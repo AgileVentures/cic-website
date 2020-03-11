@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to CIC Webstie!"
 date:   2020-03-08 14:00:12 +0300
 categories: jekyll update
 ---
