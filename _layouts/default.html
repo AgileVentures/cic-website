@@ -337,5 +337,16 @@
 
   <!-- Custom scripts for this template -->
   <script src="{{'js/freelancer.min.js' | prepend: site.baseurl}}"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
   </body>
 </html>
