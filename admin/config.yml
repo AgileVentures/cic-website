@@ -10,3 +10,18 @@ collections:
     folder: '_posts/'
     fields:
       - { name: Title }
+  - name: 'about-page'
+    label: 'About Page'
+    files:
+      - label: "about"
+        name: "about us"
+        file: "_data/about.yml"
+        fields:
+          - label: text
+            name: text
+            widget: list
+            fields: 
+              - {label: About, name: about, widget: string}
+  
+
+
