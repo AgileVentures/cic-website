@@ -407,8 +407,8 @@
 					<h6 class="text-primary">About us</h6>
 					<h2 class="h1">Central place to look for social prescribing in West London.</h2>
 					<p class="lead">Our friendly team members are always willing to help you find the best social prescribing organization for you.</p>
-					{% for about_us in site.data.about %}
-					<p> {{ about_us.text.to_s }}</p>
+					{% for about_us in site.data.about.about %}
+					<p> {{ about_us.about }}</p>
 					{% endfor %}
 					<p><span class="text-dark font-weight-bold">— Team CIC,</span> our organization goal here</p>
 					<img class="w-40" src="assets/images/mockups/signature.png" alt="">
