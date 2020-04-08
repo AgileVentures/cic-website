@@ -1,1 +1,13 @@
-- about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+# - about: >-
+#     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+text:
+  - about: >-
+      node-lipsum is a NodeJS Module and Command-line Interface combo that
+      provides a service API for lipsum.com, which you may or may not know as
+      the go-to place to generate arbitrary dummy text whenever you need it.
+      Node-lipsum can be used right from the command line by invoking
+      node-lipsum (assuming you've installed it globally) or as a node module.
+      When used as a node module, you can also get access to it's service and
+      parser sub-modules, which can provide fine-grain access to lipsum.com's
+      service.
