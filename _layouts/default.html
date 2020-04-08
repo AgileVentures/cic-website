@@ -408,7 +408,7 @@
 					<h2 class="h1">Central place to look for social prescribing in West London.</h2>
 					<p class="lead">Our friendly team members are always willing to help you find the best social prescribing organization for you.</p>
 					{% for about_us in site.data.about %}
-					<p> {{ about_us.about }}</p>
+					<p> {{ about_us.text.to_s }}</p>
 					{% endfor %}
 					<p><span class="text-dark font-weight-bold">— Team CIC,</span> our organization goal here</p>
 					<img class="w-40" src="assets/images/mockups/signature.png" alt="">
@@ -487,161 +487,6 @@
 	</section>
 	<!-- =======================
 	service -->
-
-	<!-- =======================
-	counter -->
-	<section class="p-0 counter counter-small">
-		<div class="container">
-			<div class="row ">
-				<div class="col-md-12">
-					<div class="bg-dark border-radius-3 py-5 all-text-white pattern-overlay-2">
-						<div class="row">
-							<!-- count item -->
-							<div class="col-md-3 col-6">
-								<div class="counter-item text-center">
-									<i class="counter-item-icon ti-write"></i>
-									<h2 class="counter-item-digit" data-from="0" data-to="5257" data-speed="3000" data-refresh-interval="10">5257</h2>
-									<p class="counter-item-text">Lines of code</p>
-								</div>
-							</div>
-							<!-- count item -->
-							<div class="col-md-3 col-6">
-								<div class="counter-item text-center">
-									<i class="counter-item-icon ti-truck"></i>
-									<h2 class="counter-item-digit" data-from="0" data-to="865" data-speed="3000" data-refresh-interval="10">865</h2>
-									<p class="counter-item-text">Project Delivered</p>
-								</div>
-							</div>
-							<!-- count item -->
-							<div class="col-md-3 col-6">
-								<div class="counter-item text-center">
-									<i class="counter-item-icon ti-face-smile"></i>
-									<h2 class="counter-item-digit" data-from="0" data-to="127" data-speed="3000" data-refresh-interval="10">127</h2>
-									<p class="counter-item-text">Satisfied clients</p>
-								</div>
-							</div>
-							<!-- count item -->
-							<div class="col-md-3 col-6">
-								<div class="counter-item text-center">
-									<i class="counter-item-icon ti-cup"></i>
-									<h2 class="counter-item-digit" data-from="0" data-to="16" data-speed="3000" data-refresh-interval="10">16</h2>
-									<p class="counter-item-text">Awards won</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- =======================
-	counter -->
-
-	<!-- =======================
-	Portfolio -->
-	<section class="portfolio portfolio-style-2 pb-0">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-lg-8 mx-auto">
-					<div class="title text-center">
-						<span class="pre-title">Company Portfolio </span>
-						<h2>Check our Featured Works</h2>
-						<p class="mb-0">We have built a robust team, which is capable of delivering best quality of services when it comes to website-design, Website development</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 p-0">
-					<div class="portfolio-wrap grid items-3 items-padding" data-isotope='{ "itemSelector": ".isotope-item", "layoutMode": "masonry" }'>
-						<!-- portfolio-card -->
-						<div class="portfolio-card isotope-item digital">
-							<div class="portfolio-card-body">
-								<div class="portfolio-card-header">
-									<img src="assets/images/portfolio/01.jpg" alt="">
-								</div>
-								<div class="portfolio-card-footer">
-									<a class="full-screen" href="assets/images/portfolio/01.jpg" data-fancybox="portfolio" data-caption="Fly in time"><i class="ti-fullscreen"></i></a>
-									<h6 class="info-title"><a href="#" title="">Fly in time</a></h6>
-									<p>Branding, Watch</p>
-								</div>
-							</div>
-						</div>
-						<!-- portfolio-card -->
-						<div class="portfolio-card isotope-item photo">
-							<div class="portfolio-card-body">
-								<div class="portfolio-card-header">
-									<img src="assets/images/portfolio/02.jpg" alt="">
-								</div>
-								<div class="portfolio-card-footer">
-									<a class="full-screen" href="assets/images/portfolio/02.jpg" data-fancybox="portfolio" data-caption="Waiting window"><i class="ti-fullscreen"></i></a>
-									<h6 class="info-title"><a href="#" title="">Waiting window</a></h6>
-									<p>Photography</p>
-								</div>
-							</div>
-						</div>
-						<!-- portfolio-card -->
-						<div class="portfolio-card isotope-item digital marketing">
-							<div class="portfolio-card-body">
-								<div class="portfolio-card-header">
-									<img src="assets/images/portfolio/03.jpg" alt="">
-								</div>
-								<div class="portfolio-card-footer">
-									<a class="full-screen" href="assets/images/portfolio/03.jpg" data-fancybox="portfolio" data-caption="Green Book"><i class="ti-fullscreen"></i></a>
-									<h6 class="info-title"><a href="#" title="">Green Book</a></h6>
-									<p>Graphic</p>
-								</div>
-							</div>
-						</div>
-						<!-- portfolio-card -->
-						<div class="portfolio-card isotope-item digital">
-							<div class="portfolio-card-body">
-								<div class="portfolio-card-header">
-									<img src="assets/images/portfolio/04.jpg" alt="">
-								</div>
-								<div class="portfolio-card-footer">
-									<a class="full-screen" href="assets/images/portfolio/04.jpg" data-fancybox="portfolio" data-caption="Reebok Sneakers"><i class="ti-fullscreen"></i></a>
-									<h6 class="info-title"><a href="#" title="">Reebok Sneakers</a></h6>
-									<p>Sport, Running</p>
-								</div>
-							</div>
-						</div>
-						<!-- portfolio-card -->
-						<div class="portfolio-card isotope-item digital">
-							<div class="portfolio-card-body">
-								<div class="portfolio-card-header">
-									<img src="assets/images/portfolio/11.jpg" alt="">
-								</div>
-								<div class="portfolio-card-footer">
-									<a class="full-screen" href="assets/images/portfolio/11.jpg" data-fancybox="portfolio" data-caption="Work desk"><i class="ti-fullscreen"></i></a>
-									<h6 class="info-title"><a href="#" title="">Work desk</a></h6>
-									<p>Workspace</p>
-								</div>
-							</div>
-						</div>
-						<!-- portfolio-card -->
-						<div class="portfolio-card isotope-item photo">
-							<div class="portfolio-card-body">
-								<div class="portfolio-card-header">
-									<img src="assets/images/portfolio/12.jpg" alt="">
-								</div>
-								<div class="portfolio-card-footer">
-									<a class="full-screen" href="assets/images/portfolio/12.jpg" data-fancybox="portfolio" data-caption="Green Tree"><i class="ti-fullscreen"></i></a>
-									<h6 class="info-title"><a href="#" title="">Green Tree</a></h6>
-									<p>Nature</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- portfolio wrap -->
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- =======================
-	Portfolio -->
-
-	<!-- =======================
-	Portfolio -->
 	<section class="py-5">
 		<div class="container">
 			<div class="row">
@@ -687,7 +532,7 @@
 								</button>
 							</div>
 						</form>
-						<div class="copyright-text">©2019 All Rights Reserved by <a href="#!"> Wizixo.</a></div>
+						<div class="copyright-text">©2020 All Rights Reserved by <a href="#!"> CIC.</a></div>
 					</div>
 				</div>
 			</div>
