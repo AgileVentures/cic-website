@@ -21,7 +21,7 @@ collections:
             name: about
             widget: list
             fields: 
-              - {label: About, name: about, widget: string}
+              - {label: About, name: about, widget: markdown}
   - name: 'residents'
     label: 'Residents'
     files:
@@ -33,7 +33,21 @@ collections:
             name: residents
             widget: list
             fields: 
-              - {label: Residents, name: resident, widget: string}
+              - {label: Residents, name: resident, widget: markdown}
+  
+  - name: 'health_professionals'
+    label: 'Health Professionals'
+    files:
+      - label: "Health Professionals"
+        name: "health_professionals"
+        file: "_data/health_professionals.yml"
+        fields:
+          - label: "Health Professionals"
+            name: health_professionals
+            widget: list
+            fields: 
+              - {label: Sub-title, name: sub_title, widget: string}
+              - {label: Description, name: description, widget: markdown}
   
 
 
