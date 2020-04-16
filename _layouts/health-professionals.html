@@ -112,25 +112,13 @@
 				<!-- Job positions -->
 				<div class="col-md-8">
 					{% for professional in site.data.health_professionals.health_professionals %}
-					<p> {{ professional.description }}</p>
+					<p> {{ professional.description | markdownify}}</p>
 					{% endfor %}
 
 				</div>
 				<!-- Sidebar -->
 				<div class="col-md-4 sidebar">
-					<div class="sticky-element">
-						<h2 class="mt-3 mt-md-0 mb-3">More Details</h2>
-						<ul class="list-unstyled p-0">
-							<li class="mb-3"><strong>Posted:</strong> 3 July 2018 </li>
-							<li class="mb-3"><strong>Location:</strong> London </li>
-							<li class="mb-3"><strong>Specialism:</strong> IT </li>
-							<li class="mb-3"><strong>Job type:</strong> Permanent </li>
-							<li class="mb-3"><strong>Reference number:</strong> CRR0001-18 </li>
-							<li class="mb-3"><strong>Contact:</strong> Jessica Mores</li>
-							<li class="mb-3"><strong>Phone:</strong> (+251) 854-6308 </li>
-						</ul>
-						<a class="d-block mt-3" href="#"><i class="fa fa-print mr-2"></i> Print</a>
-					</div>
+					
 				</div>
 				<!-- Sidebar end-->
 
@@ -141,16 +129,19 @@
 	careers -->
 	<section class="pb-3">
 		<div class="container">
+			<h1 class="innerpage-title" style="text-align: center;">Referrals</h1>
 			<div class="row">
 
 				<!-- column 1 -->
 				<div class="col-md-4">
 					<!-- title -->
-					<h5 class="text-primary">Referral Creteria</h5>
-					<h2 class="h1">The Referral Guidelines are based on best practice and are informed by available evidence.</h2>
-					<p>Partnering with 100+ health  organizations in London, to ensure best results for the residents of North London.</p>
+					<div class="bg-light p-4 p-lg-5 mb-5">
+						<span class="display-5 icon-dark"><i class="ti-ruler-pencil"></i></span>
+						<h5>Referral to link worker</h5>
+						<p class="mb-0">We have a strong foundation built on legacy and emerging technologies, including excellent track record of on-time deliveries. We are emerging as one of the most promising private talent sourcing and management firms in the world.</p>
+					</div>
 					<!-- service item -->
-					<div class="bg-light p-4 p-lg-5 ">
+					<div class="bg-light p-4 p-lg-5 mb-5">
 						<span class="display-5 icon-dark"><i class="ti-ruler-pencil"></i></span>
 						<h5>Referral to link worker</h5>
 						<p class="mb-0">We have a strong foundation built on legacy and emerging technologies, including excellent track record of on-time deliveries. We are emerging as one of the most promising private talent sourcing and management firms in the world.</p>
@@ -176,7 +167,7 @@
 				<!-- column 3 -->
 				<div class="col-md-4">
 					<!-- service item -->
-					<div class="bg-grad all-text-white p-4 p-lg-5 mb-5">
+					<div class="bg-light p-4 p-lg-5 mb-5">
 						<span class="display-5"><i class="ti-map icon-white"></i></span>
 						<h5> Self care services</h5>
 						<p class="mb-0">node-lipsum is a NodeJS Module and Command-line Interface combo that provides a service API for lipsum.com, which you may or may not know as the go-to place to generate arbitrary dummy text whenever you need it.</p>
