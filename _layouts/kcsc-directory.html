@@ -21,7 +21,7 @@
 								<button type="button" class="btn btn-grad border-radius-left-0 mb-0">Search</button>
 							</div>
 						</form>
-						<p class="small mt-2 mb-0"><strong>e.g.</strong>Template, Wizixo, WordPress theme </p>
+						<p class="small mt-2 mb-0"><strong>e.g.</strong>KCSC, Social Prescribing </p>
 					</div>
 					<a class="position-absolute top-0 right-0 mt-3 mr-3" data-toggle="collapse" href="#search-open"><i class="fa fa-window-close"></i></a>
 				</div>
@@ -84,12 +84,12 @@
 		<div class="container">
 			<div class="row all-text-white">
 				<div class="col-md-12 align-self-center">
-					<h1 class="innerpage-title">Residents</h1>
-					<h6 class="subtitle">Some text about the residents here</h6>
+					<h1 class="innerpage-title">KCSC Directory</h1>
+					<h6 class="subtitle">Some text about the kcsc directory here</h6>
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
 							<li class="breadcrumb-item active"><a href="index.html"><i class="ti-home"></i> Home</a></li>
-							<li class="breadcrumb-item">Residents</li>
+							<li class="breadcrumb-item">KCSC Directory</li>
 						</ol>
 					</nav>
 				</div>
@@ -106,22 +106,12 @@
 			<div class="row">
 				<!-- Job positions -->
 				<div class="col-md-8">
-					{% for resident in site.data.residents.residents %}
-					<p> {{ resident.resident | markdownify }}</p>
-					{% endfor %}
-
+					<iframe src="https://kcsc.agileventures.org/" width="1200" height="1200"> </iframe>
 				</div>
 				<!-- Sidebar -->
 				<div class="col-md-4 sidebar">
-					<div class="sticky-element">
-						<a class="btn btn-dark btn-lg mb-7" href="/kcsc-directory">KCSC Directory</a>
-						
-					</div>
 				</div>
 				<!-- Sidebar end-->
-				
-					
-				
 			</div>
 		</div>
 	</section>
