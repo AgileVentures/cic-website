@@ -19,7 +19,6 @@ collections:
         fields:
           - label: About
             name: about
-            widget: list
             fields: 
               - {label: About, name: about, widget: markdown}
   - name: 'residents'
