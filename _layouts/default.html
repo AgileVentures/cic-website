@@ -70,9 +70,14 @@
 			<div class="row align-self-center w-100">
 				<!-- banner Content -->
 				<div class="col-md-6 mt-md-0 all-text-white">
-					<h2 class="display-6 display-xl-4 font-weight-normal">CIC Social prescribing.</h2>
-					<p class="h6 mb-4 font-weight-normal d-none d-sm-block">Provide a platform that allows for growth, development and integration of social prescribing/Self-Care
-						and the VCS in West London across sectors including Local Authority, NHS, and other bodies.</p>
+					{% for page in site.data.home_page.home_page %}
+					<h2 class="display-6 display-xl-4 font-weight-normal">{{ page.welcome_title }} </h2>
+					{% endfor %}
+					
+					{% for page in site.data.home_page.home_page %}
+					<p class="h6 mb-4 font-weight-normal d-none d-sm-block">{{ welcome_page.sub_title }} </p>
+					{% endfor %}
+					
 					<a class="btn btn-dark btn-lg mb-7" href="/residents">Residents</a>
 					<a class="btn btn-dark btn-lg mb-7" href="/health-professionals">Health Professionals</a>
 				</div>
