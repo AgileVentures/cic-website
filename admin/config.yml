@@ -47,6 +47,20 @@ collections:
             fields: 
               - {label: Sub-title, name: sub_title, widget: string}
               - {label: Description, name: description, widget: markdown}
+
+  - name: 'home_page'
+    label: 'Home Page'
+    files:
+      - label: "Home Page"
+        name: "home_page"
+        file: "_data/home_page.yml"
+        fields:
+          - label: "Home Page"
+            name: home_page
+            widget: list
+            fields: 
+              - {label: Sub-title, name: sub_title, widget: string}
+              - {label: Title, name: title, widget: string}
   
 
 

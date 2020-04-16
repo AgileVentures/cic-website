@@ -118,43 +118,7 @@
 					</div>
 				</div>
 			</div>
-			<!-- <a href="#">
-				<div class="row">
-					<div class="col-sm-6 col-md-6">
-						<div class="feature-box h-100 text-center">
-							<a href="#" class="category">
-								<div class="feature-box-icon"><img class="w-50" src="assets/images/clients/03s.png" alt="Resident"></div>
-							</a>
-							<h3 class="feature-box-title">Resident</h3>
-							<p class="feature-box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						</div>
-					</div>
-
-				<div class="col-sm-6 col-md-6">
-					<div class="feature-box h-100 text-center">
-						<div class="feature-box-icon">
-							<a href="#">
-								<img class="w-50" src="assets/images/clients/02s.png" alt="Health professionals"></div>
-							</a>
-						<h3 class="feature-box-title">Health professionals</h3>
-						<p class="feature-box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.. </p>
-					</div>
-				</div> -->
-				
-				<!-- <div class="col-sm-6 col-md-3">
-					<div class="feature-box h-100 text-center">
-						<div class="feature-box-icon"><img class="w-50" src="assets/images/clients/01s.png" alt="Partner 2"></div>
-						<h3 class="feature-box-title">Partner 2</h3>
-						<p class="feature-box-desc">Outlived it received he material. Took yourself joy moderate off repeated laughter screened spot soon size you. </p>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3">
-					<div class="feature-box h-100 text-center">
-						<div class="feature-box-icon"><img class="w-50" src="assets/images/clients/04s.png" alt="Partner 4"></div>
-						<h3 class="feature-box-title">Partner 4</h3>
-						<p class="feature-box-desc">Continue delicate as unlocked entirely mr relation diverted in. Known not end fully being style house totally. </p>
-					</div>
-				</div> -->
+			 
 			</div>
 
 		</div>
@@ -208,11 +172,15 @@
 				<div class="col-md-6 mt-4 mt-md-0">
 					
 					<h6 class="text-primary">About us</h6>
-					<h2 class="h1">{{ site.data.about.about.title }}</h2>
-					
-					<p class="lead">{{ site.data.about.about.sub_title }}</p>
-					
-					<p> {{ site.data.about.about.about }}</p>
+					{% for about_us in site.data.about.about %}
+					<h2 class="h1">{{ about_us.title }} </h2>
+					{% endfor %}
+					{% for about_us in site.data.about.about %}
+					<p class="lead">{{ about_us.sub_title }}</p>
+					{% endfor %}
+					{% for about_us in site.data.about.about %}
+					<p> {{ about_us.about }}</p>
+					{% endfor %}
 					<p><span class="text-dark font-weight-bold">— Team CIC,</span> our organization goal here</p>
 					<img class="w-40" src="assets/images/mockups/signature.png" alt="">
 				</div>
