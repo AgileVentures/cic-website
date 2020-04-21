@@ -110,7 +110,7 @@
 		<div class="container">
 			<div class="row">
 				<!-- Job positions -->
-				<div class="col-md-8">
+				<div class="col-md-12">
 					{% for professional in site.data.health_professionals.health_professionals %}
 					<p> {{ professional.description | markdownify}}</p>
 					{% endfor %}
@@ -137,30 +137,46 @@
 					<!-- title -->
 					<div class="bg-light p-4 p-lg-5 mb-5">
 						<span class="display-5 icon-dark"><i class="ti-ruler-pencil"></i></span>
-						<h5>Referral to link worker</h5>
-						<p class="mb-0">We have a strong foundation built on legacy and emerging technologies, including excellent track record of on-time deliveries. We are emerging as one of the most promising private talent sourcing and management firms in the world.</p>
+						{% for referral in site.data.referral_tile_one.referalls %}
+							<h5>{{ referral.title }}</h5>
+						{% endfor %}
+						{% for referral in site.data.referral_tile_one.referalls %}
+							<p class="mb-0">{{ referral.text }}</p>
+						{% endfor %}
 					</div>
 					<!-- service item -->
 					<div class="bg-light p-4 p-lg-5 mb-5">
 						<span class="display-5 icon-dark"><i class="ti-ruler-pencil"></i></span>
-						<h5>Referral to link worker</h5>
-						<p class="mb-0">We have a strong foundation built on legacy and emerging technologies, including excellent track record of on-time deliveries. We are emerging as one of the most promising private talent sourcing and management firms in the world.</p>
+						{% for referral in site.data.referral_tile_two.referalls %}
+							<h5>{{ referral.title }}</h5>
+						{% endfor %}
+						{% for referral in site.data.referral_tile_two.referalls %}
+							<p class="mb-0">{{ referral.text }}</p>
+						{% endfor %}
 					</div>
 				</div>
 
 				<!-- column 2 -->
-				<div class="col-md-4 mt-5">
+				<div class="col-md-4">
 					<!-- service item -->
 					<div class="bg-light p-4 p-lg-5 mb-5">
 						<span class="display-5 icon-dark"><i class="ti-pencil-alt"></i></span>
-						<h5>Referral for long term conditions</h5>
-						<p class="mb-0">node-lipsum is a NodeJS Module and Command-line Interface combo that provides a service API for lipsum.com, which you may or may not know as the go-to place to generate arbitrary dummy text whenever you need it.</p>
+						{% for referral in site.data.referral_tile_three.referalls %}
+							<h5>{{ referral.title }}</h5>
+						{% endfor %}
+						{% for referral in site.data.referral_tile_three.referalls %}
+							<p class="mb-0">{{ referral.text }}</p>
+						{% endfor %}
 					</div>
 					<!-- service item -->
 					<div class="bg-light p-4 p-lg-5 mb-5">
 						<span class="display-5 icon-dark"><i class="ti-image"></i></span>
-						<h5>Referral for mental health</h5>
-						<p class="mb-0">node-lipsum is a NodeJS Module and Command-line Interface combo that provides a service API for lipsum.com, which you may or may not know as the go-to place to generate arbitrary dummy text whenever you need it.</p>
+						{% for referral in site.data.referral_tile_four.referalls %}
+							<h5>{{ referral.title }}</h5>
+						{% endfor %}
+						{% for referral in site.data.referral_tile_four.referalls %}
+							<p class="mb-0">{{ referral.text }}</p>
+						{% endfor %}
 					</div>
 				</div>
 
@@ -169,14 +185,22 @@
 					<!-- service item -->
 					<div class="bg-light p-4 p-lg-5 mb-5">
 						<span class="display-5"><i class="ti-map icon-white"></i></span>
-						<h5> Self care services</h5>
-						<p class="mb-0">node-lipsum is a NodeJS Module and Command-line Interface combo that provides a service API for lipsum.com, which you may or may not know as the go-to place to generate arbitrary dummy text whenever you need it.</p>
+						{% for referral in site.data.referral_tile_five.referalls %}
+							<h5>{{ referral.title }}</h5>
+						{% endfor %}
+						{% for referral in site.data.referral_tile_five.referalls %}
+							<p class="mb-0">{{ referral.text }}</p>
+						{% endfor %}
 					</div>
 					<!-- service item -->
 					<div class="bg-light p-4 p-lg-5 mb-5">
 						<span class="display-5 icon-dark"><i class="ti-world"></i></span>
-						<h5>Referral to Nth Ken</h5>
-						<p class="mb-0">node-lipsum is a NodeJS Module and Command-line Interface combo that provides a service API for lipsum.com, which you may or may not know as the go-to place to generate arbitrary dummy text whenever you need it.</p>
+						{% for referral in site.data.referral_tile_six.referalls %}
+							<h5>{{ referral.title }}</h5>
+						{% endfor %}
+						{% for referral in site.data.referral_tile_six.referalls %}
+							<p class="mb-0">{{ referral.text }}</p>
+						{% endfor %}
 					</div>
 				</div>
 			</div>

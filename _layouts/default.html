@@ -20,7 +20,7 @@
 								<button type="button" class="btn btn-grad border-radius-left-0 mb-0">Search</button>
 							</div>
 						</form>
-						<p class="small mt-2 mb-0"><strong>e.g.</strong>Template, Wizixo, WordPress theme </p>
+						<p class="small mt-2 mb-0"><strong>e.g.</strong>CIC, Social prescribing</p>
 					</div>
 					<a class="position-absolute top-0 right-0 mt-3 mr-3" data-toggle="collapse" href="#search-open"><i class="fa fa-window-close"></i></a>
 				</div>
@@ -75,7 +75,7 @@
 					{% endfor %}
 					
 					{% for page in site.data.home_page.home_page %}
-					<p class="h6 mb-4 font-weight-normal d-none d-sm-block">{{ welcome_page.sub_title }} </p>
+					<p class="h6 mb-4 font-weight-normal d-none d-sm-block">{{ page.welcome_sub_title }} </p>
 					{% endfor %}
 					
 					<a class="btn btn-dark btn-lg mb-8" href="/residents">Residents</a>
@@ -98,7 +98,7 @@
 							</image>
 						</g>
 					</g>
-				</svg>
+					</svg>
 					</figure>
 				</div>
 			</div>
@@ -117,9 +117,16 @@
 			<div class="row">
 				<div class="col-12 col-lg-8 mx-auto">
 					<div class="title text-center">
-						<span class="pre-title">Welcome to CIC website</span>
-						<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-						<p class="mb-0">We provide you with a list of organizations </p>
+						{% for about_us in site.data.about.about %}
+						<span class="pre-title">{{ about_us.title }}</span>
+						{% endfor %}
+						{% for about_us in site.data.about.about %}
+						<h2>{{ about_us.sub_title }}</h2>
+						{% endfor %}
+						{% for about_us in site.data.about.about %}
+						<p> </p>
+						<p class="mb-0">{{ about_us.about }}</p>
+						{% endfor %}
 					</div>
 				</div>
 			</div>
@@ -176,15 +183,15 @@
 				<!-- right -->
 				<div class="col-md-6 mt-4 mt-md-0">
 					
-					<h6 class="text-primary">About us</h6>
-					{% for about_us in site.data.about.about %}
-					<h2 class="h1">{{ about_us.title }} </h2>
+					<h6 class="text-primary">Testimonial</h6>
+					{% for testimonial in site.data.testimonials.testimonials %}
+					<h2 class="h1">{{ testimonial.title }} </h2>
 					{% endfor %}
-					{% for about_us in site.data.about.about %}
-					<p class="lead">{{ about_us.sub_title }}</p>
+					{% for testimonial in site.data.testimonials.testimonials %}
+					<p class="lead">{{ testimonial.sub_title }}</p>
 					{% endfor %}
-					{% for about_us in site.data.about.about %}
-					<p> {{ about_us.about }}</p>
+					{% for testimonial in site.data.testimonials.testimonials %}
+					<p> {{ testimonial.details }}</p>
 					{% endfor %}
 					<p><span class="text-dark font-weight-bold">— Team CIC,</span> our organization goal here</p>
 					<img class="w-40" src="assets/images/mockups/signature.png" alt="">
