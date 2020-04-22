@@ -145,6 +145,21 @@ collections:
             fields: 
               - {label: Title, name: title, widget: string}
               - {label: Text, name: text, widget: string}
+
+  - name: 'testimonials'
+    label: 'Testimonials'
+    files:
+      - label: "Testimonials"
+        name: "testimonials"
+        file: "_data/testimonials.yml"
+        fields:
+          - label: "Testimonials"
+            name: testimonials
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Sub-title, name: sub_title, widget: string}
+              - {label: Description, name: description, widget: string}
   
 
 
