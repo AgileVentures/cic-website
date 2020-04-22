@@ -70,7 +70,7 @@ collections:
         file: "_data/referral_tile_one.yml"
         fields:
           - label: "Referral to link Workers"
-            name: referral_tile_one
+            name: referrals
             widget: list
             fields: 
               - {label: Title, name: title, widget: string}
@@ -84,7 +84,7 @@ collections:
         file: "_data/referral_tile_four.yml"
         fields:
           - label: "Referral Four"
-            name: referral_tile_four
+            name: referrals
             widget: list
             fields: 
               - {label: Title, name: title, widget: string}
@@ -98,7 +98,7 @@ collections:
         file: "_data/referral_tile_three.yml"
         fields:
           - label: "Referral for Long term conditions"
-            name: referral_tile_three
+            name: referrals
             widget: list
             fields: 
               - {label: Title, name: title, widget: string}
@@ -112,7 +112,7 @@ collections:
         file: "_data/referral_tile_two.yml"
         fields:
           - label: "Referral for mental health"
-            name: referral_tile_two
+            name: referrals
             widget: list
             fields: 
               - {label: Title, name: title, widget: string}
@@ -126,7 +126,7 @@ collections:
         file: "_data/referral_tile_five.yml"
         fields:
           - label: "Self care services"
-            name: referral_tile_five
+            name: referrals
             widget: list
             fields: 
               - {label: Title, name: title, widget: string}
@@ -140,7 +140,7 @@ collections:
         file: "_data/referral_tile_six.yml"
         fields:
           - label: "Referral to Nth Ken"
-            name: referral_tile_six
+            name: referrals
             widget: list
             fields: 
               - {label: Title, name: title, widget: string}
