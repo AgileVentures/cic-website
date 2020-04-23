@@ -11371,7 +11371,6 @@ a.text-dark:hover, a.text-dark:focus {
     left: 0;
     right: 0;
     top: 100%;
-    background: #ffc107;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
   .navbar-nav .nav-link {
@@ -13245,7 +13244,15 @@ header {
   background-color: #343a40;
 }
 
-.navbar-light { background-color: #fff000;}
+.navbar-light { 
+  background: -moz-linear-gradient(150deg, #fff700 0%, #ffc107 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ffc107), color-stop(100%, #ffc107));
+  background: -webkit-linear-gradient(150deg, hsl(61, 100%, 50%) 0%, #ffc107 100%);
+  background: -o-linear-gradient(150deg, ###fff700 0%, #ffc107 100%);
+  background: -ms-linear-gradient(150deg, ##fff700 0%, #ffc107 100%);
+  background: linear-gradient(150deg, ##fff700 0%, #ffc107 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-one', endColorstr='$color-two',GradientType=1 );
+}
 
 @media (max-width: 991.98px) {
   .navbar-dark .navbar-collapse .nav-link {
@@ -13266,7 +13273,13 @@ header {
 }
 
 .navbar-primary.navbar-sticky-on {
-  background-color: #fff000;
+  background: -moz-linear-gradient(150deg, #fff700 0%, #ffc107 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ffc107), color-stop(100%, #ffc107));
+  background: -webkit-linear-gradient(150deg, hsl(61, 100%, 50%) 0%, #ffc107 100%);
+  background: -o-linear-gradient(150deg, ###fff700 0%, #ffc107 100%);
+  background: -ms-linear-gradient(150deg, ##fff700 0%, #ffc107 100%);
+  background: linear-gradient(150deg, ##fff700 0%, #ffc107 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-one', endColorstr='$color-two',GradientType=1 );
 }
 
 @media (max-width: 991.98px) {
