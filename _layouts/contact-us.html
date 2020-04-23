@@ -129,7 +129,7 @@
 					<div class="h-100">
 						<h3>Have a question? Let's get social!</h3>
 						<p>Get in touch with us to see how we can help you</p>
-						<form class="contact-form" id="contact-form" name="contactform" action="assets/include/contact-action.php">
+						<form class="contact-form" id="contact-form" name="contactform" action="https://formspree.io/mlewqpep" method="POST">
 							<!-- Start form message -->
 							<div class="row">
 								<div class="col-12">
@@ -166,6 +166,11 @@
 										<textarea id="con-message" name="message" cols="40" rows="6" class="form-control" placeholder="Message"></textarea>
 									</span>
 								</div>
+								<div class="col-md-12">
+									<input type="hidden" name="_next" value="/success" />
+								</div>
+
+								
 								<!-- submit button -->
 								<div class="col-md-12 text-center"><button class="btn btn-dark btn-block">Send Message</button></div>
 							</div>
