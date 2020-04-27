@@ -21,7 +21,7 @@
 								<button type="button" class="btn btn-grad border-radius-left-0 mb-0">Search</button>
 							</div>
 						</form>
-						<p class="small mt-2 mb-0"><strong>e.g.</strong>Template, Wizixo, WordPress theme </p>
+						<p class="small mt-2 mb-0"><strong>e.g.</strong>CIC website </p>
 					</div>
 					<a class="position-absolute top-0 right-0 mt-3 mr-3" data-toggle="collapse" href="#search-open"><i class="fa fa-window-close"></i></a>
 				</div>
@@ -84,12 +84,12 @@
 		<div class="container">
 			<div class="row all-text-white">
 				<div class="col-md-12 align-self-center">
-					<h1 class="innerpage-title">Residents</h1>
-					<h6 class="subtitle">Some text about the residents here</h6>
+					<h1 class="innerpage-title">Our Partners</h1>
+					<h6 class="subtitle">Some text about the our partners here</h6>
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
 							<li class="breadcrumb-item active"><a href="index.html"><i class="ti-home"></i> Home</a></li>
-							<li class="breadcrumb-item">Residents</li>
+							<li class="breadcrumb-item">Our Partners</li>
 						</ol>
 					</nav>
 				</div>
@@ -105,30 +105,12 @@
 		<div class="container">
 			<div class="row">
 				<!-- Job positions -->
-				<div class="col-md-8">
-					{% for resident in site.data.residents.residents %}
-					<p> {{ resident.resident | markdownify }}</p>
+				<div class="col-md-12">
+					{% for partner in site.data.our-partners.partners %}
+					<p> {{ partner.text | markdownify }}</p>
 					{% endfor %}
 
-				</div>
-				<!-- Sidebar -->
-				<div class="col-md-4 sidebar">
-					
-					<div class="bg-light p-4 p-lg-5 mb-5">
-						<span class="display-5 icon-dark"><i class="ti-world"></i></span>
-						{% for referral in site.data.referral_tile_two.referral_tile_two %}
-							<a href='/kcsc-directory'><h5>{{ referral.title }}</h5></a>
-						{% endfor %}
-						{% for referral in site.data.referral_tile_two.referral_tile_two %}
-							<p class="mb-0">{{ referral.text }}</p>
-						{% endfor %}
-						
-					</div>
-
-				</div>
-				<!-- Sidebar end-->
-				
-					
+				</div>	
 				
 			</div>
 		</div>

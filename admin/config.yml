@@ -21,6 +21,7 @@ collections:
             name: about
             fields: 
               - {label: About, name: about, widget: markdown}
+
   - name: 'residents'
     label: 'Residents'
     files:
@@ -161,6 +162,19 @@ collections:
               - {label: Title, name: title, widget: string}
               - {label: Sub-title, name: sub_title, widget: string}
               - {label: Details, name: details, widget: string}
+
+  - name: 'residents'
+    label: 'Our Partners'
+    files:
+      - label: 'Our Partners'
+        name: 'partners'
+        file: '_data/our-partners.yml"
+        fields:
+          - label: 'Our partners'
+            name: partners
+            widget: list
+            fields: 
+              - {label: Partners, name: text, widget: markdown}
   
 
 
