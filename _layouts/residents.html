@@ -113,10 +113,18 @@
 				</div>
 				<!-- Sidebar -->
 				<div class="col-md-4 sidebar">
-					<div class="sticky-element">
-						<a class="btn btn-dark btn-lg mb-7" href="/kcsc-directory">KCSC Directory</a>
+					
+					<div class="bg-light p-4 p-lg-5 mb-5">
+						<span class="display-5 icon-dark"><i class="ti-world"></i></span>
+						{% for referral in site.data.referral_tile_two.referral_tile_two %}
+							<a href='/kcsc-directory'><h5>{{ referral.title }}</h5></a>
+						{% endfor %}
+						{% for referral in site.data.referral_tile_two.referral_tile_two %}
+							<p class="mb-0">{{ referral.text }}</p>
+						{% endfor %}
 						
 					</div>
+
 				</div>
 				<!-- Sidebar end-->
 				
@@ -129,6 +137,25 @@
 	careers -->
 
 	{% include footer.html %}
+
+	<!-- =======================
+	action box -->
+	<div> <a href="#" class="back-top btn btn-grad"><i class="ti-angle-up"></i></a> </div>
+
+	<!--Global JS-->
+	<script src="assets/vendor/jquery/jquery.min.js"></script>
+	<script src="assets/vendor/popper.js/umd/popper.min.js"></script>
+	<script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+	<!--Vendors-->
+	<script src="assets/vendor/fancybox/js/jquery.fancybox.min.js"></script>
+	<script src="assets/vendor/jquery-countTo/jquery.countTo.js"></script>
+	<script src="assets/vendor/jquery-appear/jquery.appear.js"></script>
+	<script src="assets/vendor/wavify/wavify.js"></script>
+
+	<!--Template Functions-->
+	<script src="assets/js/functions.js"></script>
 
 </body>
 </html>

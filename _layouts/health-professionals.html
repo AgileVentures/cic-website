@@ -10,25 +10,7 @@
 	<!-- =======================
 	header Start-->
 	<header class="header-static navbar-sticky navbar-light">
-		<!-- Search -->
-		<div class="top-search collapse bg-light" id="search-open" data-parent="#search">
-			<div class="container">
-				<div class="row position-relative">
-					<div class="col-md-8 mx-auto py-5">
-						<form>
-							<div class="input-group">
-								<input class="form-control border-radius-right-0 border-right-0" type="text" name="search" autofocus placeholder="What are you looking for?">
-								<button type="button" class="btn btn-grad border-radius-left-0 mb-0">Search</button>
-							</div>
-						</form>
-						<p class="small mt-2 mb-0"><strong>e.g.</strong>Template, Wizixo, WordPress theme </p>
-					</div>
-					<a class="position-absolute top-0 right-0 mt-3 mr-3" data-toggle="collapse" href="#search-open"><i class="fa fa-window-close"></i></a>
-				</div>
-			</div>
-		</div>
-		<!-- End Search -->
-
+		
 		<!-- Navbar top start-->
 		{% include navbar_top.html %}
 		<!-- Navbar top End-->
@@ -37,7 +19,7 @@
 		<nav class="navbar navbar-expand-lg">
 			<div class="container">
 				<!-- Logo -->
-				<a class="navbar-brand" href="index.html">
+				<a class="navbar-brand" href="/">
 					<!-- SVG Logo Start -->
 					<svg class="navbar-brand-item" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMinYMid" width="325.656" height="100" viewBox="0 0 325.656 100">
 					  <defs>
@@ -63,8 +45,6 @@
 					<ul class="navbar-nav ml-auto">
 						<!-- Menu item 1 Demos-->
 						{% include navlinks.html %}
-				
-						</li>
 					</ul>
 				</div>
 			</div>
@@ -104,29 +84,6 @@
 	<!-- =======================
 	Banner innerpage -->
 
-	<!-- =======================
-	careers -->
-	<section>
-		<div class="container">
-			<div class="row">
-				<!-- Job positions -->
-				<div class="col-md-12">
-					{% for professional in site.data.health_professionals.health_professionals %}
-					<p> {{ professional.description | markdownify}}</p>
-					{% endfor %}
-
-				</div>
-				<!-- Sidebar -->
-				<div class="col-md-4 sidebar">
-					
-				</div>
-				<!-- Sidebar end-->
-
-			</div>
-		</div>
-	</section>
-	<!-- =======================
-	careers -->
 	<section class="pb-3">
 		<div class="container">
 			<h1 class="innerpage-title" style="text-align: center;">Referrals</h1>
