@@ -168,7 +168,7 @@ collections:
     files:
       - label: 'Our Partners'
         name: 'partners'
-        file: '_data/our-partners.yml"
+        file: '_data/partners.yml'
         fields:
           - label: 'Our partners'
             name: partners
