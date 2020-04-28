@@ -1,6 +1,6 @@
 ---
 title: "Success"
-layout: "success"
+layout: "thanks"
 ---
 
 
