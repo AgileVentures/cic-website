@@ -71,15 +71,15 @@
 				<!-- banner Content -->
 				<div class="col-md-6 mt-md-0 all-text-white">
 					{% for page in site.data.home_page.home_page %}
-					<h2 class="display-6 display-xl-4 font-weight-normal">{{ page.welcome_title }} </h2>
+					<h2 class="display-6 display-xl-4 font-weight-normal" style="color: #343a40;">{{ page.welcome_title }} </h2>
 					{% endfor %}
 					
 					{% for page in site.data.home_page.home_page %}
-					<p class="h6 mb-4 font-weight-normal d-none d-sm-block">{{ page.welcome_sub_title }} </p>
+					<p class="h6 mb-4 font-weight-normal d-none d-sm-block" style="color: #343a40;">{{ page.welcome_sub_title }} </p>
 					{% endfor %}
 					
-					<a class="btn btn-dark btn-lg mb-8" href="/residents">Residents</a>
-					<a class="btn btn-dark btn-lg mb-8" href="/health-professionals">Health Professionals</a>
+					<a class="btn btn-dark btn-lg mb-8" href="/residents" style="width: 250px;">Residents</a>
+					<a class="btn btn-dark btn-lg mb-8" href="/health-professionals" style="width: 250px;">Health Professionals</a>
 				</div>
 				<!-- banner image -->
 				<div class="col-md-6 d-none d-md-block p-0 position-absolute top-0 right-0 align-top align-text-top">

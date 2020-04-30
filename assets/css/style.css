@@ -11373,6 +11373,7 @@ a.text-dark:hover, a.text-dark:focus {
     right: 0;
     top: 100%;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--warning);
   }
   .navbar-nav .nav-link {
     line-height: 44px;
