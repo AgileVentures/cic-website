@@ -121,7 +121,7 @@
 				<!-- column 1 -->
 				<div class="col-md-4">
 					<!-- title -->
-					<!-- <div class="bg-light p-4 p-lg-5 mb-5">
+					<div class="bg-light p-4 p-lg-5 mb-5" style="max-height: 350px;">
 						<span class="display-5 icon-dark"><i class="ti-ruler-pencil"></i></span>
 						{% for referral in site.data.referral_tile_one.referral_tile_one %}
 							<h5>{{ referral.title }}</h5>
@@ -129,20 +129,19 @@
 						{% for referral in site.data.referral_tile_one.referral_tile_one %}
 							<p class="mb-0">{{ referral.text }}</p>
 						{% endfor %}
-					</div> -->
+					</div>
 				</div>
 
 				<!-- column 2 -->
-				<div class="col-md-4">
-					<div class="bg-light p-4 p-lg-5 mb-5">
-						<!-- <span class="display-5 icon-dark"><i class="ti-world"></i></span> -->
+				<div class="col-md-4" >
+					<div class="bg-light p-4 p-lg-5 mb-5" style="max-height: 350px;">
+						<span class="display-5 icon-dark"><i class="ti-world"></i></span>
 						{% for directory in site.data.kcsc_directory.kcsc_directory %}
-							<a href='/kcsc-directory'><h5> {{ directory.title }}</h5></a>
+							<a href='/kcsc-directory'><h5 style="color: green"> {{ directory.title }}</h5></a>
 						{% endfor %}
 						{% for directory in site.data.kcsc_directory.kcsc_directory %}
 							<p class="mb-0">{{ directory.text }}</p>
 						{% endfor %}
-						<a class="btn btn-grad btn-md mb-8" href="/kcsc-directory" style="margin: 20px;">KCSC Directory</a>
 						
 					</div>
 					
@@ -151,15 +150,15 @@
 				<!-- column 3 -->
 				<div class="col-md-4">
 					<!-- service item -->
-					<!-- <div class="bg-light p-4 p-lg-5 mb-5">
-						<span class="display-5"><i class="ti-map icon-white"></i></span>
+					<div class="bg-light p-4 p-lg-5 mb-5" style="max-height: 350px;">
+						<span class="display-5"><i class="ti-map icon-dark"></i></span>
 						{% for referral in site.data.referral_tile_five.referral_tile_five %}
 							<h5>{{ referral.title }}</h5>
 						{% endfor %}
 						{% for referral in site.data.referral_tile_five.referral_tile_five %}
 							<p class="mb-0">{{ referral.text }}</p>
 						{% endfor %}
-					</div> -->
+					</div>
 				</div>
 			</div>
 		</div>
