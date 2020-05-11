@@ -162,22 +162,51 @@ collections:
               - {label: Title, name: title, widget: string}
               - {label: Text, name: text, widget: string}
 
-  - name: 'testimonials'
-    label: 'Testimonials'
+  - name: 'residents_tile_extra_0'
+    label: 'Residents tile extra'
     files:
-      - label: "Testimonials"
-        name: "testimonials"
-        file: "_data/testimonials.yml"
+      - label: "Residents tile extra"
+        name: "residents_tile_extra_0"
+        file: "_data/residents_tile_extra_0.yml"
         fields:
-          - label: "Testimonials"
-            name: testimonials
+          - label: "Residents tile extra"
+            name: residents_tile_extra_0
             widget: list
             fields: 
               - {label: Title, name: title, widget: string}
-              - {label: Sub-title, name: sub_title, widget: string}
-              - {label: Details, name: details, widget: string}
+              - {label: Text, name: text, widget: string}
 
-  - name: 'residents'
+  - name: 'residents_tile_extra_1'
+    label: 'Residents tile extra 1'
+    files:
+      - label: "Residents tile extra 1"
+        name: "residents_tile_extra_1"
+        file: "_data/residents_tile_extra_1.yml"
+        fields:
+          - label: "KCSC Directory"
+            name: residents_tile_extra_1
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+
+  - name: 'contacts'
+    label: 'Contacts'
+    files:
+      - label: "Contacts"
+        name: "contacts"
+        file: "_data/contacts.yml"
+        fields:
+          - label: "Contacts"
+            name: contacts
+            widget: list
+            fields: 
+              - {label: Address, name: address, widget: string}
+              - {label: Telephone, name: telephone, widget: string}
+              - {label: Email, name: email, widget: string}
+              - {label: About-Summary, name: about, widget: string}
+
+  - name: 'partners'
     label: 'Our Partners'
     files:
       - label: 'Our Partners'

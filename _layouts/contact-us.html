@@ -99,19 +99,25 @@
 						<div class="contact-info all-text-white">
 							<div class="contact-box-icon"><i class="ti-map-alt"></i></div>
 							<h5 class="mb-2">Address</h5>
-							<p>1421 Coburn Hollow Road Metamora, Near Center Point, IL 61548.</p>
+							{% for contact in site.data.contacts.contacts %}
+								<p>{{ contact.address }} </p>
+							{% endfor %}
 						</div>
 						<!-- Email -->
 						<div class="contact-info all-text-white">
 							<div class="contact-box-icon"><i class="ti-email"></i></div>
 							<h5 class="mb-2">E-mail</h5>
-							<p>info@kcsc.com</p>
+							{% for contact in site.data.contacts.contacts %}
+								<p>{{ contact.email }} </p>
+							{% endfor %}
 						</div>
 						<!-- Phone -->
 						<div class="contact-info all-text-white">
 							<div class="contact-box-icon"><i class="ti-panel"></i></div>
 							<h5 class="mb-2">Phone</h5>
-							<p>(+251) 854-6308<br>(+001) 564-2589</p>
+							{% for contact in site.data.contacts.contacts %}
+								<p>{{ contact.telephone }} </p>
+							{% endfor %}
 						</div>
 					</div>
 				</div>
