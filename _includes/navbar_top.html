@@ -8,10 +8,14 @@
                 <!-- Top info -->
                 <ul class="nav list-unstyled ml-3">
                     <li class="nav-item mr-3">
-                        <a class="navbar-link" href="#"><strong>Phone:</strong> (251) 854-6308</a>
+                        {% for contact in site.data.contacts.contacts %}
+							<a class="navbar-link" href="#"><strong>Phone:</strong> {{ contact.telephone }}</a>
+						{% endfor %}
                     </li>
                     <li class="nav-item mr-3">
-                        <a class="navbar-link" href="#"><strong>Email:</strong> info@kcsc.org</a>
+                        {% for contact in site.data.contacts.contacts %}
+                            <a class="navbar-link" href="#"><strong>Email:</strong> {{ contact.email }}</a>
+						{% endfor %}
                     </li>
                 </ul>
             </div>
@@ -20,9 +24,9 @@
             <div class="d-flex align-items-center">
                 
                 <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact-us">Contact</a>
+                    </li>
                 </ul>
                 <!-- top social -->
                 <ul class="social-icons">

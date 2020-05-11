@@ -10,25 +10,7 @@
 	<!-- =======================
 	header Start-->
 	<header class="header-static navbar-sticky navbar-light">
-		<!-- Search -->
-		<div class="top-search collapse bg-light" id="search-open" data-parent="#search">
-			<div class="container">
-				<div class="row position-relative">
-					<div class="col-md-8 mx-auto py-5">
-						<form>
-							<div class="input-group">
-								<input class="form-control border-radius-right-0 border-right-0" type="text" name="search" autofocus placeholder="What are you looking for?">
-								<button type="button" class="btn btn-grad border-radius-left-0 mb-0">Search</button>
-							</div>
-						</form>
-						<p class="small mt-2 mb-0"><strong>e.g.</strong>Template, Wizixo, WordPress theme </p>
-					</div>
-					<a class="position-absolute top-0 right-0 mt-3 mr-3" data-toggle="collapse" href="#search-open"><i class="fa fa-window-close"></i></a>
-				</div>
-			</div>
-		</div>
-		<!-- End Search -->
-
+		
 		<!-- Navbar top start-->
 		{% include navbar_top.html %}
 		<!-- Navbar top End-->
@@ -37,7 +19,7 @@
 		<nav class="navbar navbar-expand-lg">
 			<div class="container">
 				<!-- Logo -->
-				<a class="navbar-brand" href="index.html">
+				<a class="navbar-brand" href="/">
 					<!-- SVG Logo Start -->
 					<svg class="navbar-brand-item" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMinYMid" width="325.656" height="100" viewBox="0 0 325.656 100">
 					  <defs>
@@ -63,8 +45,6 @@
 					<ul class="navbar-nav ml-auto">
 						<!-- Menu item 1 Demos-->
 						{% include navlinks.html %}
-				
-						</li>
 					</ul>
 				</div>
 			</div>
@@ -80,7 +60,7 @@
 
 	<!-- =======================
 	Banner innerpage -->
-	<div class="innerpage-banner center bg-overlay-dark-7 py-7" style="background:url(assets/images/bg/04.jpg) no-repeat; background-size:cover; background-position: center center;">
+	<div class="innerpage-banner center bg-overlay-dark-7 py-7" style="background:url(assets/images/selfcare-poster.jpg) no-repeat; background-size:cover; background-position: center center;">
 		<div class="container">
 			<div class="row all-text-white">
 				<div class="col-md-12 align-self-center">
@@ -104,53 +84,29 @@
 	<!-- =======================
 	Banner innerpage -->
 
-	<!-- =======================
-	careers -->
-	<section>
-		<div class="container">
-			<div class="row">
-				<!-- Job positions -->
-				<div class="col-md-12">
-					{% for professional in site.data.health_professionals.health_professionals %}
-					<p> {{ professional.description | markdownify}}</p>
-					{% endfor %}
-
-				</div>
-				<!-- Sidebar -->
-				<div class="col-md-4 sidebar">
-					
-				</div>
-				<!-- Sidebar end-->
-
-			</div>
-		</div>
-	</section>
-	<!-- =======================
-	careers -->
 	<section class="pb-3">
 		<div class="container">
-			<h1 class="innerpage-title" style="text-align: center;">Referrals</h1>
 			<div class="row">
 
 				<!-- column 1 -->
 				<div class="col-md-4">
 					<!-- title -->
-					<div class="bg-light p-4 p-lg-5 mb-5">
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="max-height: 350px;">
 						<span class="display-5 icon-dark"><i class="ti-ruler-pencil"></i></span>
-						{% for referral in site.data.referral_tile_one.referalls %}
-							<h5>{{ referral.title }}</h5>
+						{% for referral in site.data.referral_tile_one.referral_tile_one %}
+							<a href='#'><h5 style="color: #28a745;">{{ referral.title }}</h5></a>
 						{% endfor %}
-						{% for referral in site.data.referral_tile_one.referalls %}
+						{% for referral in site.data.referral_tile_one.referral_tile_one %}
 							<p class="mb-0">{{ referral.text }}</p>
 						{% endfor %}
 					</div>
 					<!-- service item -->
-					<div class="bg-light p-4 p-lg-5 mb-5">
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="max-height: 350px;">
 						<span class="display-5 icon-dark"><i class="ti-ruler-pencil"></i></span>
-						{% for referral in site.data.referral_tile_two.referalls %}
-							<h5>{{ referral.title }}</h5>
+						{% for referral in site.data.referral_tile_two.referral_tile_two %}
+							<a href='#'><h5 style="color: #28a745;">{{ referral.title }}</h5></a>
 						{% endfor %}
-						{% for referral in site.data.referral_tile_two.referalls %}
+						{% for referral in site.data.referral_tile_two.referral_tile_two %}
 							<p class="mb-0">{{ referral.text }}</p>
 						{% endfor %}
 					</div>
@@ -159,22 +115,22 @@
 				<!-- column 2 -->
 				<div class="col-md-4">
 					<!-- service item -->
-					<div class="bg-light p-4 p-lg-5 mb-5">
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="max-height: 350px;">
 						<span class="display-5 icon-dark"><i class="ti-pencil-alt"></i></span>
-						{% for referral in site.data.referral_tile_three.referalls %}
-							<h5>{{ referral.title }}</h5>
+						{% for referral in site.data.referral_tile_three.referral_tile_three %}
+							<a href='#'><h5 style="color: #28a745;">{{ referral.title }}</h5></a>
 						{% endfor %}
-						{% for referral in site.data.referral_tile_three.referalls %}
+						{% for referral in site.data.referral_tile_three.referral_tile_three %}
 							<p class="mb-0">{{ referral.text }}</p>
 						{% endfor %}
 					</div>
 					<!-- service item -->
-					<div class="bg-light p-4 p-lg-5 mb-5">
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="max-height: 350px;">
 						<span class="display-5 icon-dark"><i class="ti-image"></i></span>
-						{% for referral in site.data.referral_tile_four.referalls %}
-							<h5>{{ referral.title }}</h5>
+						{% for referral in site.data.referral_tile_four.referral_tile_four %}
+							<a href='#'><h5 style="color: #28a745;">{{ referral.title }}</h5></a>
 						{% endfor %}
-						{% for referral in site.data.referral_tile_four.referalls %}
+						{% for referral in site.data.referral_tile_four.referral_tile_four %}
 							<p class="mb-0">{{ referral.text }}</p>
 						{% endfor %}
 					</div>
@@ -183,22 +139,22 @@
 				<!-- column 3 -->
 				<div class="col-md-4">
 					<!-- service item -->
-					<div class="bg-light p-4 p-lg-5 mb-5">
-						<span class="display-5"><i class="ti-map icon-white"></i></span>
-						{% for referral in site.data.referral_tile_five.referalls %}
-							<h5>{{ referral.title }}</h5>
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="max-height: 350px;">
+						<span class="display-5 icon-dark"><i class="ti-map"></i></span>
+						{% for referral in site.data.referral_tile_five.referral_tile_five %}
+							<a href='#'><h5 style="color: #28a745;">{{ referral.title }}</h5></a>
 						{% endfor %}
-						{% for referral in site.data.referral_tile_five.referalls %}
+						{% for referral in site.data.referral_tile_five.referral_tile_five %}
 							<p class="mb-0">{{ referral.text }}</p>
 						{% endfor %}
 					</div>
 					<!-- service item -->
-					<div class="bg-light p-4 p-lg-5 mb-5">
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="max-height: 350px;">
 						<span class="display-5 icon-dark"><i class="ti-world"></i></span>
-						{% for referral in site.data.referral_tile_six.referalls %}
-							<h5>{{ referral.title }}</h5>
+						{% for referral in site.data.referral_tile_six.referral_tile_six %}
+							<a href='#'><h5 style="color: #28a745;">{{ referral.title }}</h5></a>
 						{% endfor %}
-						{% for referral in site.data.referral_tile_six.referalls %}
+						{% for referral in site.data.referral_tile_six.referral_tile_six %}
 							<p class="mb-0">{{ referral.text }}</p>
 						{% endfor %}
 					</div>

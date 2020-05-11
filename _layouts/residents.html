@@ -80,7 +80,7 @@
 
 	<!-- =======================
 	Banner innerpage -->
-	<div class="innerpage-banner center bg-overlay-dark-7 py-7" style="background:url(assets/images/bg/04.jpg) no-repeat; background-size:cover; background-position: center center;">
+	<div class="innerpage-banner center bg-overlay-dark-7 py-7" style="background:url(assets/images/selfcare-poster.jpg) no-repeat; background-size:cover; background-position: center center;">
 		<div class="container">
 			<div class="row all-text-white">
 				<div class="col-md-12 align-self-center">
@@ -105,23 +105,61 @@
 		<div class="container">
 			<div class="row">
 				<!-- Job positions -->
-				<div class="col-md-8">
+				<div class="col-md-12">
 					{% for resident in site.data.residents.residents %}
 					<p> {{ resident.resident | markdownify }}</p>
 					{% endfor %}
 
 				</div>
-				<!-- Sidebar -->
-				<div class="col-md-4 sidebar">
-					<div class="sticky-element">
-						<a class="btn btn-dark btn-lg mb-7" href="/kcsc-directory">KCSC Directory</a>
-						
-					</div>
-				</div>
-				<!-- Sidebar end-->
+				
 				
 					
 				
+			</div>
+			<div class="row">
+
+				<!-- column 1 -->
+				<div class="col-md-4">
+					<!-- title -->
+					<div class="bg-light p-4 p-lg-5 mb-5" style="min-height: 350px;">
+						<span class="display-5 icon-dark"><i class="ti-ruler-pencil"></i></span>
+						{% for directory in site.data.residents_tile_extra_0.kcsc_directory %}
+							<h5>{{ directory.title }}</h5>
+						{% endfor %}
+						{% for directory in site.data.residents_tile_extra_0.kcsc_directory %}
+							<p class="mb-0">{{ directory.text }}</p>
+						{% endfor %}
+					</div>
+				</div>
+
+				<!-- column 2 -->
+				<div class="col-md-4" >
+					<div class="bg-light p-4 p-lg-5 mb-5" style="min-height: 350px;">
+						<span class="display-5 icon-dark"><i class="ti-world"></i></span>
+						{% for directory in site.data.kcsc_directory.kcsc_directory %}
+							<a href='/kcsc-directory'><h5 style="color: green"> {{ directory.title }}</h5></a>
+						{% endfor %}
+						{% for directory in site.data.kcsc_directory.kcsc_directory %}
+							<p class="mb-0">{{ directory.text }}</p>
+						{% endfor %}
+						
+					</div>
+					
+				</div>
+
+				<!-- column 3 -->
+				<div class="col-md-4">
+					<!-- service item -->
+					<div class="bg-light p-4 p-lg-5 mb-5" style="min-height: 350px;">
+						<span class="display-5 icon-dark"><i class="ti-map"></i></span>
+						{% for directory in site.data.residents_tile_extra_0.kcsc_directory %}
+							<h5>{{ directory.title }}</h5>
+						{% endfor %}
+						{% for directory in site.data.residents_tile_extra_0.kcsc_directory %}
+							<p class="mb-0">{{ directory.text }}</p>
+						{% endfor %}
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -129,6 +167,25 @@
 	careers -->
 
 	{% include footer.html %}
+
+	<!-- =======================
+	action box -->
+	<div> <a href="#" class="back-top btn btn-grad"><i class="ti-angle-up"></i></a> </div>
+
+	<!--Global JS-->
+	<script src="assets/vendor/jquery/jquery.min.js"></script>
+	<script src="assets/vendor/popper.js/umd/popper.min.js"></script>
+	<script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+	<!--Vendors-->
+	<script src="assets/vendor/fancybox/js/jquery.fancybox.min.js"></script>
+	<script src="assets/vendor/jquery-countTo/jquery.countTo.js"></script>
+	<script src="assets/vendor/jquery-appear/jquery.appear.js"></script>
+	<script src="assets/vendor/wavify/wavify.js"></script>
+
+	<!--Template Functions-->
+	<script src="assets/js/functions.js"></script>
 
 </body>
 </html>
