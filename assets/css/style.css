@@ -11315,8 +11315,8 @@ a.text-dark:hover, a.text-dark:focus {
 @media (min-width:768px) {
 
   .navbar-primary .navbar-nav .nav-link {
-    color: #ffffff;
-    text-shadow: 1px 1px 2px black;
+    color: var(--orange);
+    text-shadow: 1px 1px 2px white;
     font-size: 1.5vw;
   }
 }
@@ -11396,13 +11396,13 @@ a.text-dark:hover, a.text-dark:focus {
     right: 0;
     top: 100%;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-    background: #fff700;
+    background: orange;
   }
 
-  .navbar-transparent { background: #fff700;}
+  .navbar-transparent { background: white; color: orange; }
 
   .navbar .navbar-expand-lg {
-    background: #fff700;
+    background: orange;
   }
   .navbar-nav .nav-link {
     line-height: 44px;
@@ -12416,15 +12416,16 @@ textarea {
   -ms-text-fill-color: transparent;
   -o-text-fill-color: transparent;
   text-fill-color: transparent;
+  background-color: #ffffff;
 }
 /* background color */
 .bg-grad {
-  background: -moz-linear-gradient(150deg, #fff700 0%, #ffc107 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ffc107), color-stop(100%, #ffc107));
-  background: -webkit-linear-gradient(150deg, hsl(61, 100%, 50%) 0%, #ffc107 100%);
-  background: -o-linear-gradient(150deg, #fff700 0%, #ffc107 100%);
-  background: -ms-linear-gradient(150deg, #fff700 0%, #ffc107 100%);
-  background: linear-gradient(150deg, #fff700 0%, #ffc107 100%);
+  background: -moz-linear-gradient(315deg, #ffffff 0%, #D7E1EC 74%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ffffff), color-stop(100%, #D7E1EC));
+  background: -webkit-linear-gradient(150deg, hsl(61, 100%, 50%) 0%, #D7E1EC 100%);
+  background: -o-linear-gradient(150deg, #ffffff 0%, #D7E1EC 100%);
+  background: -ms-linear-gradient(150deg, #ffffff 0%, #D7E1EC 100%);
+  background: linear-gradient(150deg, #ffffff 0%, #D7E1EC 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-one', endColorstr='$color-two',GradientType=1 );
 }
 
