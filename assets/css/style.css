@@ -27,6 +27,7 @@
   --danger: #dc3545;
   --light: #f7f8f9;
   --dark: #343a40;
+  --gradient-start: #ffc507;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -624,6 +625,7 @@ pre code {
   }
 }
 
+/* there is a need to check the negative margins for all the rows*/
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -11312,7 +11314,7 @@ a.text-dark:hover, a.text-dark:focus {
   max-width: 100%;
   width: auto;
 }
-@media (min-width:768px) {
+@media (min-width:990px) {
 
   .navbar-primary .navbar-nav .nav-link {
     color: var(--orange);
@@ -11325,7 +11327,6 @@ a.text-dark:hover, a.text-dark:focus {
 
   .navbar-primary .navbar-nav .nav-link {
     color: #ffffff;
-    text-shadow: 1px 1px 2px black;
     font-size: 0.8rem;
   }
 }
@@ -11398,8 +11399,6 @@ a.text-dark:hover, a.text-dark:focus {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     background: orange;
   }
-
-  .navbar-transparent { background: white; color: orange; }
 
   .navbar .navbar-expand-lg {
     background: orange;
@@ -11527,6 +11526,7 @@ a.text-dark:hover, a.text-dark:focus {
   background-position: right bottom;
   border: 0;
   line-height: 1.92;
+  
 }
 
 .btn-grad.active, .btn-grad:active, .btn-grad:focus, .btn-grad:hover {
@@ -12349,6 +12349,8 @@ textarea {
     font-size: 30px;
     line-height: 30px;
   }
+
+
 }
 
 /* ===================================
@@ -13127,6 +13129,12 @@ a.primary-hover:hover {
   height: 200px;
 }
 
+@media (max-width: 575px) {
+  .wave {
+    bottom: -100px;
+  }
+}
+
 /*===============================
         MARGIN PADDING   
 =================================*/
@@ -13261,7 +13269,7 @@ header {
 }
 
 @media (max-width: 992px) {
-  .navbar-transparent {background: #fff700 }
+  .navbar-transparent {background: orange }
 }
 
 .navbar-dark .navbar-top span {
@@ -13281,12 +13289,12 @@ header {
 }
 
 .navbar-light { 
-  background: -moz-linear-gradient(150deg, #fff700 0%, #ffc107 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ffc107), color-stop(100%, #ffc107));
-  background: -webkit-linear-gradient(150deg, hsl(61, 100%, 50%) 0%, #ffc107 100%);
-  background: -o-linear-gradient(150deg, #fff700 0%, #ffc107 100%);
-  background: -ms-linear-gradient(150deg, #fff700 0%, #ffc107 100%);
-  background: linear-gradient(150deg, #fff700 0%, #ffc107 100%);
+  background: -moz-linear-gradient(150deg, #ff9d00 0%, #ffb507 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ff9d00), color-stop(100%, #ffb507));
+  background: -webkit-linear-gradient(150deg, hsl(61, 100%, 50%) 0%, #ffb507 100%);
+  background: -o-linear-gradient(150deg, #ff9d00 0%, #ffb507 100%);
+  background: -ms-linear-gradient(150deg, #ff9d00 0%, #ffb507 100%);
+  background: linear-gradient(150deg, #ff9d00 0%, #ffb507 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-one', endColorstr='$color-two',GradientType=1 );
 }
 
@@ -13309,13 +13317,14 @@ header {
 }
 
 .navbar-primary.navbar-sticky-on {
-  background: -moz-linear-gradient(150deg, #fff700 0%, #ffc107 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ffc107), color-stop(100%, #ffc107));
-  background: -webkit-linear-gradient(150deg, hsl(61, 100%, 50%) 0%, #ffc107 100%);
-  background: -o-linear-gradient(150deg, #fff700 0%, #ffc107 100%);
-  background: -ms-linear-gradient(150deg, #fff700 0%, #ffc107 100%);
-  background: linear-gradient(150deg, #fff700 0%, #ffc107 100%);
+  background: -moz-linear-gradient(150deg, #ff9d00 0%, #ffda07 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,orange), color-stop(100%, #ffda07));
+  background: -webkit-linear-gradient(150deg, hsl(61, 100%, 50%) 0%, #ffda07 100%);
+  background: -o-linear-gradient(150deg, #ff9d00 0%, #ffda07 100%);
+  background: -ms-linear-gradient(150deg, #ff9d00 0%, #ffda07 100%);
+  background: linear-gradient(150deg, #ff9d00 0%, #ffda07 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-one', endColorstr='$color-two',GradientType=1 );
+  
 }
 
 @media (max-width: 991.98px) {
@@ -18511,6 +18520,7 @@ a .category {
   min-width: 250px;
 }
 
+
 @media (max-width: 1200px) {
    .tile-btn {
     min-width: 170px;
@@ -18525,6 +18535,9 @@ a .category {
   }
 }
 
-.for-tile-btn { 
-  color: red;
+
+.cic-logo { 
+  overflow: hidden;
+  margin: -15px 0 0 -30px;
+
 }
