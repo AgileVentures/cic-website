@@ -5,18 +5,18 @@ backend:
   branch: develop # Branch to update (optional; defaults to master)
 media_folder: 'assets'
 collections:
-- name: 'about'
-  label: 'about'
-  files:
-    - label: "About us"
-      name: "about"
-      file: "_data/about.yml"
-      fields:
-        - label: About
-          name: about
-          widget: list
-          fields: 
-            - {label: About, name: about, widget: markdown}
+  - name: 'about'
+    label: 'About'
+    files:
+      - label: "About us"
+        name: "about"
+        file: "_data/about.yml"
+        fields:
+          - label: About
+            name: about
+            widget: list
+            fields: 
+              - {label: About, name: about, widget: markdown}
 
   - name: 'residents'
     label: 'Residents'
