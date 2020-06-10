@@ -17,6 +17,8 @@ collections:
             widget: list
             fields: 
               - {label: About, name: about, widget: markdown}
+              - {label: title, name: title, widget: string}
+              - {label: Sub-title, name: sub_title, widget: string}
 
   - name: 'residents'
     label: 'Residents'
