@@ -4352,8 +4352,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #ffffff;
-  text-shadow: 1px 1px 2px black;
+  color: orange;
 }
 
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
@@ -11401,7 +11400,7 @@ a.text-dark:hover, a.text-dark:focus {
     right: 0;
     top: 100%;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-    background: orange;
+    background: white;
   }
 
   .navbar .navbar-expand-lg {
@@ -13250,8 +13249,11 @@ section {
 }
 
 .navbar-top a {
-  color: #8f9397;
   font-size: 0.8125rem;
+}
+
+.navbar-top a:hover {
+  color: #8f9397;
 }
 
 .navbar-top a:hover {
@@ -13292,16 +13294,6 @@ header {
   background-color: #343a40;
 }
 
-.navbar-light { 
-  background: -moz-linear-gradient(150deg, #ff9d00 0%, #ffb507 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ff9d00), color-stop(100%, #ffb507));
-  background: -webkit-linear-gradient(150deg, hsl(61, 100%, 50%) 0%, #ffb507 100%);
-  background: -o-linear-gradient(150deg, #ff9d00 0%, #ffb507 100%);
-  background: -ms-linear-gradient(150deg, #ff9d00 0%, #ffb507 100%);
-  background: linear-gradient(150deg, #ff9d00 0%, #ffb507 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-one', endColorstr='$color-two',GradientType=1 );
-}
-
 @media (max-width: 991.98px) {
   .navbar-dark .navbar-collapse .nav-link {
     color: #8f9397;
@@ -13332,7 +13324,7 @@ header {
 
 @media (max-width: 991.98px) {
   .navbar-primary .navbar-collapse .nav-link {
-    color: #ffffff;
+    color: orange;
   }
 }
 
@@ -13364,7 +13356,7 @@ header.navbar-sticky-on {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #fff000;
+  background-color: white;
   -webkit-animation: fadeInDown .5s;
   animation: fadeInDown .5s;
   width: 100%;
@@ -16240,7 +16232,6 @@ footer .widget {
   border-radius: 3px;
   border: 0;
   background: transparent;
-  color: #343a40;
   overflow: hidden;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -18555,4 +18546,26 @@ a .category {
   color: white;
   text-shadow: 1px 1px 2px black;
 
+}
+
+@media (max-width: 991px) {
+  .navbar-primary.navbar-sticky-on .nav-link {
+    color: orange;
+    text-shadow: 0px 0px 0px black;
+  }
+
+}
+
+
+.grey-tile > a {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 1.09375rem;
+}
+
+.grey-tile > a:hover {
+  color:orange;
 }
