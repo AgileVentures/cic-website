@@ -1,0 +1,221 @@
+# config.yml
+
+backend:
+  name: git-gateway
+  branch: develop # Branch to update (optional; defaults to master)
+media_folder: 'assets'
+collections:
+  - name: 'about'
+    label: 'About'
+    files:
+      - label: "About us"
+        name: "about"
+        file: "_data/about.yml"
+        fields:
+          - label: About
+            name: about
+            widget: list
+            fields: 
+              - {label: About, name: about, widget: markdown}
+              - {label: title, name: title, widget: string}
+              - {label: Sub-title, name: sub_title, widget: string}
+
+  - name: 'residents'
+    label: 'Residents'
+    files:
+      - label: "Residents"
+        name: "resident"
+        file: "_data/residents.yml"
+        fields:
+          - label: Residents
+            name: residents
+            widget: list
+            fields: 
+              - {label: Residents, name: resident, widget: markdown}
+  
+  - name: 'health_professionals'
+    label: 'Health Professionals'
+    files:
+      - label: "Health Professionals"
+        name: "health_professionals"
+        file: "_data/health_professionals.yml"
+        fields:
+          - label: "Health Professionals"
+            name: health_professionals
+            widget: list
+            fields: 
+              - {label: Sub-title, name: sub_title, widget: string}
+              - {label: Description, name: description, widget: markdown}
+
+  - name: 'home_page'
+    label: 'Home Page'
+    files:
+      - label: "Home Page"
+        name: "home_page"
+        file: "_data/home_page.yml"
+        fields:
+          - label: "Home Page"
+            name: home_page
+            widget: list
+            fields: 
+              - {label: Sub-title, name: welcome_sub_title, widget: string}
+              - {label: Title, name: welcome_title, widget: string}
+              - {label: 'Organization Goal', name: organization_goal, widget: string}
+
+  - name: 'referral_tile_one'
+    label: 'Referral to link Workers'
+    files:
+      - label: "Referral to link Workers"
+        name: "referral_tile_one"
+        file: "_data/referral_tile_one.yml"
+        fields:
+          - label: "Referral to link Workers"
+            name: referral_tile_one
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+
+  - name: 'referral_tile_four'
+    label: 'Referral Four'
+    files:
+      - label: "Referral Four"
+        name: "referral_tile_four"
+        file: "_data/referral_tile_four.yml"
+        fields:
+          - label: "Referral Four"
+            name: referral_tile_four
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+
+  - name: 'referral_tile_three'
+    label: 'Referral for Long term conditions'
+    files:
+      - label: "Referral for Long term conditions"
+        name: "referral_tile_three"
+        file: "_data/referral_tile_three.yml"
+        fields:
+          - label: "Referral for Long term conditions"
+            name: referral_tile_three
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+
+  - name: 'referral_tile_two'
+    label: 'Referral for mental health'
+    files:
+      - label: "Referral for mental health"
+        name: "referral_tile_two"
+        file: "_data/referral_tile_two.yml"
+        fields:
+          - label: "Referral for mental health"
+            name: referral_tile_two
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+
+  - name: 'referral_tile_five'
+    label: 'Self care services'
+    files:
+      - label: "Self care services"
+        name: "referral_tile_five"
+        file: "_data/referral_tile_five.yml"
+        fields:
+          - label: "Self care services"
+            name: referral_tile_five
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+
+  - name: 'referral_tile_six'
+    label: 'Referral to Nth Ken'
+    files:
+      - label: "Referral to Nth Ken"
+        name: "referral_tile_six"
+        file: "_data/referral_tile_six.yml"
+        fields:
+          - label: "Referral to Nth Ken"
+            name: referral_tile_six
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+
+  - name: 'kcsc_directory'
+    label: 'KCSC Directory'
+    files:
+      - label: "KCSC Directory"
+        name: "kcsc_directory"
+        file: "_data/kcsc_directory.yml"
+        fields:
+          - label: "KCSC Directory"
+            name: kcsc_directory
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+
+  - name: 'residents_tile_extra_0'
+    label: 'Residents tile extra'
+    files:
+      - label: "Residents tile extra"
+        name: "residents_tile_extra_0"
+        file: "_data/residents_tile_extra_0.yml"
+        fields:
+          - label: "Residents tile extra"
+            name: residents_tile_extra_0
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+
+  - name: 'residents_tile_extra_1'
+    label: 'Residents tile extra 1'
+    files:
+      - label: "Residents tile extra 1"
+        name: "residents_tile_extra_1"
+        file: "_data/residents_tile_extra_1.yml"
+        fields:
+          - label: "KCSC Directory"
+            name: residents_tile_extra_1
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+
+  - name: 'contacts'
+    label: 'Contacts'
+    files:
+      - label: "Contacts"
+        name: "contacts"
+        file: "_data/contacts.yml"
+        fields:
+          - label: "Contacts"
+            name: contacts
+            widget: list
+            fields: 
+              - {label: Address, name: address, widget: string}
+              - {label: Telephone, name: telephone, widget: string}
+              - {label: Email, name: email, widget: string}
+              - {label: About-Summary, name: about, widget: string}
+
+  - name: 'partners'
+    label: 'Our Partners'
+    files:
+      - label: 'Our Partners'
+        name: 'partners'
+        file: '_data/partners.yml'
+        fields:
+          - label: 'Our partners'
+            name: partners
+            widget: list
+            fields: 
+              - {label: Partners, name: text, widget: markdown}
+  
+
+

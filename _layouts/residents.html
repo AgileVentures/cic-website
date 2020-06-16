@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+{% include header.html %}
+
+<body>
+	<div class="preloader">
+		<img src="assets/images/preloader.svg" alt="Pre-loader">
+	</div>
+
+	<!-- =======================
+	header Start-->
+	<header class="header-static navbar-sticky navbar-light">
+		<!-- Search -->
+		<div class="top-search collapse bg-light" id="search-open" data-parent="#search">
+			<div class="container">
+				<div class="row position-relative">
+					<div class="col-md-8 mx-auto py-5">
+						<form>
+							<div class="input-group">
+								<input class="form-control border-radius-right-0 border-right-0" type="text" name="search" autofocus placeholder="What are you looking for?">
+								<button type="button" class="btn btn-grad border-radius-left-0 mb-0">Search</button>
+							</div>
+						</form>
+						<p class="small mt-2 mb-0"><strong>e.g.</strong>Template, Wizixo, WordPress theme </p>
+					</div>
+					<a class="position-absolute top-0 right-0 mt-3 mr-3" data-toggle="collapse" href="#search-open"><i class="fa fa-window-close"></i></a>
+				</div>
+			</div>
+		</div>
+		<!-- End Search -->
+
+		<!-- Navbar top start-->
+		{% include navbar_top.html %}
+		<!-- Navbar top End-->
+
+		<!-- Logo Nav Start -->
+		{% include logonav.html %}
+		<!-- Logo Nav End -->
+	</header>
+	<!-- =======================
+	header End-->
+
+	<!-- =======================
+	About us -->
+	
+
+	<!-- =======================
+	Banner innerpage -->
+	<div class="innerpage-banner center bg-overlay-dark-4 py-7" style="background:url(assets/images/selfcare-poster.jpg) no-repeat; background-size:cover; background-position: center center;">
+		<div class="container">
+			<div class="row all-text-white">
+				<div class="col-md-12 align-self-center">
+					<h1 class="innerpage-title">Residents</h1>
+					<h6 class="subtitle">Some text about the residents here</h6>
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item active"><a href="index.html"><i class="ti-home"></i> Home</a></li>
+							<li class="breadcrumb-item">Residents</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =======================
+	Banner innerpage -->
+
+	<!-- =======================
+	careers -->
+	<section>
+		<div class="container">
+			
+			<div class="row">
+
+				<!-- column 1 -->
+				<div class="col-md-4">
+					<!-- title -->
+					<div class="bg-light p-4 p-lg-5 mb-5" style="min-height: 350px;">
+						<span class="display-5 icon-dark"><i class="ti-ruler-pencil"></i></span>
+						{% for res in site.data.residents_tile_extra_0.residents_tile_extra_0 %}
+							<h5>{{ res.title }}</h5>
+						{% endfor %}
+						{% for res in site.data.residents_tile_extra_0.residents_tile_extra_0 %}
+							<p class="mb-0">{{ res.text }}</p>
+						{% endfor %}
+					</div>
+				</div>
+
+				<!-- column 2 -->
+				<div class="col-md-4" >
+					<div class="bg-light p-4 p-lg-5 mb-5" style="min-height: 350px;">
+						<span class="display-5 icon-dark"><i class="ti-world"></i></span>
+						{% for directory in site.data.kcsc_directory.kcsc_directory %}
+							<a href='/kcsc-directory'><h5 style="color: green"> {{ directory.title }}</h5></a>
+						{% endfor %}
+						{% for directory in site.data.kcsc_directory.kcsc_directory %}
+							<p class="mb-0">{{ directory.text }}</p>
+						{% endfor %}
+						
+					</div>
+					
+				</div>
+
+				<!-- column 3 -->
+				<div class="col-md-4">
+					<!-- service item -->
+					<div class="bg-light p-4 p-lg-5 mb-5" style="min-height: 350px;">
+						<span class="display-5 icon-dark"><i class="ti-map"></i></span>
+						{% for res in site.data.residents_tile_extra_1.residents_tile_extra_1 %}
+							<h5>{{ res.title }}</h5>
+						{% endfor %}
+						{% for res in site.data.residents_tile_extra_1.residents_tile_extra_1 %}
+							<p class="mb-0">{{ res.text }}</p>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- =======================
+	careers -->
+
+	{% include footer.html %}
+
+	<!-- =======================
+	action box -->
+	<div> <a href="#" class="back-top btn btn-grad"><i class="ti-angle-up"></i></a> </div>
+
+	<!--Global JS-->
+	<script src="assets/vendor/jquery/jquery.min.js"></script>
+	<script src="assets/vendor/popper.js/umd/popper.min.js"></script>
+	<script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+	<!--Vendors-->
+	<script src="assets/vendor/fancybox/js/jquery.fancybox.min.js"></script>
+	<script src="assets/vendor/jquery-countTo/jquery.countTo.js"></script>
+	<script src="assets/vendor/jquery-appear/jquery.appear.js"></script>
+	<script src="assets/vendor/wavify/wavify.js"></script>
+
+	<!--Template Functions-->
+	<script src="assets/js/functions.js"></script>
+
+</body>
+</html>

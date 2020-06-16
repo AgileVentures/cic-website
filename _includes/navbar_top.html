@@ -1,0 +1,47 @@
+<!-- Navbar top start-->
+<div class="navbar-top d-none d-lg-block">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <!-- navbar top Left-->
+            <div class="d-flex align-items-center">
+
+                <!-- Top info -->
+                <ul class="nav list-unstyled ml-3">
+                    <li class="nav-item mr-3">
+                        {% for contact in site.data.contacts.contacts %}
+							<a class="navbar-link" href="#"><strong>Phone:</strong> {{ contact.telephone }}</a>
+						{% endfor %}
+                    </li>
+                    <li class="nav-item mr-3">
+                        {% for contact in site.data.contacts.contacts %}
+                            <a class="navbar-link" href="#"><strong>Email:</strong> {{ contact.email }}</a>
+						{% endfor %}
+                    </li>
+                </ul>
+            </div>
+
+            <!-- navbar top Right-->
+            <div class="d-flex align-items-center">
+                
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact-us">Contact</a>
+                    </li>
+                </ul>
+                <!-- top social -->
+                <ul class="social-icons">
+                    <li class="social-icons-item social-facebook m-0">
+                        <a class="social-icons-link w-auto px-2" href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="social-icons-item social-instagram m-0">
+                        <a class="social-icons-link w-auto px-2" href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li class="social-icons-item social-twitter m-0">
+                        <a class="social-icons-link w-auto pl-2" href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Navbar top End-->

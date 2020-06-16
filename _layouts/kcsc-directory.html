@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+{% include header.html %}
+
+<body>
+	<div class="preloader">
+		<img src="assets/images/preloader.svg" alt="Pre-loader">
+	</div>
+
+	<!-- =======================
+	header Start-->
+	<header class="header-static navbar-sticky navbar-light">
+		<!-- Search -->
+		<div class="top-search collapse bg-light" id="search-open" data-parent="#search">
+			<div class="container">
+				<div class="row position-relative">
+					<div class="col-md-8 mx-auto py-5">
+						<form>
+							<div class="input-group">
+								<input class="form-control border-radius-right-0 border-right-0" type="text" name="search" autofocus placeholder="What are you looking for?">
+								<button type="button" class="btn btn-grad border-radius-left-0 mb-0">Search</button>
+							</div>
+						</form>
+						<p class="small mt-2 mb-0"><strong>e.g.</strong>KCSC, Social Prescribing </p>
+					</div>
+					<a class="position-absolute top-0 right-0 mt-3 mr-3" data-toggle="collapse" href="#search-open"><i class="fa fa-window-close"></i></a>
+				</div>
+			</div>
+		</div>
+		<!-- End Search -->
+
+		<!-- Navbar top start-->
+		{% include navbar_top.html %}
+		<!-- Navbar top End-->
+
+		<!-- Logo Nav Start -->
+		{% include logonav.html %}
+		<!-- Logo Nav End -->
+	</header>
+	<!-- =======================
+	header End-->
+		
+
+	<!-- =======================
+	careers -->
+	<section>
+		<div class="container">
+			<div class="row">
+				<!-- Job positions -->
+				<div class="col-md-12">
+					<!-- <iframe src="https://kcsc.agileventures.org/" width="100%" height="1200"> </iframe> -->
+					<iframe src="http://localhost:3000/services?hide_navbar=true" width="100%" height="1200"> </iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- =======================
+	careers -->
+
+	{% include footer.html %}
+
+</body>
+</html>
