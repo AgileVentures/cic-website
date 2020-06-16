@@ -72,15 +72,15 @@
 				<!-- banner Content -->
 				<div class="col-md-6 mt-md-0 all-text-white" >
 					<!-- <image style="overflow:visible;" width="115%" height="120%" id="XMLID_82_" xlink:href="assets/images/banner/32.jpg"  transform="matrix(0.9999 0 0 0.9999 8.063897e-002 6.401104e-002)"></image> -->
-					<img src="/assets/images/Full_Logo_Colour.png" class="cic-logo" />
+					<img src="assets/images/banner/Full_Logo_Colour.jpg" class="cic-logo" />
 					{% for page in site.data.home_page.home_page %}
 					<p class="h6 mb-4 font-weight-normal d-none d-sm-block" style="color: #343a40;">{{ page.welcome_sub_title }} </p>
 					{% endfor %}
 
 					
 					<div class="d-flex flex-wrap mb-sm-10">
-						<a class="btn btn-grad btn-lg tile-btn mr-1" href="/residents">Residents</a>
-						<a class="btn btn-grad btn-lg tile-btn" href="/health-professionals">Health Professionals</a>
+						<a class="btn btn-grad btn-lg tile-btn mr-1" href="{{'/residents' | prepend:site.baseurl }}">Residents</a>
+						<a class="btn btn-grad btn-lg tile-btn" href="{{'/health-professionals' | prepend:site.baseurl }}">Health Professionals</a>
 					</div>
 
 			
