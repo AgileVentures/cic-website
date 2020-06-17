@@ -18517,9 +18517,16 @@ a .category {
 
 @media (max-width: 1200px) {
    .tile-btn {
-    min-width: 170px;
+    min-width: 200px;
     font-size: 1rem;
   }
+}
+
+@media (max-width: 900px) {
+  .tile-btn {
+   min-width: 170px;
+   font-size: 1rem;
+ }
 }
 @media (max-width:620px) {
   .tile-btn {
@@ -18527,7 +18534,7 @@ a .category {
     width:50%;      
   }
 }
-@media (max-width: 922px) {
+@media (max-width: 992px) {
   .tile-btn {
     width:100%;
     font-size: 0.8rem;
