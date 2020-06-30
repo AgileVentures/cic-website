@@ -601,7 +601,6 @@ pre code {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
   margin-left: auto;
 }
 
@@ -13275,7 +13274,7 @@ header {
 }
 
 @media (max-width: 992px) {
-  .navbar-transparent {background: orange }
+  .navbar-transparent {background: white;}
 }
 
 .navbar-dark .navbar-top span {
@@ -13313,20 +13312,13 @@ header {
 }
 
 .navbar-primary.navbar-sticky-on {
-  background: -moz-linear-gradient(150deg, #ff9d00 0%, #ffda07 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%,orange), color-stop(100%, #ffda07));
-  background: -webkit-linear-gradient(150deg, hsl(61, 100%, 50%) 0%, #ffda07 100%);
-  background: -o-linear-gradient(150deg, #ff9d00 0%, #ffda07 100%);
-  background: -ms-linear-gradient(150deg, #ff9d00 0%, #ffda07 100%);
-  background: linear-gradient(150deg, #ff9d00 0%, #ffda07 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-one', endColorstr='$color-two',GradientType=1 );
+  background-color: white;
 }
 
-@media (max-width: 991.98px) {
-  .navbar-primary .navbar-collapse .nav-link {
+.navbar-primary .navbar-collapse .nav-link {
     color: orange;
-  }
 }
+
 
 .navbar-floating {
   position: absolute;
@@ -18517,6 +18509,14 @@ a .category {
 
 @media (max-width: 1200px) {
    .tile-btn {
+    min-width: 220px;
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 1100px) {
+   .tile-btn {
     min-width: 200px;
     font-size: 1rem;
   }
@@ -18550,15 +18550,13 @@ a .category {
 }
 
 .navbar-primary.navbar-sticky-on .nav-link {
-  color: white;
-  text-shadow: 1px 1px 2px black;
+  color: orange;
 
 }
 
 @media (max-width: 991px) {
   .navbar-primary.navbar-sticky-on .nav-link {
     color: orange;
-    text-shadow: 0px 0px 0px black;
   }
 
 }
