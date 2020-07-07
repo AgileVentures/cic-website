@@ -1,15 +1,15 @@
 <!-- Menu item 1 Demos-->
 <li class="nav-item">
-    <a class="nav-link" href="{{'/' | prepend:site.baseurl }}" id="demosMenu" >Home</a>
+    <a class="nav-link" href="{{'/' | prepend:site.baseurl }}" id="home" >Home</a>
 </li>
 <!-- Menu item 3 Pages-->
 <li class="nav-item ">
-    <a class="nav-link " href="{{ "/residents" | prepend:site.baseurl }}" id="pagesMenu">Residents</a>
+    <a class="nav-link " href="{{ "/residents" | prepend:site.baseurl }}" id="residents">Residents</a>
 </li>
 
 <!-- Menu item 2 Blog-->
 <li class="nav-item ">
-    <a class="nav-link " href="{{"/health-professionals" | prepend:site.baseurl }}" id="blogMenu">Health professionals</a>
+    <a class="nav-link " href="{{"/health-professionals" | prepend:site.baseurl }}" id="health-professionals">Health professionals</a>
 </li>
 
 <!-- Menu item 3 Pages-->
@@ -19,5 +19,9 @@
 
 <!-- Menu item 5 Docs-->
 <li class="nav-item ">
-    <a class="nav-link" href="{{"/contact-us" | prepend:site.baseurl }}" id="docMenu">Contact Us</a>
+    {% for page in site.data.extra_page.extra_page %}
+        {% if page.display %}
+            <a class="nav-link" href="{{"extra-page" | prepend:site.baseurl }}" id="contact-us">Extra Page</a>
+        {% endif %}
+	{% endfor %}
 </li>
