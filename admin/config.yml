@@ -217,5 +217,17 @@ collections:
             fields: 
               - {label: Partners, name: text, widget: markdown}
   
+  - name: 'extra_page'
+    label: 'Extra Page'
+    files:
+      - label: 'Extra Page'
+        name: 'extra_page'
+        file: '_data/extra_page.yml'
+        fields:
+          - label: 'Extra Page'
+            name: extra_page
+            widget: list
+            fields: 
+              - {label: "Display", name: "display", widget: "boolean", default: false}
 
 

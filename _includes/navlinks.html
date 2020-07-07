@@ -19,5 +19,9 @@
 
 <!-- Menu item 5 Docs-->
 <li class="nav-item ">
-    <a class="nav-link" href="{{"/contact-us" | prepend:site.baseurl }}" id="contact-us">Contact Us</a>
+    {% for page in site.data.extra_page.extra_page %}
+        {% if page.display %}
+            <a class="nav-link" href="{{"extra-page" | prepend:site.baseurl }}" id="contact-us">Extra Page</a>
+        {% endif %}
+	{% endfor %}
 </li>

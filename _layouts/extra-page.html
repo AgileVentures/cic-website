@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+	{% include header.html %}
+
+<body>
+	<div class="preloader">
+		<img src="assets/images/preloader.svg" alt="Pre-loader">
+	</div>
+
+	<!-- =======================
+	header Start-->
+	<header class="header-static navbar-sticky navbar-light">
+		<!-- Logo Nav Start -->
+			{% include logonav.html %}	
+		<!-- Logo Nav End -->
+	</header>
+	<!-- =======================
+	header End-->
+
+	<!-- =======================
+	About us -->
+	
+
+	<!-- =======================
+	Banner innerpage -->
+	<div class="innerpage-banner center bg-overlay-dark-4 py-7" style="background:url(assets/images/selfcare-poster.jpg) no-repeat; background-size:cover; background-position: center center;">
+		<div class="container">
+			<div class="row all-text-white">
+				<div class="col-md-12 align-self-center">
+					<h1 class="innerpage-title">Extra Page</h1>
+					<h6 class="subtitle">
+
+					Some sub title in the extra page
+					</h6>
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item active"><a href="index.html"><i class="ti-home"></i> Home</a></li>
+							<li class="breadcrumb-item">Extra Page</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =======================
+	Banner innerpage -->
+
+	<section class="pb-3">
+		<div class="container">
+			<div class="row">
+
+				<!-- column 1 -->
+				<div class="col-md-4">
+					<!-- title -->
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 350px;">
+						<span class="display-5 icon-dark"><i class="ti-ruler-pencil"></i></span>
+						<br/>
+						{% for referral in site.data.referral_tile_one.referral_tile_one %}
+							<a href='#' class=".h5"> {{ referral.title }}</a>
+						{% endfor %}
+						{% for referral in site.data.referral_tile_one.referral_tile_one %}
+							<p class="mb-0">{{ referral.text }}</p>
+						{% endfor %}
+					</div>
+					<!-- service item -->
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 350px;">
+						<span class="display-5 icon-dark"><i class="ti-ruler-pencil"></i></span>
+						<br/>
+						{% for referral in site.data.referral_tile_two.referral_tile_two %}
+							<a href='#'> {{ referral.title }}</a>
+						{% endfor %}
+						{% for referral in site.data.referral_tile_two.referral_tile_two %}
+							<p class="mb-0">{{ referral.text }}</p>
+						{% endfor %}
+					</div>
+				</div>
+
+				<!-- column 2 -->
+				<div class="col-md-4">
+					<!-- service item -->
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 350px;">
+						<span class="display-5 icon-dark"><i class="ti-pencil-alt"></i></span>
+						<br/>
+						{% for referral in site.data.referral_tile_three.referral_tile_three %}
+							<a href='#'> {{ referral.title }}</a>
+						{% endfor %}
+						{% for referral in site.data.referral_tile_three.referral_tile_three %}
+							<p class="mb-0">{{ referral.text }}</p>
+						{% endfor %}
+					</div>
+					<!-- service item -->
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 350px;">
+						<span class="display-5 icon-dark"><i class="ti-image"></i></span>
+						<br/>
+						{% for referral in site.data.referral_tile_four.referral_tile_four %}
+							<a href='#'> {{ referral.title }}</a>
+						{% endfor %}
+						{% for referral in site.data.referral_tile_four.referral_tile_four %}
+							<p class="mb-0">{{ referral.text }}</p>
+						{% endfor %}
+					</div>
+				</div>
+
+				<!-- column 3 -->
+				<div class="col-md-4">
+					<!-- service item -->
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 350px;">
+						<span class="display-5 icon-dark"><i class="ti-map"></i></span>
+						<br/>
+						{% for referral in site.data.referral_tile_five.referral_tile_five %}
+							<a href='#'> {{ referral.title }}</a>
+						{% endfor %}
+						{% for referral in site.data.referral_tile_five.referral_tile_five %}
+							<p class="mb-0">{{ referral.text }}</p>
+						{% endfor %}
+					</div>
+					<!-- service item -->
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 350px;">
+						<span class="display-5 icon-dark"><i class="ti-world"></i></span>
+						<br/>
+						{% for referral in site.data.referral_tile_six.referral_tile_six %}
+							<a href='#'>{{ referral.title }}</a>
+						{% endfor %}
+						{% for referral in site.data.referral_tile_six.referral_tile_six %}
+							<p class="mb-0">{{ referral.text }}</p>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- =======================
+	action box -->
+	
+
+	{% include footer.html %}
+	
+<!-- =======================
+	action box -->
+	<div> <a href="#" class="back-top btn btn-grad"><i class="ti-angle-up"></i></a> </div>
+
+	<!--Global JS-->
+	<script src="assets/vendor/jquery/jquery.min.js"></script>
+	<script src="assets/vendor/popper.js/umd/popper.min.js"></script>
+	<script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+	<!--Vendors-->
+	<script src="assets/vendor/fancybox/js/jquery.fancybox.min.js"></script>
+	<script src="assets/vendor/jquery-countTo/jquery.countTo.js"></script>
+	<script src="assets/vendor/jquery-appear/jquery.appear.js"></script>
+	<script src="assets/vendor/wavify/wavify.js"></script>
+
+	<!--Template Functions-->
+	<script src="assets/js/functions.js"></script>
+
+</body>
+</html>
