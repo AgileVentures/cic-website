@@ -18562,6 +18562,56 @@ a .category {
 
 }
 
+@media (min-width: 1200px) {
+  .navbar-container {
+
+    margin-right: 6px;
+  }
+  .navbar-brand {
+    margin-left: -10px
+  }
+}
+
+@media (min-width: 1320px) {
+  .navbar-container {
+
+    margin-right: 6px;
+  }
+  
+ .navbar-brand {
+    margin-left: -90px
+  }
+}
+
+@media (max-width: 990px) {
+  .cic-logo {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cic-logo {
+    margin-top: 165px;
+  }
+
+ .flex-wrap{
+   flex-wrap: nowrap !important;
+ }
+
+ .wave {
+   transform: translateY(60px);
+ }
+}
+
+@media (max-width: 575px) {
+  .cic-logo {
+    margin-top : 0px;
+  }
+
+  .wave {
+   transform: translateY(0px);
+ }
+}
 
 .grey-tile > a {
   margin-top: 0;
