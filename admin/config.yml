@@ -5,13 +5,8 @@ backend:
   branch: develop # Branch to update (optional; defaults to master)
 media_folder: 'assets'
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: '_posts/'
-    fields:
-      - { name: Title }
   - name: 'about'
-    label: 'about'
+    label: 'About'
     files:
       - label: "About us"
         name: "about"
@@ -19,8 +14,11 @@ collections:
         fields:
           - label: About
             name: about
+            widget: list
             fields: 
               - {label: About, name: about, widget: markdown}
+              - {label: title, name: title, widget: string}
+              - {label: Sub-title, name: sub_title, widget: string}
 
   - name: 'residents'
     label: 'Residents'
@@ -219,5 +217,17 @@ collections:
             fields: 
               - {label: Partners, name: text, widget: markdown}
   
+  - name: 'extra_page'
+    label: 'Extra Page'
+    files:
+      - label: 'Extra Page'
+        name: 'extra_page'
+        file: '_data/extra_page.yml'
+        fields:
+          - label: 'Extra Page'
+            name: extra_page
+            widget: list
+            fields: 
+              - {label: "Display", name: "display", widget: "boolean", default: false}
 
 

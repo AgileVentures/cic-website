@@ -269,20 +269,20 @@
         if($('#wave-one').length){
           var wave_one = $('#wave-one');
           wave_one.wavify({
-                  height: 60,
+                  height: 40,
                   bones: 5,
                   amplitude: 20,
-                  color: '#fff',
-                  speed: .15
+                  color: 'orange',
+                  speed: .5
           });
         }
         if($('#wave-two').length){
           var wave_two = $('#wave-two');
           wave_two.wavify({
-                height: 40,
+                height: 60,
                 bones: 4,
                 amplitude: 20,
-                color: 'rgba(255, 255, 255, .8)',
+                color: 'rgba(255, 255, 255)',
                 speed: .25
             });
         }
