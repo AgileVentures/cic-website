@@ -230,4 +230,32 @@ collections:
             fields: 
               - {label: "Display", name: "display", widget: "boolean", default: false}
 
+  - name: 'extra_page_content'
+    label: 'Extra Page'
+    files:
+      - label: 'Extra Page'
+        name: 'extra_page'
+        file: '_data/extra_page.yml'
+        fields:
+          - label: 'Extra Page'
+            name: extra_page
+            widget: list
+            fields: 
+              - {label: "text", name: "display", widget: "markdown"}
 
+
+  - name: 'news_article_one'
+    label: 'News Article One'
+    files:
+      - label: 'News Article One'
+        name: 'news_article_one'
+        file: '_data/news_article_one.yml'
+        fields:
+          - label: 'News Article One'
+            name: news_article_one
+            widget: list
+            fields: 
+              - {label: "title", name: "title", widget: "text"}
+              - {label: "date_published", name: "date_published", widget: "text"}
+              - {label: "author", name: "author", widget: "text"}
+              - {label: "author_info", name: "author_info", widget: "tetx"}
