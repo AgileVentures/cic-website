@@ -258,4 +258,5 @@ collections:
               - {label: "title", name: "title", widget: "text"}
               - {label: "date_published", name: "date_published", widget: "text"}
               - {label: "author", name: "author", widget: "text"}
-              - {label: "author_info", name: "author_info", widget: "tetx"}
+              - {label: "author_info", name: "author_info", widget: "text"}
+              - {label: "content", name: "content", widget: "markdown"}
