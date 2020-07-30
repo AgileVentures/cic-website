@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+	{% include header.html %}
+
+<body>
+	<div class="preloader">
+		<img src="assets/images/preloader.svg" alt="Pre-loader">
+	</div>
+
+	<!-- =======================
+	header Start-->
+	<header class="header-static navbar-sticky navbar-light">
+		<!-- Logo Nav Start -->
+			{% include logonav.html %}	
+		<!-- Logo Nav End -->
+	</header>
+	<!-- =======================
+	header End-->
+
+	<!-- =======================
+	About us -->
+	
+
+	<!-- =======================
+	Banner innerpage -->
+	<div class="innerpage-banner center bg-overlay-dark-4 py-7" style="background:url(assets/images/selfcare-poster.jpg) no-repeat; background-size:cover; background-position: center center;">
+		<div class="container">
+			<div class="row all-text-white">
+				<div class="col-md-12 align-self-center">
+					<h1 class="innerpage-title">News Item 1</h1>
+					<h6 class="subtitle">
+
+						{% for professional in site.data.health_professionals.health_professionals %}
+					<p> {{ professional.sub_title }}</p>
+					{% endfor %}
+					</h6>
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item active"><a href="index.html"><i class="ti-home"></i> Home</a></li>
+							<li class="breadcrumb-item">News Article</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =======================
+	Banner innerpage -->
+
+	<!-- =======================
+	blog -->
+	<section class="blog-page">
+		<div class="container">
+			<div class="row">
+				<!-- blog start -->
+				<div class="col-md-8 mx-auto">
+					<!-- Post item  with image-->
+					<div class="post-item">
+						<div class="post-item-wrap">
+							<div class="post-item-desc">
+								<span class="post-meta">Mar 26, 2020</span>
+								<h5 class="mt-3">Sure fail or in said west. Right my front it wound cause fully am sorry if. She jointure goodness interest debating did outweigh. Is time from them full my gone in went.</h5>
+								<p>Far concluded not his something extremity. Want four we face an he gate. On he of played he ladies answer little though nature. Blessing oh do pleasure as so formerly. Took four spot soon led size you. Outlived it received he material. Him yourself joy moderate off repeated laughter outweigh screened. Placing assured be if removed it besides on. Far shed each high read are men over day. Afraid we praise lively he suffer family estate is. Ample order up in of in ready. Timed blind had now those ought set often which. Or snug dull he show more true wish. No at many deny away miss evil. <a href="#">On in so indeed spirit an mother.</a> Amounted old strictly but marianne admitted. People former is remove remain as. </p>
+								<h5 class="my-3">Civil songs so large shade in cause.</h5>
+								<p>By in no ecstatic wondered disposal my speaking. Direct wholly valley or uneasy it at really. Sir wish like said dull and need make. Sportsman one bed departure rapturous situation disposing his. Off say yet ample ten ought hence. Depending in newspaper an September do existence strangers. Total great saw water had mirth happy new. Projecting pianoforte no of partiality is on. Nay besides joy society him totally six. </p>
+								<blockquote class="blockquote grad-line" cite="#">
+									<h5 class="mb-2 ">Sometimes when you innovate, you make mistakes. It is best to admit them quickly, and get on with improving your other innovations</h5>
+									<cite>–Steve Jobs</cite>
+								</blockquote>
+								<p>Increasing impression interested expression he my at. Respect invited request charmed me warrant to. Expect no pretty as do though so genius afraid cousin. Girl when of ye snug poor draw. Mistake totally of in chiefly. Justice visitor him entered for. Continue delicate as unlocked entirely mr relation diverted in. Known not end fully being style house. An whom down kept lain name so at easy. </p>
+								<div class="list-group-number list-group-borderless list-unstyled">
+									<a href="#" class="list-group-item list-group-item-action"><span>01</span> Creative Ideas</a>
+									<a href="#" class="list-group-item list-group-item-action"><span>02</span> Super Responsive for all devices</a>
+									<a href="#" class="list-group-item list-group-item-action"><span>03</span> Extensive documentation</a>
+									<a href="#" class="list-group-item list-group-item-action"><span>04</span> Excellent features</a>
+								</div>
+								<p class="mt-3 mb-0">Residence certainly elsewhere something she preferred cordially law. Age his surprise formerly Mrs perceive few standstill moderate. Of in power match on truth worse voice would. <strong>Large an it sense shall an match learn.</strong> By expect it result silent in formal of. Ask eat questions abilities described elsewhere assurance. <img class="float-left rounded mr-3 my-3" src="assets/images/blog/thumb-01.jpg" alt=""> Appetite in unlocked advanced breeding position concerns as. Cheerful get shutters yet for repeated screened. An no am cause hopes at three. Prevent behaved fertile he is mistake on.Consulted perpetual of pronounce me delivered. Too months nay end change relied who beauty wishes matter. Shew of john real park so rest we on. Ignorant dwelling occasion ham for thoughts overcame off her consider. Polite it elinor is depend. His not get talked effect worthy Barton. Household shameless incommode at no objection behavior. Especially do at he possession insensible sympathize boisterous it. Songs he on an widen me event truth. Certain law age brother sending amongst why covered. Why end might ask civil again spoil. She dinner she our horses depend. Remember at children by reserved to vicinity. In affronting unreserved delightful simplicity ye. Law own <a href="#">advantage furniture</a> continual sweetness bed agreeable perpetual. Oh song well four only head busy it. Afford son she had lively living. Tastes lovers myself too formal season our valley boy. Lived it their their walls might to by young. </p>
+							</div>
+						</div>
+					</div>
+					<!-- blog End -->
+
+
+					<!-- tag and share -->
+					<div class="divider mb-4"></div>
+					<div class="row">
+						<div class="col-12 col-sm-4 text-center text-sm-right">
+							<ul class="social-icons si-colored-bg light">
+								<li class="social-icons-item mb-2 social-facebook"><a class="social-icons-link" href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="social-icons-item mb-2 social-twitter"><a class="social-icons-link" href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="social-icons-item mb-2 social-gplus"><a class="social-icons-link" href="#"><i class="fa fa-google-plus"></i></a></li>
+								<li class="social-icons-item mb-2 social-linkedin"><a class="social-icons-link" href="#"><i class="fa fa-linkedin"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="divider mt-3"></div>
+
+					<!-- author info -->
+					<div class="row mt-5">
+						<div class="col-12">
+							<!-- Comment-->
+							<div class="author-info bg-light">
+								<div class="author-img"><img class="avatar" src="assets/images/thumbnails/avatar-03.jpg" alt="avatar"></div>
+								<div class="author-info-body">
+									<h4 class="author-name mb-3 mt-2">Posted by <a href="#">Emma Watson</a></h4>
+									<p class="m-0">Mr be cottage so related minuter is. Delicate say and blessing ladyship exertion few Margaret. Delight herself welcome against smiling its for. Suspected discovery by he affection household.</p>
+								</div>
+							</div>
+							<!-- Comment-->
+						</div>
+					</div>
+
+					<!-- post navigation -->
+					<div class="row post-navigation mt-5">
+						<div class="col-5">
+							<a href="#" class="post-prev">
+								<p class="m-2 m-lg-0">Previous Post</p>
+								<h6 class="text-truncate d-none d-lg-block">Right my front it wound cause fully am sorry if</h6> </a>
+						</div>
+						<div class="col-2">
+							<a href="blog-classic-left-sidebar.html" class="all-post" title="View all post"> <i class="fa fa-th"></i> </a>
+						</div>
+						<div class="col-5">
+							<a href="#" class="post-next">
+								<p class="m-2 m-lg-0">Next Post</p>
+								<h6 class="text-truncate d-none d-lg-block">Months had too ham cousin remove far spirit</h6> </a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- blog End -->
+	</section>
+	<!-- =======================
+	blog -->
+
+	{% include footer.html %}
+	
+<!-- =======================
+	action box -->
+	<div> <a href="#" class="back-top btn btn-grad"><i class="ti-angle-up"></i></a> </div>
+
+	<!--Global JS-->
+	<script src="assets/vendor/jquery/jquery.min.js"></script>
+	<script src="assets/vendor/popper.js/umd/popper.min.js"></script>
+	<script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+	<!--Vendors-->
+	<script src="assets/vendor/fancybox/js/jquery.fancybox.min.js"></script>
+	<script src="assets/vendor/jquery-countTo/jquery.countTo.js"></script>
+	<script src="assets/vendor/jquery-appear/jquery.appear.js"></script>
+	<script src="assets/vendor/wavify/wavify.js"></script>
+
+	<!--Template Functions-->
+	<script src="assets/js/functions.js"></script>
+
+</body>
+</html>
