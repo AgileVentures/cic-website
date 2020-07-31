@@ -18603,7 +18603,7 @@ a .category {
  }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 576px) {
   .cic-logo {
     margin-top : 0px;
   }
@@ -18624,4 +18624,11 @@ a .category {
 
 .grey-tile > a:hover {
   color:orange;
+}
+
+
+@media (max-width: 576px) {
+  .d-sm-block {
+    display: block !important;
+  }
 }
