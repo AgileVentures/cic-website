@@ -11283,7 +11283,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .navbar-nav .nav-link {
-  font-size: 1.2rem;
+  font-size: 1.3125rem ;
   font-weight: 900;
   text-transform: capitalize;
   line-height: 84px;
