@@ -229,6 +229,7 @@ collections:
             widget: list
             fields: 
               - {label: "Display", name: "display", widget: "boolean", default: false}
+              - {label: "Title", name: "title", widget: "text"}
 
   - name: 'extra_page_content'
     label: 'Extra Page'
