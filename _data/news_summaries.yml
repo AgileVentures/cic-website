@@ -1,25 +1,25 @@
 news_summaries:
   - author: Matt Ryder
     title: Title for News Article One
-    summary: This is a little summary about this news article 
-    date_published: '2020-01-01'
+    summary: This is a summary for news article one.
+    date_published: 2020-01-01
     links_to: news-article
     is_displayable: true
   - author: Randy Ryder
-    title: Links to item 2
-    summary: This is a little summary about this news article
+    title: Title for News Article Two
+    summary: This is a summary for news article two.
     date_published: 2020-01-01
     links_to: news-article-two
     is_displayable: true
   - author: Matt Ryder
-    title: Links to item 3
-    summary: This is a little summary about this news article
+    title: Title for News Article Three
+    summary: This is a summary for news article three.
     date_published: 2020-01-01
     links_to: news-article-three
     is_displayable: true
   - author: Randy Ryder
-    title: Links to item 4
-    summary: This is a little summary about this news article
+    title: Title for News Article Four
+    summary: This is a summary for news article four.
     date_published: 2020-01-01
     links_to: news-article-four
     is_displayable: false
