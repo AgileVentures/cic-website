@@ -12,4 +12,5 @@ news_article_two:
     title: News Article
     author: Matt Ryder
     about_author: About Author
-    summary: This is a little summary about this news article 
+    summary: This is a little summary about this news article
+    date_published: '2020-01-01' 
