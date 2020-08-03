@@ -1,6 +1,6 @@
-news_article_one:
+news_article_three:
   - text: |-
-      Community Health West London ...
+      News Article three ...
 
       **Partners**
 
@@ -11,6 +11,6 @@ news_article_one:
       How can other VCS Organisations get involved..
     title: News Article
     summary: This is a little summary about this news article 
-    author: Matt Rumbler
+    author: Matt Ryder
     about_author: About Author
-    date_published: 2020-01-01
+    date_published: '2020-01-01'

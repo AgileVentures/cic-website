@@ -1,0 +1,13 @@
+news_article_four:
+  - text: |-
+      News article four ...
+
+      insert partners
+
+      **Engagement with the wider VCS**
+
+      How can other VCS Organisations get involved..
+    title: News Article
+    author: Matt Ryder
+    about_author: About Author
+    summary: This is a little summary about this news article 
