@@ -11,4 +11,5 @@ news_article_one:
       How can other VCS Organisations get involved..
     title: News Article
     author: Matt Ryder
-    about_author: About Author 
+    about_author: About Author
+    summary: This is a little summary about this news article 

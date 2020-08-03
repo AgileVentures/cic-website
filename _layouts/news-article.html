@@ -27,11 +27,12 @@
 		<div class="container">
 			<div class="row all-text-white">
 				<div class="col-md-12 align-self-center">
-					<h1 class="innerpage-title">News Item 1</h1>
-					<h6 class="subtitle">
+					
 
-						{% for professional in site.data.health_professionals.health_professionals %}
-					<p> {{ professional.sub_title }}</p>
+					{% for item in site.data.news_article_one.news_article_one %}
+						<h1 class="innerpage-title">{{ item.title }}</h1>
+						<h6 class="subtitle">
+						<p> {{ item.summary }}</p>
 					{% endfor %}
 					</h6>
 					<nav aria-label="breadcrumb">
@@ -88,8 +89,10 @@
 							<div class="author-info bg-light">
 								<div class="author-img"><img class="avatar" src="assets/images/thumbnails/avatar-03.jpg" alt="avatar"></div>
 								<div class="author-info-body">
-									<h4 class="author-name mb-3 mt-2">Posted by <a href="#">Emma Watson</a></h4>
-									<p class="m-0">Mr be cottage so related minuter is. Delicate say and blessing ladyship exertion few Margaret. Delight herself welcome against smiling its for. Suspected discovery by he affection household.</p>
+									{% for item in site.data.news_article_one.news_article_one %}
+										<h4 class="author-name mb-3 mt-2">Posted by <a href="#">{{ item.author}}</a></h4>
+										<p class="m-0">{{ item.about_author }} </p>
+									{% endfor %}
 								</div>
 							</div>
 							<!-- Comment-->
