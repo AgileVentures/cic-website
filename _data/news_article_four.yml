@@ -11,3 +11,4 @@ news_article_four:
     author: Matt Ryder
     about_author: About Author
     summary: This is a little summary about this news article 
+    date_published: '2020-01-01'
