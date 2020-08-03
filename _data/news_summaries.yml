@@ -5,24 +5,21 @@ news_summaries:
     date_published: '2020-01-01'
     links_to: news-article
     is_displayable: true
-
   - author: Randy Ryder
     title: Links to item 2
     summary: This is a little summary about this news article
-    date_published: '2020-01-01'
+    date_published: 2020-01-01
     links_to: news-article-two
     is_displayable: true
-
   - author: Matt Ryder
     title: Links to item 3
-    summary: This is a little summary about this news article 
-    date_published: '2020-01-01'
+    summary: This is a little summary about this news article
+    date_published: 2020-01-01
     links_to: news-article-three
     is_displayable: true
-
   - author: Randy Ryder
     title: Links to item 4
     summary: This is a little summary about this news article
-    date_published: '2020-01-01'
+    date_published: 2020-01-01
     links_to: news-article-four
     is_displayable: false
