@@ -1,6 +1,6 @@
-news_articles:
+news_summaries:
   - author: Matt Ryder
-    title: Links to item 1
+    title: Title for News Article One
     summary: This is a little summary about this news article 
     date_published: '2020-01-01'
     links_to: news-article

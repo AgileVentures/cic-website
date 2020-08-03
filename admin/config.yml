@@ -313,15 +313,15 @@ collections:
               - {label: "About author", name: "about_author", widget: "text"}
               - {label: "Text", name: "text", widget: "markdown"}
 
-  - name: 'news_articles'
-    label: 'News Articles'
+  - name: 'news_summaries'
+    label: 'News Summaries'
     files:
-      - label: 'News Articles'
-        name: 'news_articles'
-        file: '_data/news_articles.yml'
+      - label: 'News Summaries'
+        name: 'news_summaries'
+        file: '_data/news_summaries.yml'
         fields:
-          - label: 'News Articles'
-            name: news_articles
+          - label: 'News Summaries'
+            name: news_summaries
             widget: list
             fields: 
               - {label: "Title", name: "title", widget: "text"}

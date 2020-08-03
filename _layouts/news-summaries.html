@@ -30,9 +30,9 @@
 					<h1 class="innerpage-title">News Items</h1>
 					<h6 class="subtitle">
 
-						{% for professional in site.data.health_professionals.health_professionals %}
-					<p> {{ professional.sub_title }}</p>
-					{% endfor %}
+						
+					<p> All News Articles </p>
+					
 					</h6>
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
@@ -55,7 +55,7 @@
 				<div class="col-md-12 blog-grid blog-grid-3 portfolio-wrap" data-isotope='{ "itemSelector": ".post-item", "layoutMode": "fitRows" }'>
 					<!-- Post item  with image-->
 					<div class="row">
-						{% for article in site.data.news_articles.news_articles %}
+						{% for article in site.data.news_summaries.news_summaries %}
 							{% if article.is_displayable %}
 							<div class="post-item">
 								<div class="post-item-wrap">
