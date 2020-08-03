@@ -278,7 +278,6 @@ collections:
               - {label: "author", name: "author", widget: "text"}
               - {label: "About author", name: "about_author", widget: "text"}
               - {label: "Text", name: "text", widget: "markdown"}
-              - {label: "date_published", name: "date_published", widget: "text"}
 
   - name: 'news_article_three'
     label: 'News Article Three'
