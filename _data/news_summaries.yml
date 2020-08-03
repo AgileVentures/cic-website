@@ -6,8 +6,9 @@ news_summaries:
     links_to: news-article
     is_displayable: true
   - author: Randy Ryder
-    title: Title for News Article Two
-    summary: This is a summary for news article two.
+    title: "Coronavirus Live Updates: Administration and Lawmakers Try to Break
+      Stalemate on Relief Bill"
+    summary: This is an article explaining about Corona Virus and US Politics.
     date_published: 2020-01-01
     links_to: news-article-two
     is_displayable: true
