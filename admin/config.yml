@@ -259,9 +259,8 @@ collections:
               - {label: "title", name: "title", widget: "text"}
               - {label: "date_published", name: "date_published", widget: "text"}
               - {label: "author", name: "author", widget: "text"}
-              - {label: "author_info", name: "author_info", widget: "text"}
+              - {label: "about_author", name: "about_author", widget: "text"}
               - {label: "Text", name: "text", widget: "markdown"}
-              - {label: "date_published", name: "date_published", widget: "text"}
 
   - name: 'news_article_two'
     label: 'News Article Two'
@@ -277,60 +276,58 @@ collections:
               - {label: "title", name: "title", widget: "text"}
               - {label: "date_published", name: "date_published", widget: "text"}
               - {label: "author", name: "author", widget: "text"}
-              - {label: "author_info", name: "author_info", widget: "text"}
+              - {label: "About author", name: "about_author", widget: "text"}
               - {label: "Text", name: "text", widget: "markdown"}
               - {label: "date_published", name: "date_published", widget: "text"}
 
-  # - name: 'news_article_three'
-  #   label: 'News Article Three'
-  #   files:
-  #     - label: 'News Article Three'
-  #       name: 'news_article_three'
-  #       file: '_data/news_article_three.yml'
-  #       fields:
-  #         - label: 'News Article Three'
-  #           name: news_article_three
-  #           widget: list
-  #           fields: 
-  #             - {label: "title", name: "title", widget: "text"}
-  #             - {label: "date_published", name: "date_published", widget: "text"}
-  #             - {label: "author", name: "author", widget: "text"}
-  #             - {label: "author_info", name: "author_info", widget: "text"}
-  #             - {label: "Text", name: "text", widget: "markdown"}
-  #             - {label: "date_published", name: "date_published", widget: "text"}
+  - name: 'news_article_three'
+    label: 'News Article Three'
+    files:
+      - label: 'News Article Three'
+        name: 'news_article_three'
+        file: '_data/news_article_three.yml'
+        fields:
+          - label: 'News Article Three'
+            name: news_article_three
+            widget: list
+            fields: 
+              - {label: "title", name: "title", widget: "text"}
+              - {label: "date_published", name: "date_published", widget: "text"}
+              - {label: "author", name: "author", widget: "text"}
+              - {label: "About author", name: "about_author", widget: "text"}
+              - {label: "Text", name: "text", widget: "markdown"}
 
-  # - name: 'news_article_four'
-  #   label: 'News Article Four'
-  #   files:
-  #     - label: 'News Article Four'
-  #       name: 'news_article_four'
-  #       file: '_data/news_article_four.yml'
-  #       fields:
-  #         - label: 'News Article Four'
-  #           name: news_article_four
-  #           widget: list
-  #           fields: 
-  #             - {label: "title", name: "title", widget: "text"}
-  #             - {label: "date_published", name: "date_published", widget: "text"}
-  #             - {label: "author", name: "author", widget: "text"}
-  #             - {label: "author_info", name: "author_info", widget: "text"}
-  #             - {label: "Text", name: "text", widget: "markdown"}
-  #             - {label: "date_published", name: "date_published", widget: "text"}
+  - name: 'news_article_four'
+    label: 'News Article Four'
+    files:
+      - label: 'News Article Four'
+        name: 'news_article_four'
+        file: '_data/news_article_four.yml'
+        fields:
+          - label: 'News Article Four'
+            name: news_article_four
+            widget: list
+            fields: 
+              - {label: "title", name: "title", widget: "text"}
+              - {label: "date_published", name: "date_published", widget: "text"}
+              - {label: "author", name: "author", widget: "text"}
+              - {label: "About author", name: "about_author", widget: "text"}
+              - {label: "Text", name: "text", widget: "markdown"}
 
-  # - name: 'news_articles'
-  #   label: 'News Articles'
-  #   files:
-  #     - label: 'News Articles'
-  #       name: 'news_articles'
-  #       file: '_data/news_articles.yml'
-  #       fields:
-  #         - label: 'News Articles'
-  #           name: news_articles
-  #           widget: list
-  #           fields: 
-  #             - {label: "title", name: "title", widget: "text"}
-  #             - {label: "date_published", name: "date_published", widget: "text"}
-  #             - {label: "author", name: "author", widget: "text"}
-  #             - {label: "Links To", name: "links_to", widget: "text"}
-  #             - {label: "Summary", name: "summary", widget: "markdown"}
-  #             - {label: "is_displayable", name: "is_displayable", widget: "boolean"}
+  - name: 'news_articles'
+    label: 'News Articles'
+    files:
+      - label: 'News Articles'
+        name: 'news_articles'
+        file: '_data/news_articles.yml'
+        fields:
+          - label: 'News Articles'
+            name: news_articles
+            widget: list
+            fields: 
+              - {label: "title", name: "title", widget: "text"}
+              - {label: "date_published", name: "date_published", widget: "text"}
+              - {label: "author", name: "author", widget: "text"}
+              - {label: "Links To", name: "links_to", widget: "text"}
+              - {label: "Summary", name: "summary", widget: "markdown"}
+              - {label: "is_displayable", name: "is_displayable", widget: "boolean"}
