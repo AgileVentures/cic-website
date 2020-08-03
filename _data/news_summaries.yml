@@ -1,8 +1,8 @@
-news_articles:
+news_summaries:
   - author: Matt Ryder
-    title: News Article One
-    summary: This is a little summary about this news article
-    date_published: 2020-01-01
+    title: Title for News Article One
+    summary: This is a little summary about this news article 
+    date_published: '2020-01-01'
     links_to: news-article
     is_displayable: true
   - author: Randy Ryder
