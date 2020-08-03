@@ -256,10 +256,10 @@ collections:
             name: news_article_one
             widget: list
             fields: 
-              - {label: "title", name: "title", widget: "text"}
-              - {label: "date_published", name: "date_published", widget: "text"}
-              - {label: "author", name: "author", widget: "text"}
-              - {label: "about_author", name: "about_author", widget: "text"}
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Date published", name: "date_published", widget: "text"}
+              - {label: "Author", name: "author", widget: "text"}
+              - {label: "About author", name: "about_author", widget: "text"}
               - {label: "Text", name: "text", widget: "markdown"}
 
   - name: 'news_article_two'
@@ -273,9 +273,9 @@ collections:
             name: news_article_two
             widget: list
             fields: 
-              - {label: "title", name: "title", widget: "text"}
-              - {label: "date_published", name: "date_published", widget: "text"}
-              - {label: "author", name: "author", widget: "text"}
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Date published", name: "date_published", widget: "text"}
+              - {label: "Author", name: "author", widget: "text"}
               - {label: "About author", name: "about_author", widget: "text"}
               - {label: "Text", name: "text", widget: "markdown"}
 
@@ -290,9 +290,9 @@ collections:
             name: news_article_three
             widget: list
             fields: 
-              - {label: "title", name: "title", widget: "text"}
-              - {label: "date_published", name: "date_published", widget: "text"}
-              - {label: "author", name: "author", widget: "text"}
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Date published", name: "date_published", widget: "text"}
+              - {label: "Author", name: "author", widget: "text"}
               - {label: "About author", name: "about_author", widget: "text"}
               - {label: "Text", name: "text", widget: "markdown"}
 
@@ -307,9 +307,9 @@ collections:
             name: news_article_four
             widget: list
             fields: 
-              - {label: "title", name: "title", widget: "text"}
-              - {label: "date_published", name: "date_published", widget: "text"}
-              - {label: "author", name: "author", widget: "text"}
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Date published", name: "date_published", widget: "text"}
+              - {label: "Author", name: "author", widget: "text"}
               - {label: "About author", name: "about_author", widget: "text"}
               - {label: "Text", name: "text", widget: "markdown"}
 
@@ -324,9 +324,9 @@ collections:
             name: news_articles
             widget: list
             fields: 
-              - {label: "title", name: "title", widget: "text"}
-              - {label: "date_published", name: "date_published", widget: "text"}
-              - {label: "author", name: "author", widget: "text"}
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Date published", name: "date_published", widget: "text"}
+              - {label: "Author", name: "author", widget: "text"}
               - {label: "Links To", name: "links_to", widget: "text"}
               - {label: "Summary", name: "summary", widget: "markdown"}
-              - {label: "is_displayable", name: "is_displayable", widget: "boolean"}
+              - {label: "Is displayable", name: "is_displayable", widget: "boolean"}
