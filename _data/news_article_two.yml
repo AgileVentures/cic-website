@@ -3,5 +3,5 @@ news_article_two:
     title: News Article Two
     author: Mike Aono
     about_author: About Author
-    summary: This is a little summary about this news article
+    subtitle: This is a subtitle for news article two.
     date_published: 2020-01-01

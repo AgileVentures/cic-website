@@ -6,3 +6,4 @@ news_article_one:
     date_published: 2020-01-01
     author_info: Some nice info about the author
     content: Some very interesting update  on news article one
+    subtitle: This is a subtitle for news article one.
