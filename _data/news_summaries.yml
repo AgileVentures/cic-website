@@ -6,7 +6,7 @@ news_summaries:
     links_to: news-article
     is_displayable: true
   - author: Unknoen
-    title: "Coronavirus Live Updates: Fight Over Aid Package Drags On"
+    title: Title for news article two.
     summary: This is an article about unemployment benefits and Corona Virus in the US.
     date_published: 2020-01-01
     links_to: news-article-two
