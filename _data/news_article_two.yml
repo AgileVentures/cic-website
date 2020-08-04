@@ -1,7 +1,7 @@
 news_article_two:
-  - text: Content for news article two.
+  - text: Content for news article two!
     title: News Article Two
-    author: Matt Ryder
+    author: Mike Aono
     about_author: About Author
     summary: This is a little summary about this news article
     date_published: 2020-01-01
