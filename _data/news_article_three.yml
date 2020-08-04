@@ -1,7 +1,8 @@
 news_article_three:
   - text: Content for news article three.
     title: Title for News Article Three
-    subtitle: This is a subtitle for news article three.
+    summary: This is a little summary about this news article
     author: Matt Ryder
-    about_author: About Author
+    about_author: "About Matt: Matt has written extensively about subjects related
+      to article three."
     date_published: 2020-01-01
