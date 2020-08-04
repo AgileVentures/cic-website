@@ -1,8 +1,8 @@
 news_article_one:
   - text: Content for news article one.
     title: Title for News Article One
-    author: Matt Rumbler
-    about_author: "About Matt: Matt has written extensively about subjects related
+    author: Lisa Rumbler
+    about_author: "About Lisa: Lisa has written extensively about subjects related
       to article one."
     date_published: 2020-01-01
     author_info: Some nice info about the author
