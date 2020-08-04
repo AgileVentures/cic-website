@@ -22,4 +22,4 @@ news_summaries:
     summary: This is a summary for news article four.
     date_published: 2020-01-01
     links_to: news-article-four
-    is_displayable: false
+    is_displayable: true
