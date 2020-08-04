@@ -7,7 +7,7 @@ news_summaries:
     is_displayable: true
   - author: Randy Ryder
     title: Title for News Article Two
-    summary: This is an article explaining about Corona Virus and US Politics.
+    summary: This is a summary for news article two.
     date_published: 2020-01-01
     links_to: news-article-two
     is_displayable: true
