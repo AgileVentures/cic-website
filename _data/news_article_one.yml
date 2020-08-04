@@ -1,6 +1,6 @@
 news_article_one:
   - text: Content for news article one.
-    title: Title for News Article One
+    title: Title for News Article One!
     author: Matt Rumbler
     about_author: About Author
     date_published: 2020-01-01
