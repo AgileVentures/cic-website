@@ -334,3 +334,16 @@ collections:
               - {label: "Links To", name: "links_to", widget: "text"}
               - {label: "Summary", name: "summary", widget: "markdown"}
               - {label: "Is displayable", name: "is_displayable", widget: "boolean"}
+
+  - name: 'kcsc_directory_page'
+    label: 'KCSC Directory Page content'
+    files:
+      - label: 'KCSC Directory Page content'
+        name: 'kcsc_directory_page'
+        file: '_data/kcsc_directory_page.yml'
+        fields:
+          - label: 'Helper Text'
+            name: helper_text
+            widget: list
+            fields: 
+              - {label: "Helper Text", name: "helper_text", widget: "text"}
