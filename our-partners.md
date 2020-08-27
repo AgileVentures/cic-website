@@ -1,5 +1,5 @@
 ---
-title: "residents"
+title: "Our Partners"
 layout: "our-partners"
 ---
 
