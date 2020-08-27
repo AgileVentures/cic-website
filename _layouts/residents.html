@@ -20,7 +20,8 @@
 
 	<!-- =======================
 	Banner innerpage -->
-	<div class="innerpage-banner center bg-overlay-dark-4 py-7" style="background:url(assets/images/selfcare-poster.jpg) no-repeat; background-size:cover; background-position: center center;">
+	<div class="innerpage-banner center bg-overlay-dark-4 py-7"
+		style="background:url(assets/images/selfcare-poster.jpg) no-repeat; background-size:cover; background-position: center center;">
 		<div class="container">
 			<div class="row all-text-white">
 				<div class="col-md-12 align-self-center">
@@ -28,7 +29,8 @@
 					<h6 class="subtitle">Some text about the residents here</h6>
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
-							<li class="breadcrumb-item active"><a href="index.html"><i class="ti-home"></i> Home</a></li>
+							<li class="breadcrumb-item active"><a href="index.html"><i class="ti-home"></i> Home</a>
+							</li>
 							<li class="breadcrumb-item">Residents</li>
 						</ol>
 					</nav>
@@ -43,48 +45,80 @@
 	careers -->
 	<section>
 		<div class="container">
-			
+
 			<div class="row">
 
 				<!-- column 1 -->
 				<div class="col-md-4">
 					<!-- title -->
-					<div class="bg-light p-4 p-lg-5 mb-5" style="min-height: 350px;">
+					<div class="bg-light p-4 p-lg-5 mb-5 residents-tile">
 						<span class="display-5 icon-dark"><i class="ti-ruler-pencil"></i></span>
 						{% for res in site.data.residents_tile_extra_0.residents_tile_extra_0 %}
-							<h5>{{ res.title }}</h5>
+						<h5>{{ res.title }}</h5>
 						{% endfor %}
 						{% for res in site.data.residents_tile_extra_0.residents_tile_extra_0 %}
-							<p class="mb-0">{{ res.text }}</p>
+						<p class="mb-0">{{ res.text }}</p>
+						{% endfor %}
+					</div>
+					<!-- title -->
+					<div class="bg-light p-4 p-lg-5 mb-5 residents-tile">
+						<span class="display-5 icon-dark"><i class="ti-ruler-pencil"></i></span>
+						{% for res in site.data.residents_tile_extra_0.residents_tile_extra_0 %}
+						<h5>{{ res.title }}</h5>
+						{% endfor %}
+						{% for res in site.data.residents_tile_extra_0.residents_tile_extra_0 %}
+						<p class="mb-0">{{ res.text }}</p>
 						{% endfor %}
 					</div>
 				</div>
 
 				<!-- column 2 -->
-				<div class="col-md-4" >
-					<div class="bg-light p-4 p-lg-5 mb-5" style="min-height: 350px;">
+				<div class="col-md-4">
+					<div class="bg-light p-4 p-lg-5 mb-5 residents-tile">
 						<span class="display-5 icon-dark"><i class="ti-world"></i></span>
 						{% for directory in site.data.kcsc_directory.kcsc_directory %}
-							<a href='/kcsc-directory'><h5 style="color: green"> {{ directory.title }}</h5></a>
+						<a href='/kcsc-directory'>
+							<h5 style="color: green"> {{ directory.title }}</h5>
+						</a>
 						{% endfor %}
 						{% for directory in site.data.kcsc_directory.kcsc_directory %}
-							<p class="mb-0">{{ directory.text }}</p>
+						<p class="mb-0">{{ directory.text }}</p>
 						{% endfor %}
-						
+
 					</div>
-					
+					<!-- title -->
+					<div class="bg-light p-4 p-lg-5 mb-5 residents-tile">
+						<span class="display-5 icon-dark"><i class="ti-ruler-pencil"></i></span>
+						{% for res in site.data.residents_tile_extra_0.residents_tile_extra_0 %}
+						<h5>{{ res.title }}</h5>
+						{% endfor %}
+						{% for res in site.data.residents_tile_extra_0.residents_tile_extra_0 %}
+						<p class="mb-0">{{ res.text }}</p>
+						{% endfor %}
+					</div>
+
 				</div>
 
 				<!-- column 3 -->
 				<div class="col-md-4">
 					<!-- service item -->
-					<div class="bg-light p-4 p-lg-5 mb-5" style="min-height: 350px;">
+					<div class="bg-light p-4 p-lg-5 mb-5 residents-tile">
 						<span class="display-5 icon-dark"><i class="ti-map"></i></span>
 						{% for res in site.data.residents_tile_extra_1.residents_tile_extra_1 %}
-							<h5>{{ res.title }}</h5>
+						<h5>{{ res.title }}</h5>
 						{% endfor %}
 						{% for res in site.data.residents_tile_extra_1.residents_tile_extra_1 %}
-							<p class="mb-0">{{ res.text }}</p>
+						<p class="mb-0">{{ res.text }}</p>
+						{% endfor %}
+					</div>
+					<!-- title -->
+					<div class="bg-light p-4 p-lg-5 mb-5 residents-tile">
+						<span class="display-5 icon-dark"><i class="ti-ruler-pencil"></i></span>
+						{% for res in site.data.residents_tile_extra_0.residents_tile_extra_0 %}
+						<h5>{{ res.title }}</h5>
+						{% endfor %}
+						{% for res in site.data.residents_tile_extra_0.residents_tile_extra_0 %}
+						<p class="mb-0">{{ res.text }}</p>
 						{% endfor %}
 					</div>
 				</div>
@@ -97,4 +131,5 @@
 	{% include footer.html %}
 
 </body>
+
 </html>

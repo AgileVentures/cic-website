@@ -18622,3 +18622,7 @@ a .category {
     min-height: 80px;
   }
 }
+
+.residents-tile {
+  min-height: 380px;
+}
