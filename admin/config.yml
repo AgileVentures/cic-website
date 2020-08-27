@@ -188,6 +188,48 @@ collections:
               - {label: Title, name: title, widget: string}
               - {label: Text, name: text, widget: string}
 
+  - name: 'residents_tile_extra_2'
+    label: 'Residents tile extra 2'
+    files:
+      - label: "Residents tile extra 2"
+        name: "residents_tile_extra_2"
+        file: "_data/residents_tile_extra_2.yml"
+        fields:
+          - label: "Extra Tile 2"
+            name: residents_tile_extra_2
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+
+  - name: 'residents_tile_extra_3'
+    label: 'Residents tile extra 3'
+    files:
+      - label: "Residents tile extra 3"
+        name: "residents_tile_extra_3"
+        file: "_data/residents_tile_extra_3.yml"
+        fields:
+          - label: "Extra tile 3"
+            name: residents_tile_extra_3
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+
+  - name: 'residents_tile_extra_4'
+    label: 'Residents tile extra 4'
+    files:
+      - label: "Residents tile extra 4"
+        name: "residents_tile_extra_4"
+        file: "_data/residents_tile_extra_4.yml"
+        fields:
+          - label: "Extra tile 4"
+            name: residents_tile_extra_4
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+
   - name: 'contacts'
     label: 'Contacts'
     files:
