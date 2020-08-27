@@ -230,6 +230,19 @@ collections:
               - {label: Title, name: title, widget: string}
               - {label: Text, name: text, widget: string}
 
+  - name: 'subscribe'
+    label: 'Subscribe'
+    files:
+      - label: "Subscribe"
+        name: "subscribe"
+        file: "_data/subscribe.yml"
+        fields:
+          - label: "Subscribe"
+            name: subscribe
+            widget: list
+            fields: 
+              - {label: Text, name: text, widget: string}
+
   - name: 'contacts'
     label: 'Contacts'
     files:
