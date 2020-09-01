@@ -23,3 +23,17 @@ news_summaries:
     date_published: 2020-01-01
     links_to: news-article-four
     is_displayable: true
+
+  - author: Randy Ryder
+    title: Title for News Article Five
+    summary: This is a summary for news article five.
+    date_published: 2020-01-01
+    links_to: news-article-five
+    is_displayable: true
+
+  - author: Randy Ryder
+    title: Title for News Article Six.
+    summary: This is a summary for news article six.
+    date_published: 2020-01-01
+    links_to: news-article-six
+    is_displayable: true
