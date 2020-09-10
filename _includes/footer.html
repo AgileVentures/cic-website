@@ -1,94 +1,106 @@
 <section class="bg-grad p-4 p-sm-5">
-    <div class="container" >
-        <div class="d-block all-text-white">
-            <div class="text-center" >
+	<div class="container">
+		<div class="d-block all-text-white">
+			<div class="text-center">
 				{% for page in site.data.home_page.home_page %}
-					<h3 class="m-0" style="color:#343a40;">{{ page.organization_goal }}</h3>
+				<h3 class="m-0" style="color:#343a40;">{{ page.organization_goal }}</h3>
 				{% endfor %}
-                
-            </div>
-        </div>
-    </div>
+
+			</div>
+		</div>
+	</div>
 </section>
 
 <!-- =======================
 	footer  -->
-	<footer class="footer pt-6">
-		<div class="footer-content pb-3">
-			<div class="container">
-				<div class="row">
-					<!-- Footer widget 1 -->
-					<div class="col-md-4">
-						<div class="widget">
-							<a href="{{'/' | prepend:site.baseurl }}" class="footer-logo">
+<footer class="footer pt-6">
+	<div class="footer-content pb-3">
+		<div class="container">
+			<div class="row">
+				<!-- Footer widget 1 -->
+				<div class="col-md-4">
+					<div class="widget">
+						<a href="{{'/' | prepend:site.baseurl }}" class="footer-logo">
 							<image src="assets/images/banner/Full_Logo_Colour.jpg">
-						<!-- footer SVG logo End -->
-							</a>
+								<!-- footer SVG logo End -->
+						</a>
+						{% for contact in site.data.contacts.contacts %}
+						<p class="mt-3">{{ contact.about }}</p>
+						<p>{{ contact.more_about }} </p>
+						{% endfor %}
+					</div>
+				</div>
+				<!-- Footer widget 2 -->
+				<div class="col-md-3 col-sm-6">
+					<div class="widget address"
+						style="background-image: url('assets/images/world-map.png'); background-position: 50% 20px; background-repeat: no-repeat; background-size: contain;">
+						<ul class="list-unstyled">
 							{% for contact in site.data.contacts.contacts %}
-								<p class="mt-3">{{ contact.about }}</p>
-								<p>{{ contact.more_about }} </p>
+							<li class="media mb-3"><i class="mr-3 display-8 ti-map-alt"></i>{{ contact.address }} </li>
+							<li class="media mb-3"><i class="mr-3 display-8 ti-headphone-alt"></i>
+								{{ contact.telephone }}</li>
+							<li class="media mb-3"><i class="mr-3 display-8 ti-email"></i> {{ contact.email }}</li>
+							<li class="media mb-3"><i class="mr-3 display-8 ti-time"></i>
+								<p>Mon - Fri: <strong>09:00 - 21:00</strong> <br>Sat & Sun: <strong>Closed</strong></p>
+							</li>
 							{% endfor %}
-						</div>
+						</ul>
 					</div>
-					<!-- Footer widget 2 -->
-					<div class="col-md-3 col-sm-6">
-						<div class="widget address" style="background-image: url('assets/images/world-map.png'); background-position: 50% 20px; background-repeat: no-repeat; background-size: contain;">
-							<ul class="list-unstyled">
-								{% for contact in site.data.contacts.contacts %}
-									<li class="media mb-3"><i class="mr-3 display-8 ti-map-alt"></i>{{ contact.address }} </li>
-									<li class="media mb-3"><i class="mr-3 display-8 ti-headphone-alt"></i> {{ contact.telephone }}</li>
-									<li class="media mb-3"><i class="mr-3 display-8 ti-email"></i> {{ contact.email }}</li>
-									<li class="media mb-3"><i class="mr-3 display-8 ti-time"></i>
-										<p>Mon - Fri: <strong>09:00 - 21:00</strong> <br>Sat & Sun: <strong>Closed</strong></p>
-									</li>
-								{% endfor %}
-							</ul>
-						</div>
-					</div>
-					<!-- Footer widget 3 -->
-					<div class="col-md-2 col-sm-6">
-						<div class="widget">
-							<h6>Quick LInks</h6>
-							<ul class="nav flex-column primary-hover">
-								<li class="nav-item"><a class="nav-link" href="/residents">Residents</a></li>
-								<li class="nav-item"><a class="nav-link" href="/health-professionals">Health Professionals</a></li>
-								<li class="nav-item"><a class="nav-link" href="/contact-us">Contact Us</a></li>
-								<li class="nav-item"><a class="nav-link" href="/our-partners">Our partners</a></li>
-								<li class="nav-item"><a class="nav-link" href="{{'/' | prepend:site.baseurl }}">Home</a></li>
-							</ul>
-						</div>
-					</div>
-					<!-- Footer widget 4 -->
-					<div class="col-md-3">
-						<div class="widget bg-grad p-4 border-radius-3">
-							<i class="ti-email newsletter-icon"></i>
-							<p class="mb-2">Subscribe to our newsletter to receive exclusive offers.</p>
-							<div class="form-group mb-0">
-								<input class="form-control border-white mb-3" type="email" placeholder="Enter email...">
-								<button class="btn btn-dark mb-0">Join us</button>
-							</div>
-						</div>
+				</div>
+				<!-- Footer widget 3 -->
+				<div class="col-md-2 col-sm-6">
+					<div class="widget">
+						<h6>Quick LInks</h6>
+						<ul class="nav flex-column primary-hover">
+							<li class="nav-item"><a class="nav-link" href="/residents">Residents</a></li>
+							<li class="nav-item"><a class="nav-link" href="/health-professionals">Health
+									Professionals</a></li>
+							<li class="nav-item"><a class="nav-link" href="/contact-us">Contact Us</a></li>
+							<li class="nav-item"><a class="nav-link" href="/our-partners">Our partners</a></li>
+							<li class="nav-item"><a class="nav-link" href="{{'/' | prepend:site.baseurl }}">Home</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 				<!-- Footer widget 4 -->
+				<div class="col-md-3">
+					<div class="widget bg-grad p-4 border-radius-3">
+						<i class="ti-email newsletter-icon"></i>
+						<div class="form-group mb-0">
+							{% for subs in site.data.subscribe.subscribe %}
+							<p class="mb-2">{{ subs.text }}</p>
+							{% endfor %}
+							<input class="form-control border-white mb-3" type="email" placeholder="Enter email...">
+							<button class="btn btn-dark mb-0">Join us</button>
+						</div>
+					</div>
+				</div>
 			</div>
+			<!-- Footer widget 4 -->
 		</div>
-		<div class="divider mt-3"></div>
-		<!--footer copyright -->
+	</div>
+	<div class="divider mt-3"></div>
+	<!--footer copyright -->
 	<!-- footer copyright -->
 	<div class="footer-copyright py-3">
 		<div class="container">
 			<div class="d-md-flex justify-content-between align-items-center py-3 text-center text-md-left">
 				<!-- copyright text -->
-				<div class="copyright-text">2020 All Rights Reserved by <a href="{{'/' | prepend:site.baseurl }}"> Community Health West London.</a></div>
+				<div class="copyright-text">2020 All Rights Reserved by <a href="{{'/' | prepend:site.baseurl }}">
+						Community Health West London.</a></div>
 				<!-- copyright links-->
 				<div class="copyright-links primary-hover mt-3 mt-md-0">
 					<ul class="list-inline">
-						<li class="list-inline-item pl-2"><a class="list-group-item-action" href="{{'/' | prepend:site.baseurl }}">Home</a></li>
-						<li class="list-inline-item pl-2"><a class="list-group-item-action" href="/residents">Residents</a></li>
-						<li class="list-inline-item pl-2"><a class="list-group-item-action" href="/health-professionals">Health Professionals</a></li>
-						<li class="list-inline-item pl-2"><a class="list-group-item-action" href="/our-partners">Our Partners</a></li>
-						<li class="list-inline-item pl-2"><a class="list-group-item-action pr-0" href="/contact-us">Contact Us</a></li>
+						<li class="list-inline-item pl-2"><a class="list-group-item-action"
+								href="{{'/' | prepend:site.baseurl }}">Home</a></li>
+						<li class="list-inline-item pl-2"><a class="list-group-item-action"
+								href="/residents">Residents</a></li>
+						<li class="list-inline-item pl-2"><a class="list-group-item-action"
+								href="/health-professionals">Health Professionals</a></li>
+						<li class="list-inline-item pl-2"><a class="list-group-item-action" href="/our-partners">Our
+								Partners</a></li>
+						<li class="list-inline-item pl-2"><a class="list-group-item-action pr-0"
+								href="/contact-us">Contact Us</a></li>
 					</ul>
 				</div>
 			</div>

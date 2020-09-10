@@ -11283,7 +11283,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .navbar-nav .nav-link {
-  font-size: 1.3rem;
+  font-size: 1.31rem ;
   font-weight: 900;
   text-transform: capitalize;
   line-height: 84px;
@@ -11313,12 +11313,12 @@ a.text-dark:hover, a.text-dark:focus {
   max-width: 100%;
   width: auto;
 }
+
 @media (min-width:990px) {
 
   .navbar-primary .navbar-nav .nav-link {
     color: orange;
     text-shadow: 1px 1px 2px white;
-    font-size: 1.5vw;
   }
 
   .navbar-primary .navbar-sticky-on {
@@ -11377,11 +11377,6 @@ a.text-dark:hover, a.text-dark:focus {
   .megamenu .container {
     width: 100%;
     padding: 0;
-  }
-}
-@media (min-width:768px) {
-  .navbar-nav .nav-link {
-    font-size: 1.5vw;
   }
 }
 
@@ -18535,6 +18530,13 @@ a .category {
     width:50%;      
   }
 }
+
+@media(min-width:1200px) {
+  .cic-logo { 
+    margin-top: 0px !important;
+  }
+}
+
 @media (max-width: 992px) {
   .tile-btn {
     width:100%;
@@ -18544,9 +18546,8 @@ a .category {
 
 @media(min-width:922px) {
   .cic-logo { 
+    margin-top: 145px;
     overflow: hidden;
-    margin: -15px 0 0 -30px;
-  
   }
 }
 
@@ -18562,36 +18563,15 @@ a .category {
 
 }
 
-@media (min-width: 1200px) {
-  .navbar-container {
-
-    margin-right: 6px;
-  }
-  .navbar-brand {
-    margin-left: -10px
-  }
-}
-
-@media (min-width: 1320px) {
-  .navbar-container {
-
-    margin-right: 6px;
-  }
-  
- .navbar-brand {
-    margin-left: -90px
-  }
-}
-
 @media (max-width: 990px) {
   .cic-logo {
-    margin-top: 100px;
+    margin-top: 110px;
   }
 }
 
 @media (max-width: 768px) {
   .cic-logo {
-    margin-top: 165px;
+    margin-top: 205px;
   }
 
  .flex-wrap{
@@ -18599,13 +18579,13 @@ a .category {
  }
 
  .wave {
-   transform: translateY(60px);
+   transform: translateY(90px);
  }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 576px) {
   .cic-logo {
-    margin-top : 0px;
+    margin-top : 10px;
   }
 
   .wave {
@@ -18624,4 +18604,25 @@ a .category {
 
 .grey-tile > a:hover {
   color:orange;
+}
+
+
+@media (max-width: 576px) {
+  .d-sm-block {
+    display: block !important;
+  }
+}
+
+.navbar {
+  min-height: 100px;
+}
+
+@media (max-width: 991.98px) {
+  .navbar {
+    min-height: 80px;
+  }
+}
+
+.residents-tile {
+  min-height: 380px;
 }

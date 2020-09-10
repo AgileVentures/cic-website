@@ -1,0 +1,8 @@
+news_article_five:
+  - text: Content for news article six.
+    title: Title for News Article six
+    author: John Smith
+    about_author: "About John: John has written extensively about subjects related
+      to article six."
+    subtitle: This is a subtitle for news article five.
+    date_published: 2020-01-01

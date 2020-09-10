@@ -188,6 +188,61 @@ collections:
               - {label: Title, name: title, widget: string}
               - {label: Text, name: text, widget: string}
 
+  - name: 'residents_tile_extra_2'
+    label: 'Residents tile extra 2'
+    files:
+      - label: "Residents tile extra 2"
+        name: "residents_tile_extra_2"
+        file: "_data/residents_tile_extra_2.yml"
+        fields:
+          - label: "Extra Tile 2"
+            name: residents_tile_extra_2
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+
+  - name: 'residents_tile_extra_3'
+    label: 'Residents tile extra 3'
+    files:
+      - label: "Residents tile extra 3"
+        name: "residents_tile_extra_3"
+        file: "_data/residents_tile_extra_3.yml"
+        fields:
+          - label: "Extra tile 3"
+            name: residents_tile_extra_3
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+
+  - name: 'residents_tile_extra_4'
+    label: 'Residents tile extra 4'
+    files:
+      - label: "Residents tile extra 4"
+        name: "residents_tile_extra_4"
+        file: "_data/residents_tile_extra_4.yml"
+        fields:
+          - label: "Extra tile 4"
+            name: residents_tile_extra_4
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+
+  - name: 'subscribe'
+    label: 'Subscribe'
+    files:
+      - label: "Subscribe"
+        name: "subscribe"
+        file: "_data/subscribe.yml"
+        fields:
+          - label: "Subscribe"
+            name: subscribe
+            widget: list
+            fields: 
+              - {label: Text, name: text, widget: string}
+
   - name: 'contacts'
     label: 'Contacts'
     files:
@@ -229,5 +284,121 @@ collections:
             widget: list
             fields: 
               - {label: "Display", name: "display", widget: "boolean", default: false}
+              - {label: "Title", name: "title", widget: "string"}
+
+  - name: 'extra_page_content'
+    label: 'Extra Page'
+    files:
+      - label: 'Extra Page'
+        name: 'extra_page'
+        file: '_data/extra_page.yml'
+        fields:
+          - label: 'Extra Page'
+            name: extra_page
+            widget: list
+            fields: 
+              - {label: "text", name: "display", widget: "markdown"}
 
 
+  - name: 'news_article_one'
+    label: 'News Article One'
+    files:
+      - label: 'News Article One'
+        name: 'news_article_one'
+        file: '_data/news_article_one.yml'
+        fields:
+          - label: 'News Article One'
+            name: news_article_one
+            widget: list
+            fields: 
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Date published", name: "date_published", widget: "text"}
+              - {label: "Author", name: "author", widget: "text"}
+              - {label: "About author", name: "about_author", widget: "text"}
+              - {label: "Text", name: "text", widget: "markdown"}
+              - {label: "Subtitle", name: "subtitle", widget: "text"}
+
+  - name: 'news_article_two'
+    label: 'News Article Two'
+    files:
+      - label: 'News Article Two'
+        name: 'news_article_two'
+        file: '_data/news_article_two.yml'
+        fields:
+          - label: 'News Article Two'
+            name: news_article_two
+            widget: list
+            fields: 
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Date published", name: "date_published", widget: "text"}
+              - {label: "Author", name: "author", widget: "text"}
+              - {label: "About author", name: "about_author", widget: "text"}
+              - {label: "Text", name: "text", widget: "markdown"}
+              - {label: "Subtitle", name: "subtitle", widget: "text"}
+
+  - name: 'news_article_three'
+    label: 'News Article Three'
+    files:
+      - label: 'News Article Three'
+        name: 'news_article_three'
+        file: '_data/news_article_three.yml'
+        fields:
+          - label: 'News Article Three'
+            name: news_article_three
+            widget: list
+            fields: 
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Date published", name: "date_published", widget: "text"}
+              - {label: "Author", name: "author", widget: "text"}
+              - {label: "About author", name: "about_author", widget: "text"}
+              - {label: "Text", name: "text", widget: "markdown"}
+              - {label: "Subtitle", name: "subtitle", widget: "text"}
+
+  - name: 'news_article_four'
+    label: 'News Article Four'
+    files:
+      - label: 'News Article Four'
+        name: 'news_article_four'
+        file: '_data/news_article_four.yml'
+        fields:
+          - label: 'News Article Four'
+            name: news_article_four
+            widget: list
+            fields: 
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Date published", name: "date_published", widget: "text"}
+              - {label: "Author", name: "author", widget: "text"}
+              - {label: "About author", name: "about_author", widget: "text"}
+              - {label: "Text", name: "text", widget: "markdown"}
+              - {label: "Subtitle", name: "subtitle", widget: "text"}
+
+  - name: 'news_summaries'
+    label: 'News Summaries'
+    files:
+      - label: 'News Summaries'
+        name: 'news_summaries'
+        file: '_data/news_summaries.yml'
+        fields:
+          - label: 'News Summaries'
+            name: news_summaries
+            widget: list
+            fields: 
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Date published", name: "date_published", widget: "text"}
+              - {label: "Author", name: "author", widget: "text"}
+              - {label: "Links To", name: "links_to", widget: "text"}
+              - {label: "Summary", name: "summary", widget: "markdown"}
+              - {label: "Is displayable", name: "is_displayable", widget: "boolean"}
+
+  - name: 'kcsc_directory_page'
+    label: 'KCSC Directory Page content'
+    files:
+      - label: 'KCSC Directory Page content'
+        name: 'kcsc_directory_page'
+        file: '_data/kcsc_directory_page.yml'
+        fields:
+          - label: 'Helper Text'
+            name: helper_text
+            widget: list
+            fields: 
+              - {label: "Helper Text", name: "helper_text", widget: "text"}

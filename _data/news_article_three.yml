@@ -1,0 +1,9 @@
+news_article_three:
+  - text: Content for news article three.
+    title: Title for News Article Three
+    summary: This is a little summary about this news article
+    author: Lisa Rumblr
+    about_author: "About Lisa: Lisa has written extensively about subjects related
+      to article three."
+    date_published: 2020-01-01
+    subtitle: This is a subtitle for article three.

@@ -1,6 +1,6 @@
 ---
 title: "CIC News Items"
-layout: "news-summaries"
+layout: "news-article-five"
 ---
 
 Page for residents

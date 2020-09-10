@@ -1,5 +1,5 @@
 ---
-title: "Community Health West London"
+title: "Extra Page"
 layout: "extra-page"
 ---
 
