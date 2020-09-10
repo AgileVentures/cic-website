@@ -1,0 +1,39 @@
+news_summaries:
+  - author: Matt Ryder
+    title: Title for News Article One
+    summary: This is a summary for news article one.
+    date_published: 2020-01-01
+    links_to: news-article
+    is_displayable: true
+  - author: Unknoen
+    title: Title for news article two.
+    summary: This is an article about unemployment benefits and Corona Virus in the US.
+    date_published: 2020-01-01
+    links_to: news-article-two
+    is_displayable: true
+  - author: Matt Ryder
+    title: Title for News Article Three
+    summary: This is a summary for news article three.
+    date_published: 2020-01-01
+    links_to: news-article-three
+    is_displayable: true
+  - author: Randy Ryder
+    title: Title for News Article Four
+    summary: This is a summary for news article four.
+    date_published: 2020-01-01
+    links_to: news-article-four
+    is_displayable: true
+
+  - author: Randy Ryder
+    title: Title for News Article Five
+    summary: This is a summary for news article five.
+    date_published: 2020-01-01
+    links_to: news-article-five
+    is_displayable: true
+
+  - author: Randy Ryder
+    title: Title for News Article Six.
+    summary: This is a summary for news article six.
+    date_published: 2020-01-01
+    links_to: news-article-six
+    is_displayable: true

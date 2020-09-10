@@ -16,11 +16,6 @@
 	</header>
 	<!-- =======================
 	header End-->
-
-	<!-- =======================
-	About us -->
-	
-
 	<!-- =======================
 	Banner innerpage -->
 	<div class="innerpage-banner center bg-overlay-dark-4 py-7" style="background:url(assets/images/selfcare-poster.jpg) no-repeat; background-size:cover; background-position: center center;">
@@ -29,7 +24,7 @@
 				<div class="col-md-12 align-self-center">
 					
 
-					{% for item in site.data.news_article_one.news_article_one %}
+					{% for item in site.data.news_article_three.news_article_three %}
 						<h1 class="innerpage-title">{{ item.title }}</h1>
 						<h6 class="subtitle">
 						<p> {{ item.subtitle }}</p>
@@ -37,8 +32,8 @@
 					</h6>
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
-							<li class="breadcrumb-item active"><a href="{{ "/" | prepend:site.baseurl }}"><i class="ti-home"></i> Home</a></li>
-							<li class="breadcrumb-item">News Article</li>
+							<li class="breadcrumb-item active"><a href="index.html"><i class="ti-home"></i> Home</a></li>
+							<li class="breadcrumb-item">News Article Three</li>
 						</ol>
 					</nav>
 				</div>
@@ -59,7 +54,7 @@
 					<div class="post-item">
 						<div class="post-item-wrap">
 							<div class="post-item-desc">
-								{% for item in site.data.news_article_one.news_article_one %}
+								{% for item in site.data.news_article_three.news_article_three %}
 									<p> {{ item.text | markdownify }}</p>
 								{% endfor %}
 							</div>
@@ -89,7 +84,7 @@
 							<div class="author-info bg-light">
 								<div class="author-img"><img class="avatar" src="assets/images/thumbnails/avatar-03.jpg" alt="avatar"></div>
 								<div class="author-info-body">
-									{% for item in site.data.news_article_one.news_article_one %}
+									{% for item in site.data.news_article_three.news_article_three %}
 										<h4 class="author-name mb-3 mt-2">Posted by <a href="#">{{ item.author}}</a></h4>
 										<p class="m-0">{{ item.about_author }} </p>
 									{% endfor %}
@@ -98,6 +93,7 @@
 							<!-- Comment-->
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</div>

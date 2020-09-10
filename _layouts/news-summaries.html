@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+	{% include header.html %}
+
+<body>
+	<div class="preloader">
+		<img src="assets/images/preloader.svg" alt="Pre-loader">
+	</div>
+
+	<!-- =======================
+	header Start-->
+	<header class="header-static navbar-sticky navbar-light">
+		<!-- Logo Nav Start -->
+			{% include logonav.html %}	
+		<!-- Logo Nav End -->
+	</header>
+	<!-- =======================
+	header End-->
+
+	<!-- =======================
+	About us -->
+	
+
+	<!-- =======================
+	Banner innerpage -->
+	<div class="innerpage-banner center bg-overlay-dark-4 py-7" style="background:url(assets/images/selfcare-poster.jpg) no-repeat; background-size:cover; background-position: center center;">
+		<div class="container">
+			<div class="row all-text-white">
+				<div class="col-md-12 align-self-center">
+					<h1 class="innerpage-title">News Items</h1>
+					<h6 class="subtitle">
+
+						
+					<p> All News Articles </p>
+					
+					</h6>
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item active"><a href="index.html"><i class="ti-home"></i> Home</a></li>
+							<li class="breadcrumb-item">News Items</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =======================
+	Banner innerpage -->
+
+	<!-- =======================
+	blog -->
+	<section class="blog-page pb-0">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 blog-grid blog-grid-3 portfolio-wrap" data-isotope='{ "itemSelector": ".post-item", "layoutMode": "fitRows" }'>
+					<!-- Post item  with image-->
+					<div class="row">
+						{% for article in site.data.news_summaries.news_summaries %}
+							{% if article.is_displayable %}
+							<div class="post-item">
+								<div class="post-item-wrap">
+									<div class="post-image">
+										<a href="{{"news-article" | prepend:site.baseurl }}"> <img src="assets/images/blog/grid/01.jpg" alt=""> </a>
+										<span class="post-meta-category bg-grad"><a href="#">Blog Image</a></span>
+									</div>
+									<div class="post-item-desc">
+										<span class="post-meta">{{ article.date_published }}, </span>
+										<span class="post-meta">Author: {{ article.author }}</a></span>
+										<h4><a href="{{ article.links_to | prepend:site.baseurl }}">{{ article.title }}</a></h4>
+										{{ article.summary | markdownify }}
+										<a href="{{ article.links_to | prepend:site.baseurl }}" class="item-link">Continue reading<i class="ti-minus"></i></a>
+									</div>
+								</div>
+							</div>
+							{% endif %}
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- =======================
+	blog -->
+
+	{% include footer.html %}
+	
+<!-- =======================
+	action box -->
+</body>
+</html>
