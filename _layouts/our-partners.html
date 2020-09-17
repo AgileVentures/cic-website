@@ -17,13 +17,15 @@
 					<div class="col-md-8 mx-auto py-5">
 						<form>
 							<div class="input-group">
-								<input class="form-control border-radius-right-0 border-right-0" type="text" name="search" autofocus placeholder="What are you looking for?">
+								<input class="form-control border-radius-right-0 border-right-0" type="text"
+									name="search" autofocus placeholder="What are you looking for?">
 								<button type="button" class="btn btn-grad border-radius-left-0 mb-0">Search</button>
 							</div>
 						</form>
 						<p class="small mt-2 mb-0"><strong>e.g.</strong>CIC website </p>
 					</div>
-					<a class="position-absolute top-0 right-0 mt-3 mr-3" data-toggle="collapse" href="#search-open"><i class="fa fa-window-close"></i></a>
+					<a class="position-absolute top-0 right-0 mt-3 mr-3" data-toggle="collapse" href="#search-open"><i
+							class="fa fa-window-close"></i></a>
 				</div>
 			</div>
 		</div>
@@ -37,11 +39,12 @@
 
 	<!-- =======================
 	About us -->
-	
+
 
 	<!-- =======================
 	Banner innerpage -->
-	<div class="innerpage-banner center bg-overlay-dark-4 py-7" style="background:url(assets/images/selfcare-poster.jpg) no-repeat; background-size:cover; background-position: center center;">
+	<div class="innerpage-banner center bg-overlay-dark-4 py-7"
+		style="background:url(assets/images/selfcare-poster.jpg) no-repeat; background-size:cover; background-position: center center;">
 		<div class="container">
 			<div class="row all-text-white">
 				<div class="col-md-12 align-self-center">
@@ -49,7 +52,8 @@
 					<h6 class="subtitle">Some text about the our partners here</h6>
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
-							<li class="breadcrumb-item active"><a href="index.html"><i class="ti-home"></i> Home</a></li>
+							<li class="breadcrumb-item active"><a href="index.html"><i class="ti-home"></i> Home</a>
+							</li>
 							<li class="breadcrumb-item">Our Partners</li>
 						</ol>
 					</nav>
@@ -65,19 +69,172 @@
 	<section>
 		<div class="container">
 			<div class="row">
-				<!-- Job positions -->
+
+				<!-- =======================
+	team grid -->
+				<section class="team team-grid pt-0">
+					<div class="container">
+						<div class="row">
+							<!-- Team item -->
+							<div class="col-sm-6">
+								<div class="team-item">
+									<div class="team-avatar">
+										<img class="rounded" src="assets/images/logos/SMART.jpg" alt="">
+									</div>
+									<div class="team-desc">
+										{% for partner_smart in site.data.partner_smart.smart %}
+										<h4 class="team-name"> {{ partner_smart.title }} </h4>
+										<span class="team-position">{{ partner_smart.sub_title }} </span>
+										<p>{{ partner_smart.text }}</p>
+										{% endfor %}
+										<ul class="social-icons light si-colored-bg-on-hover no-pb">
+											<li class="social-icons-item social-facebook"><a class="social-icons-link"
+													href="#"><i class="fa fa-facebook"></i></a></li>
+											<li class="social-icons-item social-instagram"><a class="social-icons-link"
+													href="#"><i class="fa fa-instagram"></i></a></li>
+											<li class="social-icons-item social-twitter"><a class="social-icons-link"
+													href="#"><i class="fa fa-twitter"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Team item -->
+							<div class="col-sm-6">
+								<div class="team-item">
+									<div class="team-avatar">
+										<img class="rounded" src="assets/images/logos/Open_Age_Logo.jpg" alt="">
+									</div>
+									<div class="team-desc">
+										{% for partner_open_age in site.data.partner_open_age.open_age %}
+										<h4 class="team-name"> {{ partner_open_age.title }} </h4>
+										<span class="team-position">{{ partner_open_age.sub_title }} </span>
+										<p>{{ partner_open_age.text }}</p>
+										{% endfor %}
+										<ul class="social-icons light si-colored-bg-on-hover no-pb">
+											<li class="social-icons-item social-facebook"><a class="social-icons-link"
+													href="#"><i class="fa fa-facebook"></i></a></li>
+											<li class="social-icons-item social-instagram"><a class="social-icons-link"
+													href="#"><i class="fa fa-instagram"></i></a></li>
+											<li class="social-icons-item social-twitter"><a class="social-icons-link"
+													href="#"><i class="fa fa-twitter"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Team item -->
+							<div class="col-sm-6">
+								<div class="team-item">
+									<div class="team-avatar">
+										<img class="rounded" src="assets/images/logos/One Westminster.png" alt="">
+									</div>
+									<div class="team-desc">
+										{% for partner_one_westmister in site.data.partner_one_westmister.westmister %}
+										<h4 class="team-name"> {{ partner_one_westmister.title }} </h4>
+										<span class="team-position">{{ partner_one_westmister.sub_title }} </span>
+										<p>{{ partner_one_westmister.text }}</p>
+										{% endfor %}>
+										<ul class="social-icons light si-colored-bg-on-hover no-pb">
+											<li class="social-icons-item social-facebook"><a class="social-icons-link"
+													href="#"><i class="fa fa-facebook"></i></a></li>
+											<li class="social-icons-item social-instagram"><a class="social-icons-link"
+													href="#"><i class="fa fa-instagram"></i></a></li>
+											<li class="social-icons-item social-twitter"><a class="social-icons-link"
+													href="#"><i class="fa fa-twitter"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Team item -->
+							<div class="col-sm-6">
+								<div class="team-item">
+									<div class="team-avatar">
+										<img class="rounded" src="assets/images/logos/BME Health Forum.jpg" alt="">
+									</div>
+									<div class="team-desc">
+										{% for partner_bme in site.data.partner_bme.bme %}
+										<h4 class="team-name"> {{ partner_bme.title }} </h4>
+										<span class="team-position">{{ partner_bme.sub_title }} </span>
+										<p>{{ partner_bme.text }}</p>
+										{% endfor %}
+										<ul class="social-icons light si-colored-bg-on-hover no-pb">
+											<li class="social-icons-item social-facebook"><a class="social-icons-link"
+													href="#"><i class="fa fa-facebook"></i></a></li>
+											<li class="social-icons-item social-instagram"><a class="social-icons-link"
+													href="#"><i class="fa fa-instagram"></i></a></li>
+											<li class="social-icons-item social-twitter"><a class="social-icons-link"
+													href="#"><i class="fa fa-twitter"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<!-- Team item -->
+							<div class="col-sm-6">
+								<div class="team-item">
+									<div class="team-avatar">
+										<img class="rounded" src="assets/images/logos/AGE UK K&C.JPG" alt="">
+									</div>
+									<div class="team-desc">
+										{% for partner_age_uk in site.data.partner_age_uk.age_uk %}
+										<h4 class="team-name"> {{ partner_age_uk.title }} </h4>
+										<span class="team-position">{{ partner_age_uk.sub_title }} </span>
+										<p>{{ partner_age_uk.text }}</p>
+										{% endfor %}
+										<ul class="social-icons light si-colored-bg-on-hover no-pb">
+											<li class="social-icons-item social-facebook"><a class="social-icons-link"
+													href="#"><i class="fa fa-facebook"></i></a></li>
+											<li class="social-icons-item social-instagram"><a class="social-icons-link"
+													href="#"><i class="fa fa-instagram"></i></a></li>
+											<li class="social-icons-item social-twitter"><a class="social-icons-link"
+													href="#"><i class="fa fa-twitter"></i></a></li>
+										</ul>
+									</div>>
+								</div>
+							</div>
+
+							<!-- Team item -->
+							<div class="col-sm-6">
+								<div class="team-item">
+									<div class="team-avatar">
+										<img class="rounded" src="assets/images/logos/KCSC logo.jpg" alt="">
+									</div>
+									<div class="team-desc">
+										{% for partner_kcsc in site.data.partner_kcsc.kcsc %}
+										<p> {{ partner.text | markdownify }}</p>
+										<h4 class="team-name"> {{ partner_kcsc.title }} </h4>
+										<span class="team-position">{{ partner_kcsc.sub_title }} </span>
+										<p>{{ partner_kcsc.text }}</p>
+										{% endfor %}
+										<ul class="social-icons light si-colored-bg-on-hover no-pb">
+											<li class="social-icons-item social-facebook"><a class="social-icons-link"
+													href="#"><i class="fa fa-facebook"></i></a></li>
+											<li class="social-icons-item social-instagram"><a class="social-icons-link"
+													href="#"><i class="fa fa-instagram"></i></a></li>
+											<li class="social-icons-item social-twitter"><a class="social-icons-link"
+													href="#"><i class="fa fa-twitter"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- row end -->
+					</div>
+				</section>
+				<!-- =======================
+	team grid -->
+
 				<div class="col-md-12">
 					{% for partner in site.data.partners.partners %}
 					<p> {{ partner.text | markdownify }}</p>
 					{% endfor %}
 
-				</div>	
-				
+				</div>
 			</div>
 		</div>
 	</section>
 	<!-- =======================
 	careers -->
+
 
 	{% include footer.html %}
 
@@ -85,4 +242,5 @@
 	action box -->
 	<div> <a href="#" class="back-top btn btn-grad"><i class="ti-angle-up"></i></a> </div>
 </body>
+
 </html>
