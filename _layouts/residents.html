@@ -51,20 +51,24 @@
 				<!-- column 1 -->
 				<div class="col-md-4">
 					<!-- title -->
-					<div class="bg-light p-4 p-lg-5 mb-5 residents-tile">
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 400px;">
 						<span class="display-5 icon-dark"><i class="ti-ruler-pencil"></i></span>
+						<br />
 						{% for res in site.data.residents_tile_extra_0.residents_tile_extra_0 %}
-						<h5>{{ res.title }}</h5>
+						<a href="#">{{ res.title }}</a>
 						{% endfor %}
 						{% for res in site.data.residents_tile_extra_0.residents_tile_extra_0 %}
 						<p class="mb-0">{{ res.text }}</p>
 						{% endfor %}
 					</div>
 					<!-- title -->
-					<div class="bg-light p-4 p-lg-5 mb-5 residents-tile">
-						<span class="display-5 icon-dark"><i class="ti-ruler-pencil"></i></span>
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 400px;">
+						<span class="display-5 icon-dark">
+							<i class="ti-ruler-pencil"></i>
+						</span>
+						<br />
 						{% for res in site.data.residents_tile_extra_2.residents_tile_extra_2 %}
-						<h5>{{ res.title }}</h5>
+						<a href="#">{{ res.title }}</a>
 						{% endfor %}
 						{% for res in site.data.residents_tile_extra_2.residents_tile_extra_2 %}
 						<p class="mb-0">{{ res.text }}</p>
@@ -74,11 +78,12 @@
 
 				<!-- column 2 -->
 				<div class="col-md-4">
-					<div class="bg-light p-4 p-lg-5 mb-5 residents-tile">
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 400px;">
 						<span class="display-5 icon-dark"><i class="ti-world"></i></span>
+						<br />
 						{% for directory in site.data.kcsc_directory.kcsc_directory %}
 						<a href='/kcsc-directory'>
-							<h5 style="color: green"> {{ directory.title }}</h5>
+							{{ directory.title }}
 						</a>
 						{% endfor %}
 						{% for directory in site.data.kcsc_directory.kcsc_directory %}
@@ -86,11 +91,11 @@
 						{% endfor %}
 
 					</div>
-					<!-- title -->
-					<div class="bg-light p-4 p-lg-5 mb-5 residents-tile">
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 400px;">
 						<span class="display-5 icon-dark"><i class="ti-ruler-pencil"></i></span>
+						<br />
 						{% for res in site.data.residents_tile_extra_3.residents_tile_extra_3 %}
-						<h5>{{ res.title }}</h5>
+						<a href="#">{{ res.title }}</a>
 						{% endfor %}
 						{% for res in site.data.residents_tile_extra_3.residents_tile_extra_3 %}
 						<p class="mb-0">{{ res.text }}</p>
@@ -102,20 +107,22 @@
 				<!-- column 3 -->
 				<div class="col-md-4">
 					<!-- service item -->
-					<div class="bg-light p-4 p-lg-5 mb-5 residents-tile">
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 400px;">
 						<span class="display-5 icon-dark"><i class="ti-map"></i></span>
+						<br />
 						{% for res in site.data.residents_tile_extra_1.residents_tile_extra_1 %}
-						<h5>{{ res.title }}</h5>
+						<a href="#">{{ res.title }}</a></h5>
 						{% endfor %}
 						{% for res in site.data.residents_tile_extra_1.residents_tile_extra_1 %}
 						<p class="mb-0">{{ res.text }}</p>
 						{% endfor %}
 					</div>
 					<!-- title -->
-					<div class="bg-light p-4 p-lg-5 mb-5 residents-tile">
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 400px;">
 						<span class="display-5 icon-dark"><i class="ti-ruler-pencil"></i></span>
 						{% for res in site.data.residents_tile_extra_4.residents_tile_extra_4 %}
-						<h5>{{ res.title }}</h5>
+						<br />
+						<a href='#'>{{ res.title }}</a>
 						{% endfor %}
 						{% for res in site.data.residents_tile_extra_4.residents_tile_extra_4 %}
 						<p class="mb-0">{{ res.text }}</p>

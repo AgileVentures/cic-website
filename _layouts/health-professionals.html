@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-	{% include header.html %}
+{% include header.html %}
 
 <body>
 	<div class="preloader">
@@ -11,7 +11,7 @@
 	header Start-->
 	<header class="header-static navbar-sticky navbar-light">
 		<!-- Logo Nav Start -->
-			{% include logonav.html %}	
+		{% include logonav.html %}
 		<!-- Logo Nav End -->
 	</header>
 	<!-- =======================
@@ -19,11 +19,12 @@
 
 	<!-- =======================
 	About us -->
-	
+
 
 	<!-- =======================
 	Banner innerpage -->
-	<div class="innerpage-banner center bg-overlay-dark-4 py-7" style="background:url(assets/images/selfcare-poster.jpg) no-repeat; background-size:cover; background-position: center center;">
+	<div class="innerpage-banner center bg-overlay-dark-4 py-7"
+		style="background:url(assets/images/selfcare-poster.jpg) no-repeat; background-size:cover; background-position: center center;">
 		<div class="container">
 			<div class="row all-text-white">
 				<div class="col-md-12 align-self-center">
@@ -31,12 +32,13 @@
 					<h6 class="subtitle">
 
 						{% for professional in site.data.health_professionals.health_professionals %}
-					<p> {{ professional.sub_title }}</p>
-					{% endfor %}
+						<p> {{ professional.sub_title }}</p>
+						{% endfor %}
 					</h6>
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
-							<li class="breadcrumb-item active"><a href="index.html"><i class="ti-home"></i> Home</a></li>
+							<li class="breadcrumb-item active"><a href="index.html"><i class="ti-home"></i> Home</a>
+							</li>
 							<li class="breadcrumb-item">Health Professionals</li>
 						</ol>
 					</nav>
@@ -56,23 +58,23 @@
 					<!-- title -->
 					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 350px;">
 						<span class="display-5 icon-dark"><i class="ti-ruler-pencil"></i></span>
-						<br/>
+						<br />
 						{% for referral in site.data.referral_tile_one.referral_tile_one %}
-							<a href='#' class=".h5"> {{ referral.title }}</a>
+						<a href='#' class=".h5"> {{ referral.title }}</a>
 						{% endfor %}
 						{% for referral in site.data.referral_tile_one.referral_tile_one %}
-							<p class="mb-0">{{ referral.text }}</p>
+						<p class="mb-0">{{ referral.text }}</p>
 						{% endfor %}
 					</div>
 					<!-- service item -->
 					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 350px;">
 						<span class="display-5 icon-dark"><i class="ti-ruler-pencil"></i></span>
-						<br/>
+						<br />
 						{% for referral in site.data.referral_tile_two.referral_tile_two %}
-							<a href='#'> {{ referral.title }}</a>
+						<a href='#'> {{ referral.title }}</a>
 						{% endfor %}
 						{% for referral in site.data.referral_tile_two.referral_tile_two %}
-							<p class="mb-0">{{ referral.text }}</p>
+						<p class="mb-0">{{ referral.text }}</p>
 						{% endfor %}
 					</div>
 				</div>
@@ -82,23 +84,23 @@
 					<!-- service item -->
 					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 350px;">
 						<span class="display-5 icon-dark"><i class="ti-pencil-alt"></i></span>
-						<br/>
+						<br />
 						{% for referral in site.data.referral_tile_three.referral_tile_three %}
-							<a href='#'> {{ referral.title }}</a>
+						<a href='#'> {{ referral.title }}</a>
 						{% endfor %}
 						{% for referral in site.data.referral_tile_three.referral_tile_three %}
-							<p class="mb-0">{{ referral.text }}</p>
+						<p class="mb-0">{{ referral.text }}</p>
 						{% endfor %}
 					</div>
 					<!-- service item -->
 					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 350px;">
 						<span class="display-5 icon-dark"><i class="ti-image"></i></span>
-						<br/>
+						<br />
 						{% for referral in site.data.referral_tile_four.referral_tile_four %}
-							<a href='#'> {{ referral.title }}</a>
+						<a href='#'> {{ referral.title }}</a>
 						{% endfor %}
 						{% for referral in site.data.referral_tile_four.referral_tile_four %}
-							<p class="mb-0">{{ referral.text }}</p>
+						<p class="mb-0">{{ referral.text }}</p>
 						{% endfor %}
 					</div>
 				</div>
@@ -108,23 +110,23 @@
 					<!-- service item -->
 					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 350px;">
 						<span class="display-5 icon-dark"><i class="ti-map"></i></span>
-						<br/>
+						<br />
 						{% for referral in site.data.referral_tile_five.referral_tile_five %}
-							<a href='#'> {{ referral.title }}</a>
+						<a href='#'> {{ referral.title }}</a>
 						{% endfor %}
 						{% for referral in site.data.referral_tile_five.referral_tile_five %}
-							<p class="mb-0">{{ referral.text }}</p>
+						<p class="mb-0">{{ referral.text }}</p>
 						{% endfor %}
 					</div>
 					<!-- service item -->
 					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 350px;">
 						<span class="display-5 icon-dark"><i class="ti-world"></i></span>
-						<br/>
+						<br />
 						{% for referral in site.data.referral_tile_six.referral_tile_six %}
-							<a href='#'>{{ referral.title }}</a>
+						<a href='#'>{{ referral.title }}</a>
 						{% endfor %}
 						{% for referral in site.data.referral_tile_six.referral_tile_six %}
-							<p class="mb-0">{{ referral.text }}</p>
+						<p class="mb-0">{{ referral.text }}</p>
 						{% endfor %}
 					</div>
 				</div>
@@ -133,11 +135,12 @@
 	</section>
 	<!-- =======================
 	action box -->
-	
+
 
 	{% include footer.html %}
-	
-<!-- =======================
+
+	<!-- =======================
 	action box -->
 </body>
+
 </html>
