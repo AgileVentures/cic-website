@@ -2,3 +2,9 @@ open_age:
   - title: "Open Age"
     sub_title: "Open Age"
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+    display_facebook: true
+    facebook_link: "https://www.facebook.com/openage"
+    display_instagram: true
+    instagram_link: "https://www.instagram.com/openage"
+    display_twitter: true
+    twitter_link: "https://www.twitter.com/openage"

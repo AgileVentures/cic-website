@@ -2,3 +2,9 @@ westmister:
   - title: "One Westmister"
     sub_title: "One WestmisterK"
     text: "Lorema ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+    display_facebook: true
+    facebook_link: "https://www.facebook.com/westmister"
+    display_instagram: true
+    instagram_link: "https://www.instagram.com/westmister"
+    display_twitter: true
+    twitter_link: "https://www.twitter.com/westmister"

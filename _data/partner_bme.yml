@@ -2,3 +2,9 @@ bme:
   - title: "BME Health Forum"
     sub_title: "BME Health Forum"
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+    display_facebook: true
+    facebook_link: "https://www.facebook.com/bme"
+    display_instagram: true
+    instagram_link: "https://www.instagram.com/bme"
+    display_twitter: true
+    twitter_link: "https://www.twitter.com/bme"

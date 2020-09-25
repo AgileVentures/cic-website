@@ -86,16 +86,23 @@
 										<h4 class="team-name"> {{ partner_smart.title }} </h4>
 										<span class="team-position">{{ partner_smart.sub_title }} </span>
 										<p>{{ partner_smart.text }}</p>
-										{% endfor %}
 										<ul class="social-icons light si-colored-bg-on-hover no-pb">
+											{% if partner_smart.display_facebook %}
 											<li class="social-icons-item social-facebook"><a class="social-icons-link"
-													href="#"><i class="fa fa-facebook"></i></a></li>
+													href="{{ partner_smart.facebook_link }}"><i
+														class="fa fa-facebook"></i></a></li>
+											{% endif %}
+											{% if partner_smart.display_instagram %}
 											<li class="social-icons-item social-instagram"><a class="social-icons-link"
 													href="#"><i class="fa fa-instagram"></i></a></li>
+											{% endif %}
+											{% if partner_smart.display_twitter %}
 											<li class="social-icons-item social-twitter"><a class="social-icons-link"
 													href="#"><i class="fa fa-twitter"></i></a></li>
+											{% endif %}
 										</ul>
 									</div>
+									{% endfor %}
 								</div>
 							</div>
 							<!-- Team item -->
@@ -110,16 +117,23 @@
 										<h4 class="team-name"> {{ partner_open_age.title }} </h4>
 										<span class="team-position">{{ partner_open_age.sub_title }} </span>
 										<p>{{ partner_open_age.text }}</p>
-										{% endfor %}
 										<ul class="social-icons light si-colored-bg-on-hover no-pb">
+											{% if partner_open_age.display_facebook %}
 											<li class="social-icons-item social-facebook"><a class="social-icons-link"
-													href="#"><i class="fa fa-facebook"></i></a></li>
+													href="{{ partner_open_age.facebook_link }}"><i
+														class="fa fa-facebook"></i></a></li>
+											{% endif %}
+											{% if partner_open_age.display_instagram %}
 											<li class="social-icons-item social-instagram"><a class="social-icons-link"
 													href="#"><i class="fa fa-instagram"></i></a></li>
+											{% endif %}
+											{% if partner_open_age.display_twitter %}
 											<li class="social-icons-item social-twitter"><a class="social-icons-link"
 													href="#"><i class="fa fa-twitter"></i></a></li>
+											{% endif %}
 										</ul>
 									</div>
+									{% endfor %}
 								</div>
 							</div>
 							<!-- Team item -->
@@ -134,16 +148,23 @@
 										<h4 class="team-name"> {{ partner_one_westmister.title }} </h4>
 										<span class="team-position">{{ partner_one_westmister.sub_title }} </span>
 										<p>{{ partner_one_westmister.text }}</p>
-										{% endfor %}>
 										<ul class="social-icons light si-colored-bg-on-hover no-pb">
+											{% if partner_one_westmister.display_facebook %}
 											<li class="social-icons-item social-facebook"><a class="social-icons-link"
-													href="#"><i class="fa fa-facebook"></i></a></li>
+													href="{{ partner_one_westmister.facebook_link }}"><i
+														class="fa fa-facebook"></i></a></li>
+											{% endif %}
+											{% if partner_one_westmister.display_instagram %}
 											<li class="social-icons-item social-instagram"><a class="social-icons-link"
 													href="#"><i class="fa fa-instagram"></i></a></li>
+											{% endif %}
+											{% if partner_one_westmister.display_twitter %}
 											<li class="social-icons-item social-twitter"><a class="social-icons-link"
 													href="#"><i class="fa fa-twitter"></i></a></li>
+											{% endif %}
 										</ul>
 									</div>
+									{% endfor %}>
 								</div>
 							</div>
 							<!-- Team item -->
@@ -158,15 +179,22 @@
 										<h4 class="team-name"> {{ partner_bme.title }} </h4>
 										<span class="team-position">{{ partner_bme.sub_title }} </span>
 										<p>{{ partner_bme.text }}</p>
-										{% endfor %}
 										<ul class="social-icons light si-colored-bg-on-hover no-pb">
+											{% if partner_bme.display_facebook %}
 											<li class="social-icons-item social-facebook"><a class="social-icons-link"
-													href="#"><i class="fa fa-facebook"></i></a></li>
+													href="{{ partner_bme.facebook_link }}"><i
+														class="fa fa-facebook"></i></a></li>
+											{% endif %}
+											{% if partner_bme.display_instagram %}
 											<li class="social-icons-item social-instagram"><a class="social-icons-link"
 													href="#"><i class="fa fa-instagram"></i></a></li>
+											{% endif %}
+											{% if partner_bme.display_twitter %}
 											<li class="social-icons-item social-twitter"><a class="social-icons-link"
 													href="#"><i class="fa fa-twitter"></i></a></li>
+											{% endif %}
 										</ul>
+										{% endfor %}
 									</div>
 								</div>
 							</div>
@@ -183,15 +211,22 @@
 										<h4 class="team-name"> {{ partner_age_uk.title }} </h4>
 										<span class="team-position">{{ partner_age_uk.sub_title }} </span>
 										<p>{{ partner_age_uk.text }}</p>
-										{% endfor %}
 										<ul class="social-icons light si-colored-bg-on-hover no-pb">
+											{% if partner_age_uk.display_facebook %}
 											<li class="social-icons-item social-facebook"><a class="social-icons-link"
-													href="#"><i class="fa fa-facebook"></i></a></li>
+													href="{{ partner_age_uk.facebook_link }}"><i
+														class="fa fa-facebook"></i></a></li>
+											{% endif %}
+											{% if partner_age_uk.display_instagram %}
 											<li class="social-icons-item social-instagram"><a class="social-icons-link"
 													href="#"><i class="fa fa-instagram"></i></a></li>
+											{% endif %}
+											{% if partner_age_uk.display_twitter %}
 											<li class="social-icons-item social-twitter"><a class="social-icons-link"
 													href="#"><i class="fa fa-twitter"></i></a></li>
+											{% endif %}
 										</ul>
+										{% endfor %}
 									</div>>
 								</div>
 							</div>
@@ -208,15 +243,22 @@
 										<h4 class="team-name"> {{ partner_kcsc.title }} </h4>
 										<span class="team-position">{{ partner_kcsc.sub_title }} </span>
 										<p>{{ partner_kcsc.text }}</p>
-										{% endfor %}
 										<ul class="social-icons light si-colored-bg-on-hover no-pb">
+											{% if partner_kcsc.display_facebook %}
 											<li class="social-icons-item social-facebook"><a class="social-icons-link"
-													href="#"><i class="fa fa-facebook"></i></a></li>
+													href="{{ partner_kcsc.facebook_link }}"><i
+														class="fa fa-facebook"></i></a></li>
+											{% endif %}
+											{% if partner_kcsc.display_instagram %}
 											<li class="social-icons-item social-instagram"><a class="social-icons-link"
 													href="#"><i class="fa fa-instagram"></i></a></li>
+											{% endif %}
+											{% if partner_kcsc.display_twitter %}
 											<li class="social-icons-item social-twitter"><a class="social-icons-link"
 													href="#"><i class="fa fa-twitter"></i></a></li>
+											{% endif %}
 										</ul>
+										{% endfor %}
 									</div>
 								</div>
 							</div>
@@ -227,12 +269,6 @@
 				<!-- =======================
 	team grid -->
 
-				<div class="col-md-12">
-					{% for partner in site.data.partners.partners %}
-					<p> {{ partner.text | markdownify }}</p>
-					{% endfor %}
-
-				</div>
 			</div>
 		</div>
 	</section>

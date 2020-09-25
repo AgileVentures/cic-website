@@ -2,3 +2,9 @@ smart:
   - title: "S M A R T"
     sub_title: "smart"
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+    display_facebook: true
+    facebook_link: "https://www.facebook.com/smart"
+    display_instagram: true
+    instagram_link: "https://www.instagram.com/smart"
+    display_twitter: true
+    twitter_link: "https://www.twitter.com/smart"
