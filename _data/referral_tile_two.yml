@@ -2,3 +2,6 @@ referral_tile_two:
   - title: Referral for mental health support
     text: "A referral to a service in the community to support peoples mental health
       https://communitylivingwell.co.uk/wellbeing-services-referral-form/ "
+    display: true
+    title_is_a_link: false
+    link_title_to: '#'

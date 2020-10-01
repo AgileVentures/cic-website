@@ -1,3 +1,6 @@
 referral_tile_four:
   - title: Referral to ......
     text: xxxx
+    display: true
+    title_is_a_link: false
+    link_title_to: '#'
