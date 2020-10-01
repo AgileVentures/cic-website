@@ -5,3 +5,6 @@ residents_tile_extra_3:
       other non-clinical services. Social prescribing is a way to help people
       make positive changes in their lives by giving them the knowledge, skills
       and the confidence to do so.
+    display: true
+    title_is_a_link: false
+    link_title_to: '#'
