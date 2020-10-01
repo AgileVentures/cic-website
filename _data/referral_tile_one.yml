@@ -2,3 +2,6 @@ referral_tile_one:
   - title: " Referral to link workers"
     text: A Social Prescribing Link worker is someone based in a GP surgery that
       will link people up to services in their local community
+    display: true
+    title_is_a_link: false
+    link_title_to: '#'

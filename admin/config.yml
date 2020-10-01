@@ -77,6 +77,9 @@ collections:
             fields: 
               - {label: Title, name: title, widget: string}
               - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
 
   - name: 'referral_tile_four'
     label: 'Referral Four'
@@ -91,6 +94,9 @@ collections:
             fields: 
               - {label: Title, name: title, widget: string}
               - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
 
   - name: 'referral_tile_three'
     label: 'Referral for Long term conditions'
@@ -105,6 +111,9 @@ collections:
             fields: 
               - {label: Title, name: title, widget: string}
               - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
 
   - name: 'referral_tile_two'
     label: 'Referral for mental health'
@@ -119,6 +128,9 @@ collections:
             fields: 
               - {label: Title, name: title, widget: string}
               - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
 
   - name: 'referral_tile_five'
     label: 'Self care services'
@@ -133,6 +145,9 @@ collections:
             fields: 
               - {label: Title, name: title, widget: string}
               - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
 
   - name: 'referral_tile_six'
     label: 'Referral to Nth Ken'

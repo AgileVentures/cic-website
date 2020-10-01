@@ -1,3 +1,6 @@
 referral_tile_five:
   - title: "Self-Care / Social Prescribing Directory "
     text: "Find local health and wellbeing services in the West London community "
+    display: true
+    title_is_a_link: false
+    link_title_to: '#'
