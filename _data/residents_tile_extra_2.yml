@@ -6,6 +6,6 @@ residents_tile_extra_2:
       make positive changes in their lives by giving them the knowledge, skills
       and the confidence to do so.
     display: true
-    title_is_a_link: false
+    title_is_a_link: true
     link_title_to: "#"
     title_links_to: "#"
