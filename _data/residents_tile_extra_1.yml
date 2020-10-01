@@ -3,3 +3,6 @@ residents_tile_extra_1:
     text: Community Living Well Self-Care supports people in the community to access
       free services like volunteering, theatre reading, and one to one support
       in your own language
+    display: true
+    title_is_a_link: false
+    link_title_to: '#'

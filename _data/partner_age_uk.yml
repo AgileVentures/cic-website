@@ -2,3 +2,10 @@ age_uk:
   - title: "Age UK"
     sub_title: "Age UK"
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+    display_facebook: true
+    facebook_link: "https://www.facebook.com/age_uk"
+    display_instagram: true
+    instagram_link: "https://www.instagram.com/age_uk"
+    display_twitter: true
+    twitter_link: "https://www.twitter.com/age_uk"
+
