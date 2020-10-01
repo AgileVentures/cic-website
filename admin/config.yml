@@ -32,6 +32,8 @@ collections:
             widget: list
             fields: 
               - {label: Residents, name: resident, widget: markdown}
+              - {label: title, name: title, widget: string}
+              - {label: Sub-title, name: sub_title, widget: string}
   
   - name: 'health_professionals'
     label: 'Health Professionals'

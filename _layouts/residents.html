@@ -26,7 +26,9 @@
 			<div class="row all-text-white">
 				<div class="col-md-12 align-self-center">
 					<h1 class="innerpage-title">Residents</h1>
-					<h6 class="subtitle">Some text about the residents here</h6>
+					{% for res in site.data.residents.residents %}
+					<h6> {{ res.sub_title }}</h6>
+					{% endfor %}
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
 							<li class="breadcrumb-item active"><a href="index.html"><i class="ti-home"></i> Home</a>
