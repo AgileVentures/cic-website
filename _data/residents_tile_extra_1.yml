@@ -4,5 +4,6 @@ residents_tile_extra_1:
       free services like volunteering, theatre reading, and one to one support
       in your own language
     display: true
-    title_is_a_link: false
-    link_title_to: '#'
+    title_is_a_link: true
+    link_title_to: "#https://communitylivingwell.co.uk/how-we-can-help-mental-healt\
+      h/self-care-kensington-chelsea-westminster/"
