@@ -1,10 +1,8 @@
 residents_tile_extra_4:
-  - title: What is Social Prescribing 4?
-    text: Social prescribing works alongside and supports traditional medical
-      interventions by linking people up to voluntary and community groups and
-      other non-clinical services. Social prescribing is a way to help people
-      make positive changes in their lives by giving them the knowledge, skills
-      and the confidence to do so.
+  - title: "North Kensington Social Prescribing Link Worker "
+    text: A Social Prescribing Link Worker works to link people with services in the
+      community that can improve someones health and wellbeing. For example;
+      walking groups or online groups
     display: true
     title_is_a_link: false
-    link_title_to: '#'
+    link_title_to: "#"
