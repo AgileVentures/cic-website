@@ -18628,9 +18628,10 @@ a .category {
 }
 
 .img-partners {
-  height: 100px;
+  width: 200px;
 }
 
 .kcsc-logo {
-  padding-left: 100px;
+  height: 200px;
+  padding-left: 60px;
 }
