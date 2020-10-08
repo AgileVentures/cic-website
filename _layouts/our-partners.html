@@ -82,7 +82,7 @@
 										<img class="rounded img-partners" src="assets/images/logos/SMART.jpg" alt="">
 									</div>
 									<div class="team-desc">
-										{% for partner_smart in site.data.partner_smart.smart %}
+										{% for partner_smart in site.data.partner_smart.partner_smart %}
 										<h4 class="team-name"> {{ partner_smart.title }} </h4>
 										<span class="team-position">{{ partner_smart.sub_title }} </span>
 										<p>{{ partner_smart.text }}</p>
@@ -113,7 +113,7 @@
 											alt="">
 									</div>
 									<div class="team-desc">
-										{% for partner_open_age in site.data.partner_open_age.open_age %}
+										{% for partner_open_age in site.data.partner_open_age.partner_open_age %}
 										<h4 class="team-name"> {{ partner_open_age.title }} </h4>
 										<span class="team-position">{{ partner_open_age.sub_title }} </span>
 										<p>{{ partner_open_age.text }}</p>
@@ -144,7 +144,7 @@
 											alt="">
 									</div>
 									<div class="team-desc">
-										{% for partner_one_westmister in site.data.partner_one_westmister.westmister %}
+										{% for partner_one_westmister in site.data.partner_one_westmister.partner_one_westmister %}
 										<h4 class="team-name"> {{ partner_one_westmister.title }} </h4>
 										<span class="team-position">{{ partner_one_westmister.sub_title }} </span>
 										<p>{{ partner_one_westmister.text }}</p>
@@ -175,7 +175,7 @@
 											alt="">
 									</div>
 									<div class="team-desc">
-										{% for partner_bme in site.data.partner_bme.bme %}
+										{% for partner_bme in site.data.partner_bme.partner_bme %}
 										<h4 class="team-name"> {{ partner_bme.title }} </h4>
 										<span class="team-position">{{ partner_bme.sub_title }} </span>
 										<p>{{ partner_bme.text }}</p>
@@ -207,7 +207,7 @@
 											alt="">
 									</div>
 									<div class="team-desc">
-										{% for partner_age_uk in site.data.partner_age_uk.age_uk %}
+										{% for partner_age_uk in site.data.partner_age_uk.partner_age_uk %}
 										<h4 class="team-name"> {{ partner_age_uk.title }} </h4>
 										<span class="team-position">{{ partner_age_uk.sub_title }} </span>
 										<p>{{ partner_age_uk.text }}</p>
@@ -235,11 +235,10 @@
 							<div class="col-sm-6">
 								<div class="team-item">
 									<div class="team-avatar">
-										<img class="rounded img-partners kcsc-logo"
-											src="assets/images/logos/KCSC logo.jpg" alt="">
+										<img class="rounded kcsc-logo" src="assets/images/logos/KCSC logo.jpg" alt="">
 									</div>
 									<div class="team-desc">
-										{% for partner_kcsc in site.data.partner_kcsc.kcsc %}
+										{% for partner_kcsc in site.data.partner_kcsc.partner_kcsc %}
 										<h4 class="team-name"> {{ partner_kcsc.title }} </h4>
 										<span class="team-position">{{ partner_kcsc.sub_title }} </span>
 										<p>{{ partner_kcsc.text }}</p>
