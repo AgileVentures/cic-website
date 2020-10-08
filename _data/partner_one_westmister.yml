@@ -1,4 +1,4 @@
-westmister:
+partner_one_westmister:
   - display_facebook: true
     twitter_link: https://www.twitter.com/westmister
     instagram_link: https://www.instagram.com/westmister
@@ -10,13 +10,3 @@ westmister:
     display_twitter: true
     title: One Westmister
     sub_title: One WestmisterK
-partner_one_westmister:
-  - display_facebook: false
-    twitter_link: "#"
-    instagram_link: "#"
-    text: one
-    facebook_link: "#"
-    display_instagram: false
-    display_twitter: true
-    title: One westmister
-    sub_title: one
