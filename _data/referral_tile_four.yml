@@ -8,4 +8,4 @@ referral_tile_four:
       prescribing.
     display: true
     title_is_a_link: true
-    link_title_to: "#https://www.youtube.com/watch?v=HkBorjikoJk&feature=youtu.be"
+    link_title_to: "https://www.youtube.com/watch?v=HkBorjikoJk&feature=youtu.be"
