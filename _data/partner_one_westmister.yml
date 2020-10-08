@@ -1,10 +1,22 @@
 westmister:
-  - title: "One Westmister"
-    sub_title: "One WestmisterK"
-    text: "Lorema ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
-    display_facebook: true
-    facebook_link: "https://www.facebook.com/westmister"
+  - display_facebook: true
+    twitter_link: https://www.twitter.com/westmister
+    instagram_link: https://www.instagram.com/westmister
+    text: Lorema ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam
+    facebook_link: https://www.facebook.com/westmister
     display_instagram: true
-    instagram_link: "https://www.instagram.com/westmister"
     display_twitter: true
-    twitter_link: "https://www.twitter.com/westmister"
+    title: One Westmister
+    sub_title: One WestmisterK
+partner_one_westmister:
+  - display_facebook: false
+    twitter_link: "#"
+    instagram_link: "#"
+    text: one
+    facebook_link: "#"
+    display_instagram: false
+    display_twitter: true
+    title: One westmister
+    sub_title: one
