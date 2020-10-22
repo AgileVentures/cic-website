@@ -1,10 +1,16 @@
 partner_smart:
-  - title: "S M A R T"
-    sub_title: "smart"
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
-    display_facebook: true
-    facebook_link: "https://www.facebook.com/smart"
-    display_instagram: true
-    instagram_link: "https://www.instagram.com/smart"
-    display_twitter: true
-    twitter_link: "https://www.twitter.com/smart"
+  - display_facebook: true
+    twitter_link: https://www.twitter.com/smart
+    instagram_link: https://www.instagram.com/smart
+    text: SMART is a mental health charity that promotes recovery through purposeful
+      activity, practical support, recovery planning and opportunities to
+      socialise. People build skills, experience and friendships in its social
+      enterprises , accredited training programmes, and drop-in activities as
+      well as receive information, advice and guidance through its specialist
+      Navigation and Employment Support teams. It is open every day of the year,
+      including weekends, evenings and public holidays.
+    facebook_link: https://www.facebook.com/smartchelsea
+    display_instagram: false
+    display_twitter: false
+    title: SMART
+    sub_title: St Mary Abbots Rehabilitation & Training
