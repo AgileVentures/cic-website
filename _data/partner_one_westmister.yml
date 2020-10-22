@@ -1,6 +1,6 @@
 partner_one_westmister:
-  - display_facebook: false
-    twitter_link: https://www.twitter.com/westmister
+  - display_facebook: true
+    twitter_link: https://www.twitter.com/One_Westminster
     instagram_link: https://www.instagram.com/westmister
     text: "One Westminster supports the voluntary sector and volunteering in the
       City of Westminster. It provides funding, governance, partnership and
@@ -10,8 +10,8 @@ partner_one_westmister:
       Its Time & Talents programme helps local businesses support the sector and
       its Social Prescription Service links GP and mental health referred
       patients to community based support. "
-    facebook_link: https://www.facebook.com/westmister
+    facebook_link: https://www.facebook.com/OneWestminster
     display_instagram: false
-    display_twitter: false
+    display_twitter: true
     title: One Westmister
     sub_title: Where volunteering & community action transform lives
