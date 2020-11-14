@@ -1,0 +1,16 @@
+partner_age_uk:
+  - display_facebook: true
+    twitter_link: https://www.twitter.com/AgeUKKandC
+    instagram_link: https://www.instagram.com/age_uk
+    text: Age UK Kensington & Chelsea is an independent, local charity working at
+      the heart of the community to make sure that older people’s voices are
+      heard, their needs are met and their independence is supported. It
+      provides a wide range of services including befriending, practical help,
+      information and advice, dementia support and a variety of social and
+      leisure activities.
+    facebook_link: https://www.facebook.com/AgeUKKandC/
+    display_instagram: false
+    display_twitter: true
+    title: Age UK Kensington & Chelsea
+    sub_title: We're an independent local charity doing all we can to help
+      Kensington & Chelsea's older residents to love later life

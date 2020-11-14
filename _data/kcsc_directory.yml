@@ -1,3 +1,6 @@
 kcsc_directory:
   - title: Self-Care / Social Prescribing Directory
     text: "Explore local health & wellbeing services in your community "
+    display: true
+    title_is_a_link: true
+    link_title_to: '/kcsc-directory'

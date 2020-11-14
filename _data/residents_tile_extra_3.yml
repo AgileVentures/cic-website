@@ -1,7 +1,8 @@
 residents_tile_extra_3:
-  - title: What is Social Prescribing 3?
-    text: Social prescribing works alongside and supports traditional medical
-      interventions by linking people up to voluntary and community groups and
-      other non-clinical services. Social prescribing is a way to help people
-      make positive changes in their lives by giving them the knowledge, skills
-      and the confidence to do so.
+  - title: "Access support services in North Kensington "
+    text: "The Voluntary & Community Sector provide health and wellbeing services in
+      North Kensington Communities to support those affected by the Grenfell
+      Tower fire. "
+    display: true
+    title_is_a_link: false
+    link_title_to: "#"

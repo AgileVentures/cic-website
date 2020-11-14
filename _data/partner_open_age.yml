@@ -1,0 +1,15 @@
+partner_open_age:
+  - display_facebook: true
+    twitter_link: https://www.twitter.com/open_age
+    instagram_link: https://www.instagram.com/open_age
+    text: Open Age is a member-led charity that provides c.350 weekly low-cost
+      activities in the areas of performing and creative arts, languages,
+      learning, social and physical activity to over 1,500 people a week. Its
+      vision is that everyone in London aged 50 and above leads a fulfilling and
+      joyful life. It promotes a positive approach to ageing and has over 5,000
+      members aged 50 to 104.
+    facebook_link: https://www.facebook.com/Open.Age/
+    display_instagram: false
+    display_twitter: true
+    title: Open Age
+    sub_title: Life's just begun

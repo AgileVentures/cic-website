@@ -1,5 +1,5 @@
 ---
-title: "residents"
+title: "Residents"
 layout: "residents"
 ---
 

@@ -26,7 +26,9 @@
 			<div class="row all-text-white">
 				<div class="col-md-12 align-self-center">
 					<h1 class="innerpage-title">Residents</h1>
-					<h6 class="subtitle">Some text about the residents here</h6>
+					{% for res in site.data.residents.residents %}
+					<h6> {{ res.sub_title }}</h6>
+					{% endfor %}
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
 							<li class="breadcrumb-item active"><a href="index.html"><i class="ti-home"></i> Home</a>
@@ -51,76 +53,105 @@
 				<!-- column 1 -->
 				<div class="col-md-4">
 					<!-- title -->
-					<div class="bg-light p-4 p-lg-5 mb-5 residents-tile">
+					{% for res in site.data.residents_tile_extra_0.residents_tile_extra_0 %}
+					{% if res.display %}
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 400px;">
 						<span class="display-5 icon-dark"><i class="ti-ruler-pencil"></i></span>
-						{% for res in site.data.residents_tile_extra_0.residents_tile_extra_0 %}
+						<br />
+						{% if res.title_is_a_link %}
+						<a href="{{ res.link_title_to }}">{{ res.title }}</a>
+						{% else %}
 						<h5>{{ res.title }}</h5>
-						{% endfor %}
-						{% for res in site.data.residents_tile_extra_0.residents_tile_extra_0 %}
+						{% endif %}
 						<p class="mb-0">{{ res.text }}</p>
-						{% endfor %}
 					</div>
+					{% endif %}
+					{% endfor %}
 					<!-- title -->
-					<div class="bg-light p-4 p-lg-5 mb-5 residents-tile">
-						<span class="display-5 icon-dark"><i class="ti-ruler-pencil"></i></span>
-						{% for res in site.data.residents_tile_extra_2.residents_tile_extra_2 %}
+					{% for res in site.data.residents_tile_extra_2.residents_tile_extra_2 %}
+					{% if res.display %}
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 400px;">
+						<span class="display-5 icon-dark">
+							<i class="ti-ruler-pencil"></i>
+						</span>
+						<br />
+						{% if res.title_is_a_link %}
+						<a href="{{ res.link_title_to }}">{{ res.title }}</a>
+						{% else %}
 						<h5>{{ res.title }}</h5>
-						{% endfor %}
-						{% for res in site.data.residents_tile_extra_2.residents_tile_extra_2 %}
+						{% endif %}
 						<p class="mb-0">{{ res.text }}</p>
-						{% endfor %}
 					</div>
+					{% endif %}
+					{% endfor %}
 				</div>
 
 				<!-- column 2 -->
 				<div class="col-md-4">
-					<div class="bg-light p-4 p-lg-5 mb-5 residents-tile">
+					{% for res in site.data.kcsc_directory.kcsc_directory %}
+					{% if res.display %}
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 400px;">
 						<span class="display-5 icon-dark"><i class="ti-world"></i></span>
-						{% for directory in site.data.kcsc_directory.kcsc_directory %}
-						<a href='/kcsc-directory'>
-							<h5 style="color: green"> {{ directory.title }}</h5>
-						</a>
-						{% endfor %}
-						{% for directory in site.data.kcsc_directory.kcsc_directory %}
-						<p class="mb-0">{{ directory.text }}</p>
-						{% endfor %}
+						<br />
+						{% if res.title_is_a_link %}
+						<a href="{{ res.link_title_to }}">{{ res.title }}</a>
+						{% else %}
+						<h5>{{ res.title }}</h5>
+						{% endif %}
+						<p class="mb-0">{{ res.text }}</p>
 
 					</div>
-					<!-- title -->
-					<div class="bg-light p-4 p-lg-5 mb-5 residents-tile">
+					{% endif %}
+					{% endfor %}
+					{% for res in site.data.residents_tile_extra_3.residents_tile_extra_3 %}
+					{% if res.display %}
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 400px;">
 						<span class="display-5 icon-dark"><i class="ti-ruler-pencil"></i></span>
-						{% for res in site.data.residents_tile_extra_3.residents_tile_extra_3 %}
+						<br />
+						{% if res.title_is_a_link %}
+						<a href="{{ res.link_title_to }}">{{ res.title }}</a>
+						{% else %}
 						<h5>{{ res.title }}</h5>
-						{% endfor %}
-						{% for res in site.data.residents_tile_extra_3.residents_tile_extra_3 %}
+						{% endif %}
 						<p class="mb-0">{{ res.text }}</p>
-						{% endfor %}
 					</div>
+					{% endif %}
+					{% endfor %}
 
 				</div>
 
 				<!-- column 3 -->
 				<div class="col-md-4">
 					<!-- service item -->
-					<div class="bg-light p-4 p-lg-5 mb-5 residents-tile">
+					{% for res in site.data.residents_tile_extra_1.residents_tile_extra_1 %}
+					{% if res.display %}
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 400px;">
 						<span class="display-5 icon-dark"><i class="ti-map"></i></span>
-						{% for res in site.data.residents_tile_extra_1.residents_tile_extra_1 %}
+						<br />
+						{% if res.title_is_a_link %}
+						<a href="{{ res.link_title_to }}">{{ res.title }}</a>
+						{% else %}
 						<h5>{{ res.title }}</h5>
-						{% endfor %}
-						{% for res in site.data.residents_tile_extra_1.residents_tile_extra_1 %}
+						{% endif %}
 						<p class="mb-0">{{ res.text }}</p>
-						{% endfor %}
 					</div>
-					<!-- title -->
-					<div class="bg-light p-4 p-lg-5 mb-5 residents-tile">
-						<span class="display-5 icon-dark"><i class="ti-ruler-pencil"></i></span>
-						{% for res in site.data.residents_tile_extra_4.residents_tile_extra_4 %}
+					{% endif %}
+					{% endfor %}
+
+					{% for res in site.data.residents_tile_extra_4.residents_tile_extra_4 %}
+					{% if res.display %}
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 400px;">
+						<span class="display-5 icon-dark"><i class="ti-map"></i></span>
+						<br />
+						{% if res.title_is_a_link %}
+						<a href="{{ res.link_title_to }}">{{ res.title }}</a>
+						{% else %}
 						<h5>{{ res.title }}</h5>
-						{% endfor %}
-						{% for res in site.data.residents_tile_extra_4.residents_tile_extra_4 %}
+						{% endif %}
 						<p class="mb-0">{{ res.text }}</p>
-						{% endfor %}
 					</div>
+					{% endif %}
+					{% endfor %}
 				</div>
 			</div>
 		</div>

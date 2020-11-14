@@ -32,6 +32,8 @@ collections:
             widget: list
             fields: 
               - {label: Residents, name: resident, widget: markdown}
+              - {label: title, name: title, widget: string}
+              - {label: Sub-title, name: sub_title, widget: string}
   
   - name: 'health_professionals'
     label: 'Health Professionals'
@@ -75,6 +77,9 @@ collections:
             fields: 
               - {label: Title, name: title, widget: string}
               - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
 
   - name: 'referral_tile_four'
     label: 'Referral Four'
@@ -89,6 +94,9 @@ collections:
             fields: 
               - {label: Title, name: title, widget: string}
               - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
 
   - name: 'referral_tile_three'
     label: 'Referral for Long term conditions'
@@ -103,6 +111,9 @@ collections:
             fields: 
               - {label: Title, name: title, widget: string}
               - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
 
   - name: 'referral_tile_two'
     label: 'Referral for mental health'
@@ -117,6 +128,9 @@ collections:
             fields: 
               - {label: Title, name: title, widget: string}
               - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
 
   - name: 'referral_tile_five'
     label: 'Self care services'
@@ -131,6 +145,9 @@ collections:
             fields: 
               - {label: Title, name: title, widget: string}
               - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
 
   - name: 'referral_tile_six'
     label: 'Referral to Nth Ken'
@@ -145,6 +162,9 @@ collections:
             fields: 
               - {label: Title, name: title, widget: string}
               - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
 
   - name: 'kcsc_directory'
     label: 'KCSC Directory'
@@ -159,6 +179,9 @@ collections:
             fields: 
               - {label: Title, name: title, widget: string}
               - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
 
   - name: 'residents_tile_extra_0'
     label: 'Residents tile extra'
@@ -173,6 +196,9 @@ collections:
             fields: 
               - {label: Title, name: title, widget: string}
               - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
 
   - name: 'residents_tile_extra_1'
     label: 'Residents tile extra 1'
@@ -187,6 +213,9 @@ collections:
             fields: 
               - {label: Title, name: title, widget: string}
               - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
 
   - name: 'residents_tile_extra_2'
     label: 'Residents tile extra 2'
@@ -201,6 +230,9 @@ collections:
             fields: 
               - {label: Title, name: title, widget: string}
               - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
 
   - name: 'residents_tile_extra_3'
     label: 'Residents tile extra 3'
@@ -215,6 +247,9 @@ collections:
             fields: 
               - {label: Title, name: title, widget: string}
               - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
 
   - name: 'residents_tile_extra_4'
     label: 'Residents tile extra 4'
@@ -229,6 +264,9 @@ collections:
             fields: 
               - {label: Title, name: title, widget: string}
               - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
 
   - name: 'subscribe'
     label: 'Subscribe'
@@ -402,3 +440,130 @@ collections:
             widget: list
             fields: 
               - {label: "Helper Text", name: "helper_text", widget: "text"}
+
+
+  - name: 'partner_age_uk'
+    label: 'Partner Age UK'
+    files:
+      - label: 'Age UK'
+        name: 'partner_age_uk'
+        file: '_data/partner_age_uk.yml'
+        fields:
+          - label: 'Age UK'
+            name: partner_age_uk
+            widget: list
+            fields: 
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Sub-Title", name: "sub_title", widget: "text"}
+              - {label: "Text", name: "text", widget: "text"}
+              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
+              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
+              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
+              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
+              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
+              - {label: "Twitter Link", name: "twitter_link", widget: "text"}
+
+  - name: 'partner_bme'
+    label: 'Partner BME'
+    files:
+      - label: 'BME'
+        name: 'partner_bme'
+        file: '_data/partner_bme.yml'
+        fields:
+          - label: 'BME'
+            name: partner_bme
+            widget: list
+            fields: 
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Sub-Title", name: "sub_title", widget: "text"}
+              - {label: "Text", name: "text", widget: "text"}
+              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
+              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
+              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
+              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
+              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
+              - {label: "Twitter Link", name: "twitter_link", widget: "text"}
+
+  - name: 'partner_kcsc'
+    label: 'Partner KCSC'
+    files:
+      - label: 'KCSC'
+        name: 'partner_kcsc'
+        file: '_data/partner_kcsc.yml'
+        fields:
+          - label: 'KCSC'
+            name: partner_kcsc
+            widget: list
+            fields: 
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Sub-Title", name: "sub_title", widget: "text"}
+              - {label: "Text", name: "text", widget: "text"}
+              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
+              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
+              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
+              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
+              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
+              - {label: "Twitter Link", name: "twitter_link", widget: "text"}
+
+  - name: 'partner_one_westmister'
+    label: 'Partner One Westmister'
+    files:
+      - label: 'One Westmister'
+        name: 'partner_one_westmister'
+        file: '_data/partner_one_westmister.yml'
+        fields:
+          - label: 'One Westmister'
+            name: partner_one_westmister
+            widget: list
+            fields: 
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Sub-Title", name: "sub_title", widget: "text"}
+              - {label: "Text", name: "text", widget: "text"}
+              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
+              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
+              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
+              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
+              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
+              - {label: "Twitter Link", name: "twitter_link", widget: "text"}
+
+  - name: 'partner_open_age'
+    label: 'Partner Open Age'
+    files:
+      - label: 'Open Age'
+        name: 'partner_open_age'
+        file: '_data/partner_open_age.yml'
+        fields:
+          - label: 'Open Age'
+            name: partner_open_age
+            widget: list
+            fields: 
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Sub-Title", name: "sub_title", widget: "text"}
+              - {label: "Text", name: "text", widget: "text"}
+              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
+              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
+              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
+              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
+              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
+              - {label: "Twitter Link", name: "twitter_link", widget: "text"}
+
+  - name: 'partner_smart'
+    label: 'Partner SMART'
+    files:
+      - label: 'SMART'
+        name: 'partner_smart'
+        file: '_data/partner_smart.yml'
+        fields:
+          - label: 'SMART'
+            name: partner_smart
+            widget: list
+            fields: 
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Sub-Title", name: "sub_title", widget: "text"}
+              - {label: "Text", name: "text", widget: "text"}
+              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
+              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
+              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
+              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
+              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
+              - {label: "Twitter Link", name: "twitter_link", widget: "text"}

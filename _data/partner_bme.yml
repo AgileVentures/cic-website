@@ -1,0 +1,15 @@
+partner_bme:
+  - display_facebook: false
+    twitter_link: https://www.twitter.com/bme
+    instagram_link: https://www.instagram.com/bme
+    text: The BME Health Forum is a unique and well-established partnership between
+      voluntary and community organisations, healthcare providers,
+      commissioners, and local authorities. It improves the quality of health
+      and social care services for patients from deprived backgrounds living
+      primarily in Kensington & Chelsea and Westminster, and aims to reduce
+      health inequalities affecting Black and Minority Ethnic Communities.
+    facebook_link: https://www.facebook.com/bme
+    display_instagram: false
+    display_twitter: false
+    title: BME Health Forum
+    sub_title: The Black and Minority Ethnic (BME) Health Forum

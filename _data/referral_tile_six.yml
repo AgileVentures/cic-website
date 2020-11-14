@@ -2,3 +2,6 @@ referral_tile_six:
   - title: "Referral to support services in North Kensington "
     text: A referral to services in the community to support people in North
       Kensington affected by the Grenfell Tower fire
+    display: true
+    title_is_a_link: false
+    link_title_to: '#'
