@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+	{% include header.html %}
+
+<body>
+	<div class="preloader">
+		<img src="assets/images/preloader.svg" alt="Pre-loader">
+	</div>
+
+	<!-- =======================
+	header Start-->
+	<header class="header-static navbar-sticky navbar-light">
+		<!-- Logo Nav Start -->
+			{% include logonav.html %}	
+		<!-- Logo Nav End -->
+	</header>
+	<!-- =======================
+	header End-->
+
+	<!-- =======================
+	About us -->
+	
+
+	<!-- =======================
+	Banner innerpage -->
+	<div class="innerpage-banner center bg-overlay-dark-4 py-7" style="background:url(assets/images/selfcare-poster.jpg) no-repeat; background-size:cover; background-position: center center;">
+		<div class="container">
+			<div class="row all-text-white">
+				<div class="col-md-12 align-self-center">
+					
+
+					{% for item in site.data.page-about-chwl.about_chwl %}
+						<h1 class="innerpage-title">{{ item.title }}</h1>
+						<h6 class="subtitle">
+						<p> {{ item.subtitle }}</p>
+					{% endfor %}
+					</h6>
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item active"><a href="{{ "/" | prepend:site.baseurl }}"><i class="ti-home"></i> Home</a></li>
+							<li class="breadcrumb-item">About Community Health West London</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =======================
+	Banner innerpage -->
+
+	<!-- =======================
+	blog -->
+	<section class="blog-page">
+		<div class="container">
+			<div class="row">
+				<!-- blog start -->
+				<div class="col-md-8 mx-auto">
+					<!-- Post item  with image-->
+					<div class="post-item">
+						<div class="post-item-wrap">
+							<div class="post-item-desc">
+								{% for item in site.data.page-about-chwl.about_chwl  %}
+									<p> {{ item.text | markdownify }}</p>
+								{% endfor %}
+							</div>
+						</div>
+					</div>
+					<!-- blog End -->
+				</div>
+			</div>
+		</div>
+		<!-- blog End -->
+	</section>
+	<!-- =======================
+	blog -->
+
+	{% include footer.html %}
+	
+<!-- =======================
+	action box -->
+</body>
+</html>

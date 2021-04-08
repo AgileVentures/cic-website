@@ -1,0 +1,6 @@
+about_communityhealthwestlondon:
+  - title: "Community Health West London"
+    text: "Community Health West London (CHWL) is a Community Interest Company (CIC), a consortium of six charities: Age UK Kensington & Chelsea, BME Health Forum, Kensington & Chelsea Social Council (KCSC), One Westminster, Open Age and SMART. KCSC is currently administering CHWL on behalf of the Consortium."
+    display: true
+    title_is_a_link: true
+    link_title_to: '/about-chwl'
