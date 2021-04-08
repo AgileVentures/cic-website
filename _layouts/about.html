@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+{% include header.html %}
+
+<body>
+	<div class="preloader">
+		<img src="assets/images/preloader.svg" alt="Pre-loader">
+	</div>
+
+	<!-- =======================
+	header Start-->
+	<header class="header-static navbar-sticky navbar-light">
+		<!-- Logo Nav Start -->
+		{% include logonav.html %}
+		<!-- Logo Nav End -->
+	</header>
+	<!-- =======================
+	header End-->
+
+	<!-- =======================
+	About us -->
+
+
+	<!-- =======================
+	Banner innerpage -->
+	<div class="innerpage-banner center bg-overlay-dark-4 py-7"
+		style="background:url(assets/images/selfcare-poster.jpg) no-repeat; background-size:cover; background-position: center center;">
+		<div class="container">
+			<div class="row all-text-white">
+				<div class="col-md-12 align-self-center">
+					<h1 class="innerpage-title">About Us</h1>
+					<h6 class="subtitle">
+
+						{% for professional in site.data.health_professionals.health_professionals %}
+						<p> {{ professional.sub_title }}</p>
+						{% endfor %}
+					</h6>
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item active"><a href="index.html"><i class="ti-home"></i> Home</a>
+							</li>
+							<li class="breadcrumb-item">About us</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =======================
+	Banner innerpage -->
+
+	<section class="pb-3">
+		<div class="container">
+			<div class="row">
+
+				<!-- column 1 -->
+				<div class="col-md-4">
+					<!-- title -->
+					{% for r in site.data.about-partners.about_partners %}
+					{% if r.display %}
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 350px;">
+						<span class="display-5 icon-dark"><i class="ti-ruler-pencil"></i></span>
+						<br />
+						{% if r.title_is_a_link %}
+						<a href="{{ r.link_title_to }}">{{ r.title }}</a>
+						{% else %}
+						<h5>{{ r.title }}</h5>
+						{% endif %}
+						<p class="mb-0">{{ r.text }}</p>
+					</div>
+					{% endif %}
+					{% endfor %}
+
+					{% for r in site.data.about-work-with-us.work_with_us %}
+					{% if r.display %}
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 350px;">
+						<span class="display-5 icon-dark"><i class="ti-ruler-pencil"></i></span>
+						<br />
+						{% if r.title_is_a_link %}
+						<a href="{{ r.link_title_to }}">{{ r.title }}</a>
+						{% else %}
+						<h5>{{ r.title }}</h5>
+						{% endif %}
+						<p class="mb-0">{{ r.text }}</p>
+					</div>
+					{% endif %}
+					{% endfor %}
+					<!-- service item -->
+				</div>
+
+				<!-- column 2 -->
+				<div class="col-md-4">
+					<!-- service item -->
+					{% for r in site.data.about-communityhealthwestlondon.about_communityhealthwestlondon %}
+					{% if r.display %}
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 350px;">
+						<span class="display-5 icon-dark"><i class="ti-pencil-alt"></i></span>
+						<br />
+						{% if r.title_is_a_link %}
+						<a href="{{ r.link_title_to }}">{{ r.title }}</a>
+						{% else %}
+						<h5>{{ r.title }}</h5>
+						{% endif %}
+						<p class="mb-0">{{ r.text }}</p>
+					</div>
+					{% endif %}
+					{% endfor %}
+					<!-- service item -->
+					{% for r in site.data.referral_tile_four.referral_tile_four %}
+					{% if r.display %}
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 350px;">
+						<span class="display-5 icon-dark"><i class="ti-pencil-alt"></i></span>
+						<br />
+						{% if r.title_is_a_link %}
+						<a href="{{ r.link_title_to }}">{{ r.title }}</a>
+						{% else %}
+						<h5>{{ r.title }}</h5>
+						{% endif %}
+						<p class="mb-0">{{ r.text }}</p>
+					</div>
+					{% endif %}
+					{% endfor %}
+					<!-- service item -->
+				</div>
+
+				<!-- column 3 -->
+				<div class="col-md-4">
+					<!-- service item -->
+					{% for r in site.data.about-casestudies.about_casestudies %}
+					{% if r.display %}
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 350px;">
+						<span class="display-5 icon-dark"><i class="ti-map"></i></span>
+						<br />
+						{% if r.title_is_a_link %}
+						<a href="{{ r.link_title_to }}">{{ r.title }}</a>
+						{% else %}
+						<h5>{{ r.title }}</h5>
+						{% endif %}
+						<p class="mb-0">{{ r.text }}</p>
+					</div>
+					{% endif %}
+					{% endfor %}
+					<!-- service item -->
+					<!-- service item -->
+					{% for r in site.data.referral_tile_six.referral_tile_six %}
+					{% if r.display %}
+					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 350px;">
+						<span class="display-5 icon-dark"><i class="ti-world"></i></span>
+						<br />
+						{% if r.title_is_a_link %}
+						<a href="{{ r.link_title_to }}">{{ r.title }}</a>
+						{% else %}
+						<h5>{{ r.title }}</h5>
+						{% endif %}
+						<p class="mb-0">{{ r.text }}</p>
+					</div>
+					{% endif %}
+					{% endfor %}
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- =======================
+	action box -->
+
+
+	{% include footer.html %}
+
+	<!-- =======================
+	action box -->
+</body>
+
+</html>
