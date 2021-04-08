@@ -4,8 +4,8 @@ referral_tile_four:
       interventions by linking people up to voluntary and community groups and
       other non-clinical services. Social prescribing is a way to help people
       make positive changes in their lives by giving them the knowledge, skills
-      and the confidence to do so. Click hear to watch a video about social
+      and the confidence to do so. Click here to watch a video about social
       prescribing.
     display: true
     title_is_a_link: true
-    link_title_to: "https://www.youtube.com/watch?v=HkBorjikoJk&feature=youtu.be"
+    link_title_to: https://www.youtube.com/watch?v=HkBorjikoJk&feature=youtu.be

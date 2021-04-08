@@ -1,10 +1,15 @@
 partner_kcsc:
-  - title: "Kensington and Chelsea Socical Council"
-    sub_title: "kcsc"
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
-    display_facebook: true
-    facebook_link: "https://www.facebook.com/kcsc"
-    display_instagram: true
-    instagram_link: "https://www.instagram.com/kcsc"
+  - display_facebook: false
+    twitter_link: https://www.twitter.com/KCSocialCouncil/
+    instagram_link: https://www.instagram.com/kcsc
+    text: "KCSC is the Royal Borough of Kensington and Chelsea’s recognised
+      voluntary sector ‘infrastructure’ organisation. It supports voluntary and
+      community organisations through the provision of training, advice and
+      information. KCSC also facilitates the voice of the local voluntary and
+      community sector and represents the sector at a strategic level. "
+    facebook_link: https://www.facebook.com/kcsc
+    display_instagram: false
     display_twitter: true
-    twitter_link: "https://www.twitter.com/kcsc"
+    title: Kensington and Chelsea Social Council
+    sub_title: Supporting voluntary and community organisations in the Royal Borough
+      of Kensington & Chelsea
