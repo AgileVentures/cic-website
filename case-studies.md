@@ -4,4 +4,3 @@ layout: "case-studies"
 ---
 
 Page for about
-
