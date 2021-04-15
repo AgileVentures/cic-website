@@ -687,13 +687,13 @@ collections:
 
 
   - name: 'page_case_studies'
-    label: 'Page About Social Prescribing'
+    label: 'Page Case Studies'
     files:
-      - label: 'Page About Social Prescribing'
+      - label: 'Page Case Studies'
         name: 'page_case_studies'
         file: '_data/page_case_studies.yml'
         fields:
-          - label: 'Page About Social Prescribing'
+          - label: 'Page Case Studies'
             name: page_case_studies
             widget: list
             fields: 
