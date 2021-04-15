@@ -566,4 +566,89 @@ collections:
               - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
               - {label: "Instagram Link", name: "instagram_link", widget: "text"}
               - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
-              - {label: "Twitter Link", name: "twitter_link", widget: "text"}
+              - {label: "Twitter Link", name: "twitter_link", widget: "text"} 
+
+  - name: 'about_casestudies'
+    label: 'Tile for About Case Studies'
+    files:
+      - label: "Tile for About Case Studies"
+        name: "about_casestudies"
+        file: "_data/about_casestudies.yml"
+        fields:
+          - label: "Tile for About Case Studies"
+            name: about_casestudies
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
+  
+  - name: 'about_communityhealthwestlondon'
+    label: 'Tile for About Community Health West London'
+    files:
+      - label: "About Community Health West London"
+        name: "about_communityhealthwestlondon"
+        file: "_data/about_communityhealthwestlondon.yml"
+        fields:
+          - label: "About Community Health West London"
+            name: about_communityhealthwestlondon
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
+  
+  - name: 'about_partners'
+    label: 'Tile for About Partners'
+    files:
+      - label: "About Partners"
+        name: "about_partners"
+        file: "_data/about_partners.yml"
+        fields:
+          - label: "About Partners"
+            name: about_partners
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string} 
+
+  - name: 'about_social_prescribing'
+    label: 'Tile for About Social Prescribing'
+    files:
+      - label: "About Social Prescribing"
+        name: "about_social_prescribing"
+        file: "_data/about_social_prescribing.yml"
+        fields:
+          - label: "About Social Prescribing"
+            name: about_social_prescribing
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string} 
+
+  - name: 'about_work_with_us'
+    label: 'Tile for About Work With Us'
+    files:
+      - label: "About Work With Us"
+        name: "about_work_with_us"
+        file: "_data/about_work_with_us.yml"
+        fields:
+          - label: "About Work With Us"
+            name: about_work_with_us
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string} 
