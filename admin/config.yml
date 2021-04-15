@@ -652,3 +652,51 @@ collections:
               - {label: Display, name: display, widget: boolean}
               - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
               - {label: 'Title links to', name: link_title_to, widget: string} 
+
+  
+  - name: 'page_about_chwl'
+    label: 'Page About Community Health West London'
+    files:
+      - label: 'Page About Community Health West London'
+        name: 'page_about_chwl'
+        file: '_data/page_about_chwl.yml'
+        fields:
+          - label: 'Page About Community Health West London'
+            name: page_about_chwl
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: "Sub-Title", name: "sub_title", widget: "text"}
+              - {label: Text, name: text, widget: string}
+
+
+  - name: 'page_about_social_prescribing'
+    label: 'Page About Social Prescribing'
+    files:
+      - label: 'Page About Social Prescribing'
+        name: 'page_about_social_prescribing'
+        file: '_data/page_about_social_prescribing.yml'
+        fields:
+          - label: 'Page About Social Prescribing'
+            name: page_about_social_prescribing
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: "Sub-Title", name: "sub_title", widget: "text"}
+              - {label: Text, name: text, widget: string}
+
+
+  - name: 'page_case_studies'
+    label: 'Page About Social Prescribing'
+    files:
+      - label: 'Page About Social Prescribing'
+        name: 'page_case_studies'
+        file: '_data/page_case_studies.yml'
+        fields:
+          - label: 'Page About Social Prescribing'
+            name: page_case_studies
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: "Sub-Title", name: "sub_title", widget: "text"}
+              - {label: Text, name: text, widget: string}
