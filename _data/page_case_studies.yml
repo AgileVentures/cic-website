@@ -2,3 +2,7 @@ case_studies:
   - text: Case studies.
     title: Title About Community Health West London.
     subtitle: This is a subtitle for case study page.
+page_case_studies:
+  - title: About social prescribing
+    sub_title: About social prescribing
+    text: About social prescribing
