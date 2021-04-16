@@ -183,15 +183,15 @@ collections:
               - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
               - {label: 'Title links to', name: link_title_to, widget: string}
 
-  - name: 'residents_tile_extra_0'
+  - name: 'tile_social_prescribing'
     label: 'Residents tile extra'
     files:
       - label: "Residents tile extra"
-        name: "residents_tile_extra_0"
-        file: "_data/residents_tile_extra_0.yml"
+        name: "tile_social_prescribing"
+        file: "_data/tile_social_prescribing.yml"
         fields:
           - label: "Residents tile extra"
-            name: residents_tile_extra_0
+            name: tile_social_prescribing
             widget: list
             fields: 
               - {label: Title, name: title, widget: string}
@@ -695,6 +695,21 @@ collections:
         fields:
           - label: 'Page Case Studies'
             name: page_case_studies
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: "Sub-Title", name: "sub_title", widget: "text"}
+              - {label: Text, name: text, widget: string}
+
+  - name: 'page_work_with_us'
+    label: 'Page work with us'
+    files:
+      - label: 'Page work with us'
+        name: 'page_work_with_us'
+        file: '_data/page_work_with_us.yml'
+        fields:
+          - label: 'Page work with us'
+            name: page_work_with_us
             widget: list
             fields: 
               - {label: Title, name: title, widget: string}
