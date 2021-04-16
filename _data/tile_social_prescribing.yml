@@ -1,4 +1,4 @@
-residents_tile_extra_0:
+tile_social_prescribing:
   - title: What is Social Prescribing?
     text: Social prescribing works alongside and supports traditional medical
       interventions by linking people up to voluntary and community groups and
@@ -6,5 +6,5 @@ residents_tile_extra_0:
       make positive changes in their lives by giving them the knowledge, skills
       and the confidence to do so.
     display: true
-    title_is_a_link: false
-    link_title_to: '#'
+    title_is_a_link: true
+    link_title_to: '/social-prescribing'

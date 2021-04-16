@@ -70,21 +70,7 @@
 					</div>
 					{% endif %}
 					{% endfor %}
-
-					{% for r in site.data.about_work_with_us.work_with_us %}
-					{% if r.display %}
-					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 350px;">
-						<span class="display-5 icon-dark"><i class="ti-ruler-pencil"></i></span>
-						<br />
-						{% if r.title_is_a_link %}
-						<a href="{{ r.link_title_to }}">{{ r.title }}</a>
-						{% else %}
-						<h5>{{ r.title }}</h5>
-						{% endif %}
-						<p class="mb-0">{{ r.text }}</p>
-					</div>
-					{% endif %}
-					{% endfor %}
+					
 					<!-- service item -->
 				</div>
 
@@ -126,21 +112,6 @@
 					{% endif %}
 					{% endfor %}
 					<!-- service item -->
-					<!-- service item -->
-					{% for r in site.data.about_social_prescribing.social_prescribing %}
-					{% if r.display %}
-					<div class="bg-light p-4 p-lg-5 mb-5 grey-tile" style="min-height: 350px;">
-						<span class="display-5 icon-dark"><i class="ti-world"></i></span>
-						<br />
-						{% if r.title_is_a_link %}
-						<a href="{{ r.link_title_to }}">{{ r.title }}</a>
-						{% else %}
-						<h5>{{ r.title }}</h5>
-						{% endif %}
-						<p class="mb-0">{{ r.text }}</p>
-					</div>
-					{% endif %}
-					{% endfor %}
 
 				</div>
 			</div>
