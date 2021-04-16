@@ -1,4 +1,4 @@
-social_prescribing:
-  - text: About social prescribing.
-    title: Title About Social Prescribing.
-    subtitle: This is a subtitle for news article one.
+page_about_social_prescribing:
+  - title: About social prescribing
+    sub_title: About social prescribing
+    text: About social prescribing
