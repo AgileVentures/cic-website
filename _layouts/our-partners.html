@@ -3,9 +3,9 @@
 {% include header.html %}
 
 <body>
-	<div class="preloader">
+	<!-- <div class="preloader">
 		<img src="assets/images/preloader.svg" alt="Pre-loader">
-	</div>
+	</div> -->
 
 	<!-- =======================
 	header Start-->
@@ -49,7 +49,12 @@
 			<div class="row all-text-white">
 				<div class="col-md-12 align-self-center">
 					<h1 class="innerpage-title">Our Partners</h1>
-					<h6 class="subtitle">Some text about the our partners here</h6>
+					<h6 class="subtitle">
+
+						{% for p in site.data.partners.partners %}
+						<p> {{ p.sub_title }}</p>
+						{% endfor %}
+					</h6>
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
 							<li class="breadcrumb-item active"><a href="index.html"><i class="ti-home"></i> Home</a>

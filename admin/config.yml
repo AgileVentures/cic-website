@@ -16,7 +16,6 @@ collections:
             name: about
             widget: list
             fields: 
-              - {label: About, name: about, widget: markdown}
               - {label: title, name: title, widget: string}
               - {label: Sub-title, name: sub_title, widget: string}
 
@@ -308,7 +307,7 @@ collections:
             name: partners
             widget: list
             fields: 
-              - {label: Partners, name: text, widget: markdown}
+              - {label: "Sub title", name: sub_title, widget: markdown}
   
   - name: 'extra_page'
     label: 'Extra Page'
