@@ -41,28 +41,13 @@
 				</div>
 				<!-- Footer widget 3 -->
 				<div class="col-md-2 col-sm-6">
-					<div class="widget">
-						<h6>Quick Links</h6>
-						<ul class="nav flex-column primary-hover">
-							<li class="nav-item"><a class="nav-link" href="/work-with-us">Work with us</a></li>
-							<li class="nav-item"><a class="nav-link" href="/health-professionals">Health
-									Professionals</a></li>
-							<li class="nav-item"><a class="nav-link" href="/residents">Residents</a></li>
-							<li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
-							<li class="nav-item"><a class="nav-link" href="{{'/' | prepend:site.baseurl }}">Home</a>
-							</li>
-						</ul>
-					</div>
+					
 				</div>
 				<!-- Footer widget 4 -->
 				<div class="col-md-3">
 					<div class="widget bg-grad p-4 border-radius-3">
 						<i class="ti-email newsletter-icon"></i>
 						<div class="form-group mb-0">
-							{% for subs in site.data.subscribe.subscribe %}
-							<p class="mb-2">{{ subs.text }}</p>
-							{% endfor %}
-							<input class="form-control border-white mb-3" type="email" placeholder="Enter email...">
 							<button class="btn btn-dark mb-0">Join us</button>
 						</div>
 					</div>
