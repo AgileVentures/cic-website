@@ -408,6 +408,146 @@ collections:
               - {label: "Text", name: "text", widget: "markdown"}
               - {label: "Subtitle", name: "subtitle", widget: "text"}
 
+  - name: 'partners'
+    label: 'Page: Our Partners'
+    files:
+      - label: 'Our Partners'
+        name: 'partners'
+        file: '_data/partners.yml'
+        fields:
+          - label: 'Our partners'
+            name: partners
+            widget: list
+            fields: 
+              - {label: "Sub title", name: sub_title, widget: markdown}
+  
+  - name: 'partner_age_uk'
+    label: 'Tile: Our Partners Page: Age UK'
+    files:
+      - label: 'Age UK'
+        name: 'partner_age_uk'
+        file: '_data/partner_age_uk.yml'
+        fields:
+          - label: 'Age UK'
+            name: partner_age_uk
+            widget: list
+            fields: 
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Sub-Title", name: "sub_title", widget: "text"}
+              - {label: "Text", name: "text", widget: "text"}
+              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
+              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
+              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
+              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
+              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
+              - {label: "Twitter Link", name: "twitter_link", widget: "text"}
+
+  - name: 'partner_bme'
+    label: 'Tile: Our Partners Page: BME'
+    files:
+      - label: 'BME'
+        name: 'partner_bme'
+        file: '_data/partner_bme.yml'
+        fields:
+          - label: 'BME'
+            name: partner_bme
+            widget: list
+            fields: 
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Sub-Title", name: "sub_title", widget: "text"}
+              - {label: "Text", name: "text", widget: "text"}
+              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
+              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
+              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
+              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
+              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
+              - {label: "Twitter Link", name: "twitter_link", widget: "text"}
+
+  - name: 'partner_kcsc'
+    label: 'Tile: Our Partners Page: Partner KCSC'
+    files:
+      - label: 'KCSC'
+        name: 'partner_kcsc'
+        file: '_data/partner_kcsc.yml'
+        fields:
+          - label: 'KCSC'
+            name: partner_kcsc
+            widget: list
+            fields: 
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Sub-Title", name: "sub_title", widget: "text"}
+              - {label: "Text", name: "text", widget: "text"}
+              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
+              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
+              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
+              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
+              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
+              - {label: "Twitter Link", name: "twitter_link", widget: "text"}
+
+  - name: 'partner_one_westmister'
+    label: 'Tile: Our Partners Page: One Westmister'
+    files:
+      - label: 'One Westmister'
+        name: 'partner_one_westmister'
+        file: '_data/partner_one_westmister.yml'
+        fields:
+          - label: 'One Westmister'
+            name: partner_one_westmister
+            widget: list
+            fields: 
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Sub-Title", name: "sub_title", widget: "text"}
+              - {label: "Text", name: "text", widget: "text"}
+              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
+              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
+              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
+              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
+              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
+              - {label: "Twitter Link", name: "twitter_link", widget: "text"}
+
+  - name: 'partner_open_age'
+    label: 'Tile: Our Partners Page: Open Age'
+    files:
+      - label: 'Open Age'
+        name: 'partner_open_age'
+        file: '_data/partner_open_age.yml'
+        fields:
+          - label: 'Open Age'
+            name: partner_open_age
+            widget: list
+            fields: 
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Sub-Title", name: "sub_title", widget: "text"}
+              - {label: "Text", name: "text", widget: "text"}
+              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
+              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
+              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
+              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
+              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
+              - {label: "Twitter Link", name: "twitter_link", widget: "text"}
+
+  - name: 'partner_smart'
+    label: 'Tile: Our Partners Page: SMART'
+    files:
+      - label: 'SMART'
+        name: 'partner_smart'
+        file: '_data/partner_smart.yml'
+        fields:
+          - label: 'SMART'
+            name: partner_smart
+            widget: list
+            fields: 
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Sub-Title", name: "sub_title", widget: "text"}
+              - {label: "Text", name: "text", widget: "text"}
+              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
+              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
+              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
+              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
+              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
+              - {label: "Twitter Link", name: "twitter_link", widget: "text"} 
+
+  
   - name: 'subscribe'
     label: 'Subscribe'
     files:
@@ -437,21 +577,8 @@ collections:
               - {label: Email, name: email, widget: string}
               - {label: About-Summary, name: about, widget: string}
 
-  - name: 'partners'
-    label: 'Our Partners'
-    files:
-      - label: 'Our Partners'
-        name: 'partners'
-        file: '_data/partners.yml'
-        fields:
-          - label: 'Our partners'
-            name: partners
-            widget: list
-            fields: 
-              - {label: "Sub title", name: sub_title, widget: markdown}
-  
   - name: 'extra_page'
-    label: 'Extra Page'
+    label: 'Page: Extra Page Settings'
     files:
       - label: 'Extra Page'
         name: 'extra_page'
@@ -465,7 +592,7 @@ collections:
               - {label: "Title", name: "title", widget: "string"}
 
   - name: 'extra_page_content'
-    label: 'Extra Page'
+    label: 'Page: Extra Page'
     files:
       - label: 'Extra Page'
         name: 'extra_page'
@@ -480,7 +607,7 @@ collections:
 
 
   - name: 'kcsc_directory_page'
-    label: 'KCSC Directory Page content'
+    label: 'Page: KCSC Directory Page content'
     files:
       - label: 'KCSC Directory Page content'
         name: 'kcsc_directory_page'
@@ -493,136 +620,9 @@ collections:
               - {label: "Helper Text", name: "helper_text", widget: "text"}
 
 
-  - name: 'partner_age_uk'
-    label: 'Partner Age UK'
-    files:
-      - label: 'Age UK'
-        name: 'partner_age_uk'
-        file: '_data/partner_age_uk.yml'
-        fields:
-          - label: 'Age UK'
-            name: partner_age_uk
-            widget: list
-            fields: 
-              - {label: "Title", name: "title", widget: "text"}
-              - {label: "Sub-Title", name: "sub_title", widget: "text"}
-              - {label: "Text", name: "text", widget: "text"}
-              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
-              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
-              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
-              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
-              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
-              - {label: "Twitter Link", name: "twitter_link", widget: "text"}
-
-  - name: 'partner_bme'
-    label: 'Partner BME'
-    files:
-      - label: 'BME'
-        name: 'partner_bme'
-        file: '_data/partner_bme.yml'
-        fields:
-          - label: 'BME'
-            name: partner_bme
-            widget: list
-            fields: 
-              - {label: "Title", name: "title", widget: "text"}
-              - {label: "Sub-Title", name: "sub_title", widget: "text"}
-              - {label: "Text", name: "text", widget: "text"}
-              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
-              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
-              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
-              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
-              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
-              - {label: "Twitter Link", name: "twitter_link", widget: "text"}
-
-  - name: 'partner_kcsc'
-    label: 'Partner KCSC'
-    files:
-      - label: 'KCSC'
-        name: 'partner_kcsc'
-        file: '_data/partner_kcsc.yml'
-        fields:
-          - label: 'KCSC'
-            name: partner_kcsc
-            widget: list
-            fields: 
-              - {label: "Title", name: "title", widget: "text"}
-              - {label: "Sub-Title", name: "sub_title", widget: "text"}
-              - {label: "Text", name: "text", widget: "text"}
-              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
-              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
-              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
-              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
-              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
-              - {label: "Twitter Link", name: "twitter_link", widget: "text"}
-
-  - name: 'partner_one_westmister'
-    label: 'Partner One Westmister'
-    files:
-      - label: 'One Westmister'
-        name: 'partner_one_westmister'
-        file: '_data/partner_one_westmister.yml'
-        fields:
-          - label: 'One Westmister'
-            name: partner_one_westmister
-            widget: list
-            fields: 
-              - {label: "Title", name: "title", widget: "text"}
-              - {label: "Sub-Title", name: "sub_title", widget: "text"}
-              - {label: "Text", name: "text", widget: "text"}
-              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
-              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
-              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
-              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
-              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
-              - {label: "Twitter Link", name: "twitter_link", widget: "text"}
-
-  - name: 'partner_open_age'
-    label: 'Partner Open Age'
-    files:
-      - label: 'Open Age'
-        name: 'partner_open_age'
-        file: '_data/partner_open_age.yml'
-        fields:
-          - label: 'Open Age'
-            name: partner_open_age
-            widget: list
-            fields: 
-              - {label: "Title", name: "title", widget: "text"}
-              - {label: "Sub-Title", name: "sub_title", widget: "text"}
-              - {label: "Text", name: "text", widget: "text"}
-              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
-              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
-              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
-              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
-              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
-              - {label: "Twitter Link", name: "twitter_link", widget: "text"}
-
-  - name: 'partner_smart'
-    label: 'Partner SMART'
-    files:
-      - label: 'SMART'
-        name: 'partner_smart'
-        file: '_data/partner_smart.yml'
-        fields:
-          - label: 'SMART'
-            name: partner_smart
-            widget: list
-            fields: 
-              - {label: "Title", name: "title", widget: "text"}
-              - {label: "Sub-Title", name: "sub_title", widget: "text"}
-              - {label: "Text", name: "text", widget: "text"}
-              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
-              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
-              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
-              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
-              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
-              - {label: "Twitter Link", name: "twitter_link", widget: "text"} 
-
-  
 
   - name: 'page_about_chwl'
-    label: 'Page About Community Health West London'
+    label: 'Page: About Community Health West London'
     files:
       - label: 'Page About Community Health West London'
         name: 'page_about_chwl'
@@ -639,7 +639,7 @@ collections:
 
 
   - name: 'page_case_studies'
-    label: 'Page Case Studies'
+    label: 'Page: Case Studies'
     files:
       - label: 'Page Case Studies'
         name: 'page_case_studies'
@@ -654,7 +654,7 @@ collections:
               - {label: Text, name: text, widget: string}
 
   - name: 'page_work_with_us'
-    label: 'Page work with us'
+    label: 'Page: Work with us'
     files:
       - label: 'Page work with us'
         name: 'page_work_with_us'
