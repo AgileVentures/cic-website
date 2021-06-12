@@ -6,7 +6,7 @@ backend:
 media_folder: 'assets'
 collections:
   - name: 'about'
-    label: 'About'
+    label: 'Page About Us'
     files:
       - label: "About us"
         name: "about"
