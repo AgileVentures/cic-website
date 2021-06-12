@@ -5,6 +5,21 @@ backend:
   branch: develop # Branch to update (optional; defaults to master)
 media_folder: 'assets'
 collections:
+  - name: 'home_page'
+    label: 'Page: Home Page'
+    files:
+      - label: "Home Page"
+        name: "home_page"
+        file: "_data/home_page.yml"
+        fields:
+          - label: "Home Page"
+            name: home_page
+            widget: list
+            fields: 
+              - {label: Sub-title, name: welcome_sub_title, widget: string}
+              - {label: Title, name: welcome_title, widget: string}
+              - {label: 'Organization Goal', name: organization_goal, widget: string}
+
   - name: 'about'
     label: 'Page About Us'
     files:
@@ -302,21 +317,6 @@ collections:
               - {label: Display, name: display, widget: boolean}
               - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
               - {label: 'Title links to', name: link_title_to, widget: string}
-
-  - name: 'home_page'
-    label: 'Home Page'
-    files:
-      - label: "Home Page"
-        name: "home_page"
-        file: "_data/home_page.yml"
-        fields:
-          - label: "Home Page"
-            name: home_page
-            widget: list
-            fields: 
-              - {label: Sub-title, name: welcome_sub_title, widget: string}
-              - {label: Title, name: welcome_title, widget: string}
-              - {label: 'Organization Goal', name: organization_goal, widget: string}
 
 
   - name: 'subscribe'
