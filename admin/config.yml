@@ -20,7 +20,7 @@ collections:
               - {label: Sub-title, name: sub_title, widget: string}
 
   - name: 'about_casestudies'
-    label: 'Tile for About Case Studies'
+    label: 'Tile: About Us: Case Studies'
     files:
       - label: "Tile for About Case Studies"
         name: "about_casestudies"
@@ -37,7 +37,7 @@ collections:
               - {label: 'Title links to', name: link_title_to, widget: string}
   
   - name: 'about_communityhealthwestlondon'
-    label: 'Tile for About Community Health West London'
+    label: 'Tile: About Us: About Community Health West London'
     files:
       - label: "About Community Health West London"
         name: "about_communityhealthwestlondon"
@@ -53,20 +53,22 @@ collections:
               - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
               - {label: 'Title links to', name: link_title_to, widget: string}
               
-  - name: 'page_about_social_prescribing'
-    label: 'Page About Social Prescribing'
+  - name: 'about_partners'
+    label: 'Tile: About Us: About Partners'
     files:
-      - label: 'Page About Social Prescribing'
-        name: 'page_about_social_prescribing'
-        file: '_data/page_about_social_prescribing.yml'
+      - label: "About Partners"
+        name: "about_partners"
+        file: "_data/about_partners.yml"
         fields:
-          - label: 'Page About Social Prescribing'
-            name: page_about_social_prescribing
+          - label: "About Partners"
+            name: about_partners
             widget: list
             fields: 
               - {label: Title, name: title, widget: string}
-              - {label: "Sub-Title", name: "sub_title", widget: "text"}
               - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string} 
 
   - name: 'residents'
     label: 'Residents'
@@ -617,22 +619,6 @@ collections:
               - {label: "Twitter Link", name: "twitter_link", widget: "text"} 
 
   
-  - name: 'about_partners'
-    label: 'Tile for About Partners'
-    files:
-      - label: "About Partners"
-        name: "about_partners"
-        file: "_data/about_partners.yml"
-        fields:
-          - label: "About Partners"
-            name: about_partners
-            widget: list
-            fields: 
-              - {label: Title, name: title, widget: string}
-              - {label: Text, name: text, widget: string}
-              - {label: Display, name: display, widget: boolean}
-              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
-              - {label: 'Title links to', name: link_title_to, widget: string} 
 
   - name: 'page_about_chwl'
     label: 'Page About Community Health West London'
@@ -680,3 +666,18 @@ collections:
               - {label: Title, name: title, widget: string}
               - {label: "Sub-Title", name: "sub_title", widget: "text"}
               - {label: Text, name: text, widget: markdown}
+
+  - name: 'page_about_social_prescribing'
+    label: 'Page About Social Prescribing'
+    files:
+      - label: 'Page About Social Prescribing'
+        name: 'page_about_social_prescribing'
+        file: '_data/page_about_social_prescribing.yml'
+        fields:
+          - label: 'Page About Social Prescribing'
+            name: page_about_social_prescribing
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: "Sub-Title", name: "sub_title", widget: "text"}
+              - {label: Text, name: text, widget: string}
