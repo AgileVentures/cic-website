@@ -71,7 +71,7 @@ collections:
               - {label: 'Title links to', name: link_title_to, widget: string} 
 
   - name: 'residents'
-    label: 'Residents'
+    label: 'Page: Residents'
     files:
       - label: "Residents"
         name: "resident"
@@ -85,6 +85,108 @@ collections:
               - {label: title, name: title, widget: string}
               - {label: Sub-title, name: sub_title, widget: string}
   
+  - name: 'kcsc_directory'
+    label: 'Tile: Residents Page: KCSC Directory'
+    files:
+      - label: "KCSC Directory"
+        name: "kcsc_directory"
+        file: "_data/kcsc_directory.yml"
+        fields:
+          - label: "KCSC Directory"
+            name: kcsc_directory
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
+
+  - name: 'tile_social_prescribing'
+    label: 'Tile: Residents Page: Tile 0'
+    files:
+      - label: "Residents tile extra"
+        name: "tile_social_prescribing"
+        file: "_data/tile_social_prescribing.yml"
+        fields:
+          - label: "Residents tile extra"
+            name: tile_social_prescribing
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
+
+  - name: 'residents_tile_extra_1'
+    label: 'Tile: Residents Page: Tile 1'
+    files:
+      - label: "Residents tile extra 1"
+        name: "residents_tile_extra_1"
+        file: "_data/residents_tile_extra_1.yml"
+        fields:
+          - label: "KCSC Directory"
+            name: residents_tile_extra_1
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
+
+  - name: 'residents_tile_extra_2'
+    label: 'Tile: Residents Page: Tile 2'
+    files:
+      - label: "Residents tile extra 2"
+        name: "residents_tile_extra_2"
+        file: "_data/residents_tile_extra_2.yml"
+        fields:
+          - label: "Extra Tile 2"
+            name: residents_tile_extra_2
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
+
+  - name: 'residents_tile_extra_3'
+    label: 'Tile: Residents Page: Tile 3'
+    files:
+      - label: "Residents tile extra 3"
+        name: "residents_tile_extra_3"
+        file: "_data/residents_tile_extra_3.yml"
+        fields:
+          - label: "Extra tile 3"
+            name: residents_tile_extra_3
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
+
+  - name: 'residents_tile_extra_4'
+    label: 'Tile: Residents Page: Tile 4'
+    files:
+      - label: "Residents tile extra 4"
+        name: "residents_tile_extra_4"
+        file: "_data/residents_tile_extra_4.yml"
+        fields:
+          - label: "Extra tile 4"
+            name: residents_tile_extra_4
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
+
   - name: 'health_professionals'
     label: 'Health Professionals'
     files:
@@ -208,108 +310,6 @@ collections:
         fields:
           - label: "Referral to Nth Ken"
             name: referral_tile_six
-            widget: list
-            fields: 
-              - {label: Title, name: title, widget: string}
-              - {label: Text, name: text, widget: string}
-              - {label: Display, name: display, widget: boolean}
-              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
-              - {label: 'Title links to', name: link_title_to, widget: string}
-
-  - name: 'kcsc_directory'
-    label: 'KCSC Directory'
-    files:
-      - label: "KCSC Directory"
-        name: "kcsc_directory"
-        file: "_data/kcsc_directory.yml"
-        fields:
-          - label: "KCSC Directory"
-            name: kcsc_directory
-            widget: list
-            fields: 
-              - {label: Title, name: title, widget: string}
-              - {label: Text, name: text, widget: string}
-              - {label: Display, name: display, widget: boolean}
-              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
-              - {label: 'Title links to', name: link_title_to, widget: string}
-
-  - name: 'tile_social_prescribing'
-    label: 'Residents tile extra'
-    files:
-      - label: "Residents tile extra"
-        name: "tile_social_prescribing"
-        file: "_data/tile_social_prescribing.yml"
-        fields:
-          - label: "Residents tile extra"
-            name: tile_social_prescribing
-            widget: list
-            fields: 
-              - {label: Title, name: title, widget: string}
-              - {label: Text, name: text, widget: string}
-              - {label: Display, name: display, widget: boolean}
-              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
-              - {label: 'Title links to', name: link_title_to, widget: string}
-
-  - name: 'residents_tile_extra_1'
-    label: 'Residents tile extra 1'
-    files:
-      - label: "Residents tile extra 1"
-        name: "residents_tile_extra_1"
-        file: "_data/residents_tile_extra_1.yml"
-        fields:
-          - label: "KCSC Directory"
-            name: residents_tile_extra_1
-            widget: list
-            fields: 
-              - {label: Title, name: title, widget: string}
-              - {label: Text, name: text, widget: string}
-              - {label: Display, name: display, widget: boolean}
-              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
-              - {label: 'Title links to', name: link_title_to, widget: string}
-
-  - name: 'residents_tile_extra_2'
-    label: 'Residents tile extra 2'
-    files:
-      - label: "Residents tile extra 2"
-        name: "residents_tile_extra_2"
-        file: "_data/residents_tile_extra_2.yml"
-        fields:
-          - label: "Extra Tile 2"
-            name: residents_tile_extra_2
-            widget: list
-            fields: 
-              - {label: Title, name: title, widget: string}
-              - {label: Text, name: text, widget: string}
-              - {label: Display, name: display, widget: boolean}
-              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
-              - {label: 'Title links to', name: link_title_to, widget: string}
-
-  - name: 'residents_tile_extra_3'
-    label: 'Residents tile extra 3'
-    files:
-      - label: "Residents tile extra 3"
-        name: "residents_tile_extra_3"
-        file: "_data/residents_tile_extra_3.yml"
-        fields:
-          - label: "Extra tile 3"
-            name: residents_tile_extra_3
-            widget: list
-            fields: 
-              - {label: Title, name: title, widget: string}
-              - {label: Text, name: text, widget: string}
-              - {label: Display, name: display, widget: boolean}
-              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
-              - {label: 'Title links to', name: link_title_to, widget: string}
-
-  - name: 'residents_tile_extra_4'
-    label: 'Residents tile extra 4'
-    files:
-      - label: "Residents tile extra 4"
-        name: "residents_tile_extra_4"
-        file: "_data/residents_tile_extra_4.yml"
-        fields:
-          - label: "Extra tile 4"
-            name: residents_tile_extra_4
             widget: list
             fields: 
               - {label: Title, name: title, widget: string}
@@ -666,18 +666,3 @@ collections:
               - {label: Title, name: title, widget: string}
               - {label: "Sub-Title", name: "sub_title", widget: "text"}
               - {label: Text, name: text, widget: markdown}
-
-  - name: 'page_about_social_prescribing'
-    label: 'Page About Social Prescribing'
-    files:
-      - label: 'Page About Social Prescribing'
-        name: 'page_about_social_prescribing'
-        file: '_data/page_about_social_prescribing.yml'
-        fields:
-          - label: 'Page About Social Prescribing'
-            name: page_about_social_prescribing
-            widget: list
-            fields: 
-              - {label: Title, name: title, widget: string}
-              - {label: "Sub-Title", name: "sub_title", widget: "text"}
-              - {label: Text, name: text, widget: string}
