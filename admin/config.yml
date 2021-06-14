@@ -5,51 +5,8 @@ backend:
   branch: develop # Branch to update (optional; defaults to master)
 media_folder: 'assets'
 collections:
-  - name: 'about'
-    label: 'About'
-    files:
-      - label: "About us"
-        name: "about"
-        file: "_data/about.yml"
-        fields:
-          - label: About
-            name: about
-            widget: list
-            fields: 
-              - {label: title, name: title, widget: string}
-              - {label: Sub-title, name: sub_title, widget: string}
-
-  - name: 'residents'
-    label: 'Residents'
-    files:
-      - label: "Residents"
-        name: "resident"
-        file: "_data/residents.yml"
-        fields:
-          - label: Residents
-            name: residents
-            widget: list
-            fields: 
-              - {label: Residents, name: resident, widget: markdown}
-              - {label: title, name: title, widget: string}
-              - {label: Sub-title, name: sub_title, widget: string}
-  
-  - name: 'health_professionals'
-    label: 'Health Professionals'
-    files:
-      - label: "Health Professionals"
-        name: "health_professionals"
-        file: "_data/health_professionals.yml"
-        fields:
-          - label: "Health Professionals"
-            name: health_professionals
-            widget: list
-            fields: 
-              - {label: Sub-title, name: sub_title, widget: string}
-              - {label: Description, name: description, widget: markdown}
-
   - name: 'home_page'
-    label: 'Home Page'
+    label: 'Page: Home Page'
     files:
       - label: "Home Page"
         name: "home_page"
@@ -63,15 +20,29 @@ collections:
               - {label: Title, name: welcome_title, widget: string}
               - {label: 'Organization Goal', name: organization_goal, widget: string}
 
-  - name: 'referral_tile_one'
-    label: 'Referral to link Workers'
+  - name: 'about'
+    label: 'Page About Us'
     files:
-      - label: "Referral to link Workers"
-        name: "referral_tile_one"
-        file: "_data/referral_tile_one.yml"
+      - label: "About us"
+        name: "about"
+        file: "_data/about.yml"
         fields:
-          - label: "Referral to link Workers"
-            name: referral_tile_one
+          - label: About
+            name: about
+            widget: list
+            fields: 
+              - {label: title, name: title, widget: string}
+              - {label: Sub-title, name: sub_title, widget: string}
+
+  - name: 'about_casestudies'
+    label: 'Tile: About Us: Case Studies'
+    files:
+      - label: "Tile for About Case Studies"
+        name: "about_casestudies"
+        file: "_data/about_casestudies.yml"
+        fields:
+          - label: "Tile for About Case Studies"
+            name: about_casestudies
             widget: list
             fields: 
               - {label: Title, name: title, widget: string}
@@ -79,16 +50,16 @@ collections:
               - {label: Display, name: display, widget: boolean}
               - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
               - {label: 'Title links to', name: link_title_to, widget: string}
-
-  - name: 'referral_tile_four'
-    label: 'Referral Four'
+  
+  - name: 'about_communityhealthwestlondon'
+    label: 'Tile: About Us: About Community Health West London'
     files:
-      - label: "Referral Four"
-        name: "referral_tile_four"
-        file: "_data/referral_tile_four.yml"
+      - label: "About Community Health West London"
+        name: "about_communityhealthwestlondon"
+        file: "_data/about_communityhealthwestlondon.yml"
         fields:
-          - label: "Referral Four"
-            name: referral_tile_four
+          - label: "About Community Health West London"
+            name: about_communityhealthwestlondon
             widget: list
             fields: 
               - {label: Title, name: title, widget: string}
@@ -96,77 +67,41 @@ collections:
               - {label: Display, name: display, widget: boolean}
               - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
               - {label: 'Title links to', name: link_title_to, widget: string}
-
-  - name: 'referral_tile_three'
-    label: 'Referral for Long term conditions'
+              
+  - name: 'about_partners'
+    label: 'Tile: About Us: About Partners'
     files:
-      - label: "Referral for Long term conditions"
-        name: "referral_tile_three"
-        file: "_data/referral_tile_three.yml"
+      - label: "About Partners"
+        name: "about_partners"
+        file: "_data/about_partners.yml"
         fields:
-          - label: "Referral for Long term conditions"
-            name: referral_tile_three
+          - label: "About Partners"
+            name: about_partners
             widget: list
             fields: 
               - {label: Title, name: title, widget: string}
               - {label: Text, name: text, widget: string}
               - {label: Display, name: display, widget: boolean}
               - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
-              - {label: 'Title links to', name: link_title_to, widget: string}
+              - {label: 'Title links to', name: link_title_to, widget: string} 
 
-  - name: 'referral_tile_two'
-    label: 'Referral for mental health'
+  - name: 'residents'
+    label: 'Page: Residents'
     files:
-      - label: "Referral for mental health"
-        name: "referral_tile_two"
-        file: "_data/referral_tile_two.yml"
+      - label: "Residents"
+        name: "resident"
+        file: "_data/residents.yml"
         fields:
-          - label: "Referral for mental health"
-            name: referral_tile_two
+          - label: Residents
+            name: residents
             widget: list
             fields: 
-              - {label: Title, name: title, widget: string}
-              - {label: Text, name: text, widget: string}
-              - {label: Display, name: display, widget: boolean}
-              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
-              - {label: 'Title links to', name: link_title_to, widget: string}
-
-  - name: 'referral_tile_five'
-    label: 'Self care services'
-    files:
-      - label: "Self care services"
-        name: "referral_tile_five"
-        file: "_data/referral_tile_five.yml"
-        fields:
-          - label: "Self care services"
-            name: referral_tile_five
-            widget: list
-            fields: 
-              - {label: Title, name: title, widget: string}
-              - {label: Text, name: text, widget: string}
-              - {label: Display, name: display, widget: boolean}
-              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
-              - {label: 'Title links to', name: link_title_to, widget: string}
-
-  - name: 'referral_tile_six'
-    label: 'Referral to Nth Ken'
-    files:
-      - label: "Referral to Nth Ken"
-        name: "referral_tile_six"
-        file: "_data/referral_tile_six.yml"
-        fields:
-          - label: "Referral to Nth Ken"
-            name: referral_tile_six
-            widget: list
-            fields: 
-              - {label: Title, name: title, widget: string}
-              - {label: Text, name: text, widget: string}
-              - {label: Display, name: display, widget: boolean}
-              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
-              - {label: 'Title links to', name: link_title_to, widget: string}
-
+              - {label: Residents, name: resident, widget: markdown}
+              - {label: title, name: title, widget: string}
+              - {label: Sub-title, name: sub_title, widget: string}
+  
   - name: 'kcsc_directory'
-    label: 'KCSC Directory'
+    label: 'Tile: Residents Page: KCSC Directory'
     files:
       - label: "KCSC Directory"
         name: "kcsc_directory"
@@ -183,7 +118,7 @@ collections:
               - {label: 'Title links to', name: link_title_to, widget: string}
 
   - name: 'tile_social_prescribing'
-    label: 'Residents tile extra'
+    label: 'Tile: Residents Page: Tile 0'
     files:
       - label: "Residents tile extra"
         name: "tile_social_prescribing"
@@ -200,7 +135,7 @@ collections:
               - {label: 'Title links to', name: link_title_to, widget: string}
 
   - name: 'residents_tile_extra_1'
-    label: 'Residents tile extra 1'
+    label: 'Tile: Residents Page: Tile 1'
     files:
       - label: "Residents tile extra 1"
         name: "residents_tile_extra_1"
@@ -217,7 +152,7 @@ collections:
               - {label: 'Title links to', name: link_title_to, widget: string}
 
   - name: 'residents_tile_extra_2'
-    label: 'Residents tile extra 2'
+    label: 'Tile: Residents Page: Tile 2'
     files:
       - label: "Residents tile extra 2"
         name: "residents_tile_extra_2"
@@ -234,7 +169,7 @@ collections:
               - {label: 'Title links to', name: link_title_to, widget: string}
 
   - name: 'residents_tile_extra_3'
-    label: 'Residents tile extra 3'
+    label: 'Tile: Residents Page: Tile 3'
     files:
       - label: "Residents tile extra 3"
         name: "residents_tile_extra_3"
@@ -251,7 +186,7 @@ collections:
               - {label: 'Title links to', name: link_title_to, widget: string}
 
   - name: 'residents_tile_extra_4'
-    label: 'Residents tile extra 4'
+    label: 'Tile: Residents Page: Tile 4'
     files:
       - label: "Residents tile extra 4"
         name: "residents_tile_extra_4"
@@ -267,6 +202,352 @@ collections:
               - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
               - {label: 'Title links to', name: link_title_to, widget: string}
 
+  - name: 'health_professionals'
+    label: 'Page: Health Professionals'
+    files:
+      - label: "Health Professionals"
+        name: "health_professionals"
+        file: "_data/health_professionals.yml"
+        fields:
+          - label: "Health Professionals"
+            name: health_professionals
+            widget: list
+            fields: 
+              - {label: Sub-title, name: sub_title, widget: string}
+              - {label: Description, name: description, widget: markdown}
+
+  - name: 'referral_tile_one'
+    label: 'Tile: Health Professionals Page: Referral to link Workers'
+    files:
+      - label: "Referral to link Workers"
+        name: "referral_tile_one"
+        file: "_data/referral_tile_one.yml"
+        fields:
+          - label: "Referral to link Workers"
+            name: referral_tile_one
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
+
+  - name: 'referral_tile_four'
+    label: 'Tile: Health Professionals Page: Referral Four'
+    files:
+      - label: "Referral Four"
+        name: "referral_tile_four"
+        file: "_data/referral_tile_four.yml"
+        fields:
+          - label: "Referral Four"
+            name: referral_tile_four
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
+
+  - name: 'referral_tile_three'
+    label: 'Tile: Health Professionals Page: Referral for Long term conditions'
+    files:
+      - label: "Referral for Long term conditions"
+        name: "referral_tile_three"
+        file: "_data/referral_tile_three.yml"
+        fields:
+          - label: "Referral for Long term conditions"
+            name: referral_tile_three
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
+
+  - name: 'referral_tile_two'
+    label: 'Tile: Health Professionals Page: Referral for mental health'
+    files:
+      - label: "Referral for mental health"
+        name: "referral_tile_two"
+        file: "_data/referral_tile_two.yml"
+        fields:
+          - label: "Referral for mental health"
+            name: referral_tile_two
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
+
+  - name: 'referral_tile_five'
+    label: 'Tile: Health Professionals Page: Self care services'
+    files:
+      - label: "Self care services"
+        name: "referral_tile_five"
+        file: "_data/referral_tile_five.yml"
+        fields:
+          - label: "Self care services"
+            name: referral_tile_five
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
+
+  - name: 'referral_tile_six'
+    label: 'Tile: Health Professionals Page: Referral to Nth Ken'
+    files:
+      - label: "Referral to Nth Ken"
+        name: "referral_tile_six"
+        file: "_data/referral_tile_six.yml"
+        fields:
+          - label: "Referral to Nth Ken"
+            name: referral_tile_six
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Text, name: text, widget: string}
+              - {label: Display, name: display, widget: boolean}
+              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
+              - {label: 'Title links to', name: link_title_to, widget: string}
+
+  - name: 'news_summaries'
+    label: 'News Summaries'
+    files:
+      - label: 'News Summaries'
+        name: 'news_summaries'
+        file: '_data/news_summaries.yml'
+        fields:
+          - label: 'News Summaries'
+            name: news_summaries
+            widget: list
+            fields: 
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Date published", name: "date_published", widget: "text"}
+              - {label: "Author", name: "author", widget: "text"}
+              - {label: "Links To", name: "links_to", widget: "text"}
+              - {label: "Summary", name: "summary", widget: "markdown"}
+              - {label: "Is displayable", name: "is_displayable", widget: "boolean"}
+
+  - name: 'news_article_one'
+    label: 'Page: News Article One'
+    files:
+      - label: 'News Article One'
+        name: 'news_article_one'
+        file: '_data/news_article_one.yml'
+        fields:
+          - label: 'News Article One'
+            name: news_article_one
+            widget: list
+            fields: 
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Date published", name: "date_published", widget: "text"}
+              - {label: "Author", name: "author", widget: "text"}
+              - {label: "About author", name: "about_author", widget: "text"}
+              - {label: "Text", name: "text", widget: "markdown"}
+              - {label: "Subtitle", name: "subtitle", widget: "text"}
+
+  - name: 'news_article_two'
+    label: 'Page: News Article Two'
+    files:
+      - label: 'News Article Two'
+        name: 'news_article_two'
+        file: '_data/news_article_two.yml'
+        fields:
+          - label: 'News Article Two'
+            name: news_article_two
+            widget: list
+            fields: 
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Date published", name: "date_published", widget: "text"}
+              - {label: "Author", name: "author", widget: "text"}
+              - {label: "About author", name: "about_author", widget: "text"}
+              - {label: "Text", name: "text", widget: "markdown"}
+              - {label: "Subtitle", name: "subtitle", widget: "text"}
+
+  - name: 'news_article_three'
+    label: 'Page: News Article Three'
+    files:
+      - label: 'News Article Three'
+        name: 'news_article_three'
+        file: '_data/news_article_three.yml'
+        fields:
+          - label: 'News Article Three'
+            name: news_article_three
+            widget: list
+            fields: 
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Date published", name: "date_published", widget: "text"}
+              - {label: "Author", name: "author", widget: "text"}
+              - {label: "About author", name: "about_author", widget: "text"}
+              - {label: "Text", name: "text", widget: "markdown"}
+              - {label: "Subtitle", name: "subtitle", widget: "text"}
+
+  - name: 'news_article_four'
+    label: 'Page: News Article Four'
+    files:
+      - label: 'News Article Four'
+        name: 'news_article_four'
+        file: '_data/news_article_four.yml'
+        fields:
+          - label: 'News Article Four'
+            name: news_article_four
+            widget: list
+            fields: 
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Date published", name: "date_published", widget: "text"}
+              - {label: "Author", name: "author", widget: "text"}
+              - {label: "About author", name: "about_author", widget: "text"}
+              - {label: "Text", name: "text", widget: "markdown"}
+              - {label: "Subtitle", name: "subtitle", widget: "text"}
+
+  - name: 'partners'
+    label: 'Page: Our Partners'
+    files:
+      - label: 'Our Partners'
+        name: 'partners'
+        file: '_data/partners.yml'
+        fields:
+          - label: 'Our partners'
+            name: partners
+            widget: list
+            fields: 
+              - {label: "Sub title", name: sub_title, widget: markdown}
+  
+  - name: 'partner_age_uk'
+    label: 'Tile: Our Partners Page: Age UK'
+    files:
+      - label: 'Age UK'
+        name: 'partner_age_uk'
+        file: '_data/partner_age_uk.yml'
+        fields:
+          - label: 'Age UK'
+            name: partner_age_uk
+            widget: list
+            fields: 
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Sub-Title", name: "sub_title", widget: "text"}
+              - {label: "Text", name: "text", widget: "text"}
+              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
+              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
+              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
+              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
+              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
+              - {label: "Twitter Link", name: "twitter_link", widget: "text"}
+
+  - name: 'partner_bme'
+    label: 'Tile: Our Partners Page: BME'
+    files:
+      - label: 'BME'
+        name: 'partner_bme'
+        file: '_data/partner_bme.yml'
+        fields:
+          - label: 'BME'
+            name: partner_bme
+            widget: list
+            fields: 
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Sub-Title", name: "sub_title", widget: "text"}
+              - {label: "Text", name: "text", widget: "text"}
+              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
+              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
+              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
+              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
+              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
+              - {label: "Twitter Link", name: "twitter_link", widget: "text"}
+
+  - name: 'partner_kcsc'
+    label: 'Tile: Our Partners Page: Partner KCSC'
+    files:
+      - label: 'KCSC'
+        name: 'partner_kcsc'
+        file: '_data/partner_kcsc.yml'
+        fields:
+          - label: 'KCSC'
+            name: partner_kcsc
+            widget: list
+            fields: 
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Sub-Title", name: "sub_title", widget: "text"}
+              - {label: "Text", name: "text", widget: "text"}
+              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
+              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
+              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
+              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
+              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
+              - {label: "Twitter Link", name: "twitter_link", widget: "text"}
+
+  - name: 'partner_one_westmister'
+    label: 'Tile: Our Partners Page: One Westmister'
+    files:
+      - label: 'One Westmister'
+        name: 'partner_one_westmister'
+        file: '_data/partner_one_westmister.yml'
+        fields:
+          - label: 'One Westmister'
+            name: partner_one_westmister
+            widget: list
+            fields: 
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Sub-Title", name: "sub_title", widget: "text"}
+              - {label: "Text", name: "text", widget: "text"}
+              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
+              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
+              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
+              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
+              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
+              - {label: "Twitter Link", name: "twitter_link", widget: "text"}
+
+  - name: 'partner_open_age'
+    label: 'Tile: Our Partners Page: Open Age'
+    files:
+      - label: 'Open Age'
+        name: 'partner_open_age'
+        file: '_data/partner_open_age.yml'
+        fields:
+          - label: 'Open Age'
+            name: partner_open_age
+            widget: list
+            fields: 
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Sub-Title", name: "sub_title", widget: "text"}
+              - {label: "Text", name: "text", widget: "text"}
+              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
+              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
+              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
+              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
+              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
+              - {label: "Twitter Link", name: "twitter_link", widget: "text"}
+
+  - name: 'partner_smart'
+    label: 'Tile: Our Partners Page: SMART'
+    files:
+      - label: 'SMART'
+        name: 'partner_smart'
+        file: '_data/partner_smart.yml'
+        fields:
+          - label: 'SMART'
+            name: partner_smart
+            widget: list
+            fields: 
+              - {label: "Title", name: "title", widget: "text"}
+              - {label: "Sub-Title", name: "sub_title", widget: "text"}
+              - {label: "Text", name: "text", widget: "text"}
+              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
+              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
+              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
+              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
+              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
+              - {label: "Twitter Link", name: "twitter_link", widget: "text"} 
+
+  
   - name: 'subscribe'
     label: 'Subscribe'
     files:
@@ -296,21 +577,8 @@ collections:
               - {label: Email, name: email, widget: string}
               - {label: About-Summary, name: about, widget: string}
 
-  - name: 'partners'
-    label: 'Our Partners'
-    files:
-      - label: 'Our Partners'
-        name: 'partners'
-        file: '_data/partners.yml'
-        fields:
-          - label: 'Our partners'
-            name: partners
-            widget: list
-            fields: 
-              - {label: "Sub title", name: sub_title, widget: markdown}
-  
   - name: 'extra_page'
-    label: 'Extra Page'
+    label: 'Page: Extra Page Settings'
     files:
       - label: 'Extra Page'
         name: 'extra_page'
@@ -324,7 +592,7 @@ collections:
               - {label: "Title", name: "title", widget: "string"}
 
   - name: 'extra_page_content'
-    label: 'Extra Page'
+    label: 'Page: Extra Page'
     files:
       - label: 'Extra Page'
         name: 'extra_page'
@@ -337,98 +605,9 @@ collections:
               - {label: "text", name: "display", widget: "markdown"}
 
 
-  - name: 'news_article_one'
-    label: 'News Article One'
-    files:
-      - label: 'News Article One'
-        name: 'news_article_one'
-        file: '_data/news_article_one.yml'
-        fields:
-          - label: 'News Article One'
-            name: news_article_one
-            widget: list
-            fields: 
-              - {label: "Title", name: "title", widget: "text"}
-              - {label: "Date published", name: "date_published", widget: "text"}
-              - {label: "Author", name: "author", widget: "text"}
-              - {label: "About author", name: "about_author", widget: "text"}
-              - {label: "Text", name: "text", widget: "markdown"}
-              - {label: "Subtitle", name: "subtitle", widget: "text"}
-
-  - name: 'news_article_two'
-    label: 'News Article Two'
-    files:
-      - label: 'News Article Two'
-        name: 'news_article_two'
-        file: '_data/news_article_two.yml'
-        fields:
-          - label: 'News Article Two'
-            name: news_article_two
-            widget: list
-            fields: 
-              - {label: "Title", name: "title", widget: "text"}
-              - {label: "Date published", name: "date_published", widget: "text"}
-              - {label: "Author", name: "author", widget: "text"}
-              - {label: "About author", name: "about_author", widget: "text"}
-              - {label: "Text", name: "text", widget: "markdown"}
-              - {label: "Subtitle", name: "subtitle", widget: "text"}
-
-  - name: 'news_article_three'
-    label: 'News Article Three'
-    files:
-      - label: 'News Article Three'
-        name: 'news_article_three'
-        file: '_data/news_article_three.yml'
-        fields:
-          - label: 'News Article Three'
-            name: news_article_three
-            widget: list
-            fields: 
-              - {label: "Title", name: "title", widget: "text"}
-              - {label: "Date published", name: "date_published", widget: "text"}
-              - {label: "Author", name: "author", widget: "text"}
-              - {label: "About author", name: "about_author", widget: "text"}
-              - {label: "Text", name: "text", widget: "markdown"}
-              - {label: "Subtitle", name: "subtitle", widget: "text"}
-
-  - name: 'news_article_four'
-    label: 'News Article Four'
-    files:
-      - label: 'News Article Four'
-        name: 'news_article_four'
-        file: '_data/news_article_four.yml'
-        fields:
-          - label: 'News Article Four'
-            name: news_article_four
-            widget: list
-            fields: 
-              - {label: "Title", name: "title", widget: "text"}
-              - {label: "Date published", name: "date_published", widget: "text"}
-              - {label: "Author", name: "author", widget: "text"}
-              - {label: "About author", name: "about_author", widget: "text"}
-              - {label: "Text", name: "text", widget: "markdown"}
-              - {label: "Subtitle", name: "subtitle", widget: "text"}
-
-  - name: 'news_summaries'
-    label: 'News Summaries'
-    files:
-      - label: 'News Summaries'
-        name: 'news_summaries'
-        file: '_data/news_summaries.yml'
-        fields:
-          - label: 'News Summaries'
-            name: news_summaries
-            widget: list
-            fields: 
-              - {label: "Title", name: "title", widget: "text"}
-              - {label: "Date published", name: "date_published", widget: "text"}
-              - {label: "Author", name: "author", widget: "text"}
-              - {label: "Links To", name: "links_to", widget: "text"}
-              - {label: "Summary", name: "summary", widget: "markdown"}
-              - {label: "Is displayable", name: "is_displayable", widget: "boolean"}
 
   - name: 'kcsc_directory_page'
-    label: 'KCSC Directory Page content'
+    label: 'Page: KCSC Directory Page content'
     files:
       - label: 'KCSC Directory Page content'
         name: 'kcsc_directory_page'
@@ -441,185 +620,9 @@ collections:
               - {label: "Helper Text", name: "helper_text", widget: "text"}
 
 
-  - name: 'partner_age_uk'
-    label: 'Partner Age UK'
-    files:
-      - label: 'Age UK'
-        name: 'partner_age_uk'
-        file: '_data/partner_age_uk.yml'
-        fields:
-          - label: 'Age UK'
-            name: partner_age_uk
-            widget: list
-            fields: 
-              - {label: "Title", name: "title", widget: "text"}
-              - {label: "Sub-Title", name: "sub_title", widget: "text"}
-              - {label: "Text", name: "text", widget: "text"}
-              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
-              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
-              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
-              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
-              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
-              - {label: "Twitter Link", name: "twitter_link", widget: "text"}
-
-  - name: 'partner_bme'
-    label: 'Partner BME'
-    files:
-      - label: 'BME'
-        name: 'partner_bme'
-        file: '_data/partner_bme.yml'
-        fields:
-          - label: 'BME'
-            name: partner_bme
-            widget: list
-            fields: 
-              - {label: "Title", name: "title", widget: "text"}
-              - {label: "Sub-Title", name: "sub_title", widget: "text"}
-              - {label: "Text", name: "text", widget: "text"}
-              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
-              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
-              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
-              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
-              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
-              - {label: "Twitter Link", name: "twitter_link", widget: "text"}
-
-  - name: 'partner_kcsc'
-    label: 'Partner KCSC'
-    files:
-      - label: 'KCSC'
-        name: 'partner_kcsc'
-        file: '_data/partner_kcsc.yml'
-        fields:
-          - label: 'KCSC'
-            name: partner_kcsc
-            widget: list
-            fields: 
-              - {label: "Title", name: "title", widget: "text"}
-              - {label: "Sub-Title", name: "sub_title", widget: "text"}
-              - {label: "Text", name: "text", widget: "text"}
-              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
-              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
-              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
-              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
-              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
-              - {label: "Twitter Link", name: "twitter_link", widget: "text"}
-
-  - name: 'partner_one_westmister'
-    label: 'Partner One Westmister'
-    files:
-      - label: 'One Westmister'
-        name: 'partner_one_westmister'
-        file: '_data/partner_one_westmister.yml'
-        fields:
-          - label: 'One Westmister'
-            name: partner_one_westmister
-            widget: list
-            fields: 
-              - {label: "Title", name: "title", widget: "text"}
-              - {label: "Sub-Title", name: "sub_title", widget: "text"}
-              - {label: "Text", name: "text", widget: "text"}
-              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
-              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
-              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
-              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
-              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
-              - {label: "Twitter Link", name: "twitter_link", widget: "text"}
-
-  - name: 'partner_open_age'
-    label: 'Partner Open Age'
-    files:
-      - label: 'Open Age'
-        name: 'partner_open_age'
-        file: '_data/partner_open_age.yml'
-        fields:
-          - label: 'Open Age'
-            name: partner_open_age
-            widget: list
-            fields: 
-              - {label: "Title", name: "title", widget: "text"}
-              - {label: "Sub-Title", name: "sub_title", widget: "text"}
-              - {label: "Text", name: "text", widget: "text"}
-              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
-              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
-              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
-              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
-              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
-              - {label: "Twitter Link", name: "twitter_link", widget: "text"}
-
-  - name: 'partner_smart'
-    label: 'Partner SMART'
-    files:
-      - label: 'SMART'
-        name: 'partner_smart'
-        file: '_data/partner_smart.yml'
-        fields:
-          - label: 'SMART'
-            name: partner_smart
-            widget: list
-            fields: 
-              - {label: "Title", name: "title", widget: "text"}
-              - {label: "Sub-Title", name: "sub_title", widget: "text"}
-              - {label: "Text", name: "text", widget: "text"}
-              - {label: "Display Facebook", name: "display_facebook", widget: "boolean"}
-              - {label: "Facebook Link", name: "facebook_link", widget: "text"}
-              - {label: "Display Instagram", name: "display_instagram", widget: "boolean"}
-              - {label: "Instagram Link", name: "instagram_link", widget: "text"}
-              - {label: "Display Twitter", name: "display_twitter", widget: "boolean"}
-              - {label: "Twitter Link", name: "twitter_link", widget: "text"} 
-
-  - name: 'about_casestudies'
-    label: 'Tile for About Case Studies'
-    files:
-      - label: "Tile for About Case Studies"
-        name: "about_casestudies"
-        file: "_data/about_casestudies.yml"
-        fields:
-          - label: "Tile for About Case Studies"
-            name: about_casestudies
-            widget: list
-            fields: 
-              - {label: Title, name: title, widget: string}
-              - {label: Text, name: text, widget: string}
-              - {label: Display, name: display, widget: boolean}
-              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
-              - {label: 'Title links to', name: link_title_to, widget: string}
-  
-  - name: 'about_communityhealthwestlondon'
-    label: 'Tile for About Community Health West London'
-    files:
-      - label: "About Community Health West London"
-        name: "about_communityhealthwestlondon"
-        file: "_data/about_communityhealthwestlondon.yml"
-        fields:
-          - label: "About Community Health West London"
-            name: about_communityhealthwestlondon
-            widget: list
-            fields: 
-              - {label: Title, name: title, widget: string}
-              - {label: Text, name: text, widget: string}
-              - {label: Display, name: display, widget: boolean}
-              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
-              - {label: 'Title links to', name: link_title_to, widget: string}
-  
-  - name: 'about_partners'
-    label: 'Tile for About Partners'
-    files:
-      - label: "About Partners"
-        name: "about_partners"
-        file: "_data/about_partners.yml"
-        fields:
-          - label: "About Partners"
-            name: about_partners
-            widget: list
-            fields: 
-              - {label: Title, name: title, widget: string}
-              - {label: Text, name: text, widget: string}
-              - {label: Display, name: display, widget: boolean}
-              - {label: 'Title is a link?', name: title_is_a_link, widget: boolean}
-              - {label: 'Title links to', name: link_title_to, widget: string} 
 
   - name: 'page_about_chwl'
-    label: 'Page About Community Health West London'
+    label: 'Page: About Community Health West London'
     files:
       - label: 'Page About Community Health West London'
         name: 'page_about_chwl'
@@ -634,24 +637,9 @@ collections:
               - {label: Text, name: text, widget: string}
 
 
-  - name: 'page_about_social_prescribing'
-    label: 'Page About Social Prescribing'
-    files:
-      - label: 'Page About Social Prescribing'
-        name: 'page_about_social_prescribing'
-        file: '_data/page_about_social_prescribing.yml'
-        fields:
-          - label: 'Page About Social Prescribing'
-            name: page_about_social_prescribing
-            widget: list
-            fields: 
-              - {label: Title, name: title, widget: string}
-              - {label: "Sub-Title", name: "sub_title", widget: "text"}
-              - {label: Text, name: text, widget: string}
-
 
   - name: 'page_case_studies'
-    label: 'Page Case Studies'
+    label: 'Page: Case Studies'
     files:
       - label: 'Page Case Studies'
         name: 'page_case_studies'
@@ -666,7 +654,7 @@ collections:
               - {label: Text, name: text, widget: string}
 
   - name: 'page_work_with_us'
-    label: 'Page work with us'
+    label: 'Page: Work with us'
     files:
       - label: 'Page work with us'
         name: 'page_work_with_us'
